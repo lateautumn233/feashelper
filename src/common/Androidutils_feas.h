@@ -70,6 +70,8 @@ public:
                     return false;
             }
         }
+        Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "performance");
+        Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "performance");
         Feas_status = true;
         return true;
     }
@@ -91,6 +93,10 @@ public:
             if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps_61", 0))
                 return false;
         }
+        if(!Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "schedutil"))
+            Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "walt");
+        if(!Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "schedutil"))
+            Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "walt");
         Feas_status = false;
         return true;
     }
