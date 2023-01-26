@@ -29,4 +29,7 @@ v0.7
   * fix1:移除miui13支持
   * fix2:尝试修复卡2
   * fix3:开机30秒再执行，留出逃生时间
+v0.8
+  * 打开feas的游戏切换performance调速器减少开销
+  * magisk自动更新
   
