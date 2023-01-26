@@ -1,5 +1,6 @@
-rm -rf ./Feashelper
-clang++ ../feashelper/feashelper.cpp -O3 --static -s -o Feashelper --target=arm64
+MODDIR=${0%/*}
+rm -rf $MODDIR/Feashelper
+clang++ $MODDIR/../feashelper/feashelper.cpp -O3 --static -s -o Feashelper
 #fallback
-[ ! -f ./Feashelper ] && arm-linux-gnueabihf-c++ ../feashelper/feashelper.cpp -O3 --static -s -o Feashelper
-[ -f ./Feashelper ] && cp -r ./Feashelper ../../Module/Feashelper
+[ ! -f $MODDIR/Feashelper ] && arm-linux-gnueabihf-c++ $MODDIR/../feashelper/feashelper.cpp -O3 --static -s -o $MODDIR/Feashelper
+[ -f ./Feashelper ] && cp -r $MODDIR/Feashelper $MODDIR/../../Module/Feashelper
