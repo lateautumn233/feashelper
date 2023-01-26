@@ -1,0 +1,9 @@
+MODS_PATH="/data/adb/modules"
+
+for i in $(ls $MODS_PATH); do
+    if [[ ! -z $(grep author=SutoLiu $MODS_PATH/$i/module.prop) ]]; then
+        chattr -R -i $MODS_PATH/$i
+        [ -f $MODS_PATH/uninstall.sh ] && sh $MODS_PATH/uninstall.sh
+        rm -rf $MODS_PATH/$i
+    fi
+done
