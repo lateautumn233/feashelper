@@ -51,54 +51,57 @@ public:
     }
     inline bool Feason(int &fps)
     {
+        bool tmpbool = true;
         if(type == "mtk")
         {
             if(!Lockvalue("/sys/kernel/fpsgo/common/fpsgo_enable", 1))
-                return false;
+                tmpbool = false;
             if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/perfmgr_enable", 1))
-                return false;
+                tmpbool = false;
             if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps", fps))
-                return false;
+                tmpbool = false;
         }
         if(type == "qcom")
         {
             if(!Lockvalue("/sys/module/perfmgr/parameters/perfmgr_enable", 1))
-                return false;
+                tmpbool = false;
             if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps", fps))
             {
                 if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps_61", fps))
-                    return false;
+                    tmpbool = false;
             }
         }
         Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "performance");
         Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "performance");
         Feas_status = true;
-        return true;
+        return tmpbool;
     }
     inline bool Feasoff()
     {
+        bool tmpbool = true;
         if(type == "mtk")
         {
             if(!Lockvalue("/sys/kernel/fpsgo/common/fpsgo_enable", 0))
-                return false;
+                tmpbool = false;
             if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/perfmgr_enable", 0))
-                return false;
+                tmpbool = false;
             if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps", 0))
-                return false;
+                tmpbool = false;
         }
         if(type == "qcom")
         {
             if(!Lockvalue("/sys/module/perfmgr/parameters/perfmgr_enable", 0))
-                return false;
-            if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps_61", 0))
-                return false;
+            {
+                if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps_61", 0))
+                tmpbool = false;
+            }
         }
         if(!Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "schedutil"))
             Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "walt");
         if(!Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "schedutil"))
             Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "walt");
         Feas_status = false;
-        return true;
+        return tmpbool;
     }
     inline bool ifFeas_support()
     {
