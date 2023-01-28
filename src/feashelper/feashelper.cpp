@@ -78,7 +78,8 @@ int main(int argc, char* argv[])
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 400);
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_b", int(-50));
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_x", 6);
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_y", int(-1));                        Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 10);
+                        Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_y", int(-1));
+                        Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 10);
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/continus_no_jank_count", 15);
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a_thres", 800);
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/predict_freq_level", 1);
