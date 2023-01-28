@@ -1,7 +1,13 @@
 #include "../common/Androidutils_feas.h"
 #include "../common/S3profile.h"
 
-
+std::string getGov(){
+    std::ifstream fd("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor");
+    std::string gov;
+    fd >> gov;
+    fd.close();
+    return gov;
+}
 
 int main(int argc, char* argv[])
 {
@@ -24,7 +30,7 @@ int main(int argc, char* argv[])
     profile.startProfilemonitor(5);
     
     //creat device
-    roidDeviceFeas device("mtk-feas");
+    roidDeviceFeas device("feas");
 
     //test feas support
     if (!device.ifFeas_support())
@@ -46,8 +52,11 @@ int main(int argc, char* argv[])
             device.Feason(profile.fps);
             
             //swich cpu 0-7 to performance
-            Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "performance");
-            Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "performance");
+            while(getGov() != std::string("performance"))
+            {
+                Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "performance");
+                Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "performance");
+            }
             
             /*From mi joyose config
              *now only genshin*/
@@ -120,13 +129,23 @@ int main(int argc, char* argv[])
             device.Feasoff();
             
             //swich performance to schedutil/walt
-            if(!Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "walt"))
+            while(getGov() != std::string("walt") && getGov() != std::string("schedutil"))
             {
-                Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "schedutil");
-            }
-            if(!Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "walt"))
-            {
-                Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "schedutil");
+                if(device.getType() == std::string("qcom"))
+                {
+                    Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "walt");
+                    Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "walt");
+                    if(getGov() != std::string("walt")) //fall back
+                    {
+                        Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "schedutil");
+                        Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "schedutil");
+                    }
+                }
+                if(device.getType() == std::string("mtk"))
+                {
+                    Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "schedutil");
+                    Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "schedutil");
+                }
             }
         }
         //dumpsys update in 3s

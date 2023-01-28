@@ -12,8 +12,12 @@
 template <typename T>
 inline bool Lockvalue(const char *location, T value){
     chmod(location, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IWOTH | S_IROTH);
-    std::ofstream fd(location, std::ios::in | std::ios::trunc);
-    if(!fd)  {return false;}
+    std::ofstream fd(location, std::ios::out | std::ios::trunc);
+    if(!fd)
+    {
+        fd.close();
+        return false;
+    }
     fd << value;
     fd.close();
     chmod(location, S_IRUSR | S_IRGRP | S_IROTH);
@@ -75,10 +79,10 @@ protected:
         {
             Shell("dumpsys activity activities|grep topResumedActivity=|tail -n 1|cut -d \"{\" -f2|cut -d \"/\" -f1|cut -d \" \" -f3", Topapp);
             //reduce screen off cost
-            /*if(Topapp == std::string(""))
+            if(Topapp == std::string(""))
             {
                 sleep(6);
-            }*/
+            }
             sleep(second);
         }
     }
