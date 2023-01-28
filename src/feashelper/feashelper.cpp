@@ -9,7 +9,14 @@ inline std::string getGov(){
     fd.close();
     return gov;
 }
-
+inline void setGov(const char *governor)//swich cpu 0-7 to performance
+{
+    while(getGov() != std::string(governor))
+    {
+        Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", governor);
+        Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", governor);
+    }
+}
 //stop feas boost_affinity if had installed asoulopt
 inline void Ifasopt()
 {
@@ -68,13 +75,9 @@ int main(int argc, char* argv[])
             
             //open feas
             device.Feason(profile.fps);
-            
-            //swich cpu 0-7 to performance
-            while(getGov() != std::string("performance"))
-            {
-                Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "performance");
-                Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "performance");
-            }
+
+            //set governor
+            setGov("performance");
             
             /*From mi joyose config
              *now only genshin*/
@@ -90,18 +93,15 @@ int main(int argc, char* argv[])
             {
                 if(device.getType() == "qcom")
                 {
-                    Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "walt");
-                    Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "walt");
+                    setGov("walt");
                     if(getGov() != "walt") //fall back
                     {
-                        Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "schedutil");
-                        Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "schedutil");
+                        setGov("schedutil");
                     }
                 }
                 if(device.getType() == "mtk")
                 {
-                    Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "schedutil");
-                    Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "schedutil");
+                    setGov("schedutil");
                 }
             }
         }
