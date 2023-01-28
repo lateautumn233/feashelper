@@ -46,8 +46,6 @@ int main(int argc, char* argv[])
     device.startTopappmonitor(3);
     while(true)
     {
-        std::cout << device.getToppkg() << std::endl;
-        std::cout << getGov() << std::endl;
         if(profile.Inlist(device.getToppkg()))
         {
             //open feas
