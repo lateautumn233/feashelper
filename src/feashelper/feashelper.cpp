@@ -103,7 +103,7 @@ int main(int argc, char* argv[])
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 8);
                     }
                 }
-                else if(!isNewFeas()) // older feas on mtk(example k50) feas <=2.1
+                /*else if(!isNewFeas()) // older feas on mtk(example k50) feas <=2.1
                 {
                     if(isOP(device))
                     {
@@ -120,7 +120,7 @@ int main(int argc, char* argv[])
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_x", 5);
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 8);
                     }
-                }
+                }*/
             }
         }
         else

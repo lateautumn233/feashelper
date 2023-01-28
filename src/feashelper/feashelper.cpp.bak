@@ -60,7 +60,7 @@ int main(int argc, char* argv[])
             
             /*From mi joyose config
              *now only genshin*/
-            if(device.getType() == std::string("qcom"))
+            if(device.getType() == "qcom")
             {
                 if(isOP(device)) //if game is OP
                 /*from k50u joyose config*/
@@ -80,7 +80,7 @@ int main(int argc, char* argv[])
                     Lockvalue("/sys/module/perfmgr/parameters/predict_freq_level", 0);
                 }
             }
-            if(device.getType() == std::string("mtk"))
+            if(device.getType() == "mtk")
             {
                 if(isNewFeas()) // newer feas on mtk(example k60e) feas >= 2.2
                 {
@@ -129,19 +129,19 @@ int main(int argc, char* argv[])
             device.Feasoff();
             
             //swich performance to schedutil/walt
-            while(getGov() != std::string("walt") && getGov() != std::string("schedutil"))
+            while(getGov() != "walt" && getGov() != "schedutil")
             {
-                if(device.getType() == std::string("qcom"))
+                if(device.getType() == "qcom")
                 {
                     Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "walt");
                     Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "walt");
-                    if(getGov() != std::string("walt")) //fall back
+                    if(getGov() != "walt") //fall back
                     {
                         Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "schedutil");
                         Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "schedutil");
                     }
                 }
-                if(device.getType() == std::string("mtk"))
+                if(device.getType() == "mtk")
                 {
                     Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "schedutil");
                     Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "schedutil");
