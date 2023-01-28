@@ -83,7 +83,7 @@ int main(int argc, char* argv[])
             {
                 if(isOP(device)) //OP
                 {
-                    if(Testfile("/sys/module/mtk_fpsgo/parameters/target_fps_61")) // newer feas on mtk(k60e)
+                    if(Testfile("/sys/module/mtk_fpsgo/parameters/target_fps_61")) // newer feas on mtk(k60e) feas >= 2.2
                     {
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 400);
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_b", int(-50));
@@ -92,16 +92,16 @@ int main(int argc, char* argv[])
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 10);
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/continus_no_jank_count", 15);
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a_thres", 800);
-                        Lockvalue("sys/module/mtk_fpsgo/parameters/predict_freq_level", 1);
+                        Lockvalue("/sys/module/mtk_fpsgo/parameters/predict_freq_level", 1);
                     }
                     else //not OP
                     {
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 500);
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/predict_freq_level", 1);
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_x", 5);
-                        Lockvalue("sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 8);
+                        Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 8);
                     }
-                    /*if(!Testfile("/sys/module/mtk_fpsgo/parameters/target_fps_61")) // older feas on mtk(k50)
+                    /*if(!Testfile("/sys/module/mtk_fpsgo/parameters/target_fps_61")) // older feas on mtk(k50) feas <=2.1
                     {
                     
                     }
