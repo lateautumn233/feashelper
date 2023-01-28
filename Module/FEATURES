@@ -34,4 +34,7 @@ v0.8
   * magisk自动更新
   * add 修复高通设备没有切换到performance
   - 调速器的问题
+v0.9(beta)
+  * 细节调参优化(原神)
+  - (qcom from k50u, mtk from k60e)
   

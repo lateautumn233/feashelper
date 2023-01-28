@@ -119,7 +119,7 @@ bool isOP(roidDeviceFeas &device)
 {
     if(device.getToppkg() == std::string("com.miHoYo.GenshinImpact") || device.getToppkg() == std::string("com.miHoYo.Yuanshen") || device.getToppkg() == std::string("com.miHoYo.ys.bilibili") || device.getToppkg() == std::string("com.miHoYo.ys.mi")) //if game is OP
     {
-        std::cout << "Genshin" << std::endl;
+        //std::cout << "Genshin" << std::endl;
         return true;
     }
     return false;
