@@ -101,7 +101,7 @@ int main(int argc, char* argv[])
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_x", 5);
                         Lockvalue("sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 8);
                     }
-                    /*if(!Testfile("/sys/module/mtk_fpsgo/parameters/target_fps_61")) // older feas on mtk(k50)
+                    /*if(Testfile("/sys/module/mtk_fpsgo/parameters/target_fps")) // older feas on mtk(k50)
                     {
                     
                     }

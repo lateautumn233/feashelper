@@ -71,8 +71,6 @@ public:
                     tmpbool = false;
             }
         }
-        Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "performance");
-        Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "performance");
         Feas_status = true;
         return tmpbool;
     }
@@ -96,15 +94,15 @@ public:
                 tmpbool = false;
             }
         }
-        if(!Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "schedutil"))
-            Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "walt");
-        if(!Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "schedutil"))
-            Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "walt");
         Feas_status = false;
         return tmpbool;
     }
-    inline bool ifFeas_support()
+    inline bool ifFeas_support() const
     {
         return Feas_support;
+    }
+    inline std::string getType() const
+    {
+        return type;
     }
 };
