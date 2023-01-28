@@ -121,14 +121,10 @@ int main(int argc, char* argv[])
             
             //swich performance to schedutil/walt
             if(!Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "walt"))
-            {
                 Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", "schedutil");
-            }
             if(!Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "walt"))
-            {
                 Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "schedutil");
             }
-        }
         //dumpsys update in 3s
         sleep(3);
     }

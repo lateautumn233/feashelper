@@ -75,10 +75,10 @@ protected:
         {
             Shell("dumpsys activity activities|grep topResumedActivity=|tail -n 1|cut -d \"{\" -f2|cut -d \"/\" -f1|cut -d \" \" -f3", Topapp);
             //reduce screen off cost
-            /*if(Topapp == std::string(""))
+            if(Topapp == std::string(""))
             {
                 sleep(6);
-            }*/
+            }
             sleep(second);
         }
     }
