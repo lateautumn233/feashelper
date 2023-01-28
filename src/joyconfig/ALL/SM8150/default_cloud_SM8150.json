@@ -1,0 +1,271 @@
+{
+  "booster_config":{
+    "config_name": "booster_config",
+    "enable": true,
+    "group_name": "booster_config",
+    "version": 2019120401,
+    "with_model": false,
+    "params": {
+      "header": {
+        "version": "2019120401"
+      },
+      "game_booster": {
+        "booster_enable": true,
+        "cpuset_enable": true,
+        "monitor": {
+          "monitor_enable": false,
+          "analytics_enable": false,
+          "default_interval": 2
+        },
+        "migt": [
+          "com.tencent.tmgp.speedmobile;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.tmgp.speedmobileEx;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:2016000;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.tmgp.sgame;0:0 1:0 2:0 3:0 4:1401600 5:1401600 6:1401600 7:1612800;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.tmgp.sgamece;0:0 1:0 2:0 3:0 4:1401600 5:1401600 6:1401600 7:1612800;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.netease.hyxd.mi;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:2016000;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.netease.hyxd;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:2016000;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.tmgp.cf;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:2016000;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.miHoYo.bh3.mi;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:2016000;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.miHoYo.bh3.uc;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:2016000;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.miHoYo.enterprise.NGHSoD;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:2016000;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.netease.mrzh.mi;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.netease.mrzh;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.tmgp.pubgmhd;0:0 1:0 2:0 3:0 4:1056000 5:1056000 6:1056000 7:1401600;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.tmgp.pubgmhdce;0:0 1:0 2:0 3:0 4:1056000 5:1056000 6:1056000 7:1401600;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.netease.dwrg.mi;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.netease.dwrg;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.netease.h48.mi;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.netease.h48;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.studiowildcard.wardrumstudios.ark;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:2016000;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.studiowildcard.wardrumstudios.ark.ncr;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:2016000;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.t2ksports.nba2k19and;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:2016000;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.t2ksports.nba2k18and;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:2016000;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.netease.lx12.mi;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.netease.lx12;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.tmgp.pubgm;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:2016000;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.ngame.allstar.eu;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.ngame.allstar.in;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.netmarble.penta;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.garena.game.kgtw;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.garena.game.kgvn;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.garena.game.kgth;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.garena.game.kgid;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.garena.game.kgsam;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.garena.game.kgvntest;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.epicgames.fortnite;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:2016000;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.ig;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:2016000;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.igce;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:2016000;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.pubg.krmobile;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:2016000;40;60:18 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.huoshe.mndwdzz.mi;0:0 1:0 2:0 3:0 4:2323200 5:2323200 6:2323200 7:0;40;60:17 40:25 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0"
+        ],
+        "booster_config": {
+          "default_config": [
+            {
+              "permission": "root",
+              "cmd": "/sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres#60;/sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres#30;/sys/devices/system/cpu/cpu4/core_ctl/min_cpus#2"
+            }
+          ],
+          "scene_config": [
+            {
+              "scene_id": 5,
+              "scene_name": "loading",
+              "change_end": true,
+              "booster": [
+                {
+                  "permission": "root",
+                  "cmd": "perflock#40800000_FFF#0"
+                }
+              ]
+            },
+            {
+              "scene_id": 10001,
+              "scene_name": "foreground",
+              "booster": [
+                {
+                  "permission": "root",
+                  "cmd": "/sys/devices/system/cpu/cpu4/core_ctl/min_cpus#3"
+                }
+              ],
+              "end": [
+                {
+                  "permission": "root",
+                  "cmd": "/sys/devices/system/cpu/cpu4/core_ctl/min_cpus#2"
+                }
+              ]
+            }
+          ],
+          "ovrride_config": [
+            {
+              "game_name": "com.tencent.tmgp.sgame",
+              "scene_ovrride": [
+                {
+                  "scene_id": 4,
+                  "scene_name": "hall",
+                  "change_end": true,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40800000_FFF_40400000_1#20"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "change_end": true,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres#20;/sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres#60;/sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres#30"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 6,
+                  "scene_name": "gaming",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/module/migt/parameters/force_reset_runtime#1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.cf",
+              "scene_ovrride": [
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "change_end": true,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres#20;/sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres#60;/sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres#30"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.speedmobile",
+              "scene_ovrride": [
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "change_end": true,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres#20;/sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres#60;/sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres#30"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.pubgmhd",
+              "end_scene": "103",
+              "scene_ovrride": [
+                {
+                  "scene_id": 100,
+                  "scene_name": "gaming",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/module/migt/parameters/force_reset_runtime#1"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 102,
+                  "scene_name": "parachute",
+                  "change_end": true,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres#20;/sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_4B_40C20200_37_40C1C100_55_40C1C200_46_40800000_FFF_40800200_FFF_40800100_FFF#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres#60;/sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres#30"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.netease.onmyoji",
+              "end_scene": "10001",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "/dev/cpuset/game/cpus#4-6;/dev/cpuset/game/cgroup.procs#`pidof com.netease.onmyoji`"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.netease.onmyoji.mi",
+              "end_scene": "10001",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "/dev/cpuset/game/cpus#4-6;/dev/cpuset/game/cgroup.procs#`pidof com.netease.onmyoji.mi`"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

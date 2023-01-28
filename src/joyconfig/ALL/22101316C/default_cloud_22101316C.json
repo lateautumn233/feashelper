@@ -1,0 +1,524 @@
+{
+  "booster_config": {
+    "config_name": "booster_config",
+    "enable": true,
+    "group_name": "booster_config",
+    "version": 2022092950,
+    "with_model": false,
+    "params": {
+      "header": {
+        "version": "2022092950",
+        "network_improve": true,
+        "index_enable": true,
+        "mqs_enable": true
+      },
+      "game_booster": {
+        "booster_enable": true,
+        "cpuset_enable": true,
+        "tuner_enable": true,
+        "monitor": {
+          "monitor_enable": false,
+          "analytics_enable": false,
+          "default_interval": 2
+        },
+        "support_motor_app": [],
+        "support_display_refresh_rates": [
+          60,
+          90,
+          120
+        ],
+        "support_dynamic_refresh_rate_games": [
+          "com.tencent.tmgp.sgame",
+          "com.tencent.tmgp.sgamece",
+          "com.tencent.tmgp.pubgmhd",
+          "com.tencent.ig",
+          "com.tencent.tmgp.speedmobile",
+          "com.tencent.lolm",
+          "com.riotgames.league.wildrift"
+        ],
+        "support_highfps_app": [
+          "com.tencent.tmgp.sgame:90",
+          "com.tencent.tmgp.sgamece:90",
+          "com.tencent.tmgp.speedmobile:120"
+        ],
+        "scale_app_enable": true,
+        "support_scale_app_list": [
+          "com.miHoYo.enterprise.NGHSoD",
+          "com.happyelements.AndroidAnimal",
+          "cn.jj",
+          "com.tencent.tmgp.speedmobile",
+          "com.blizzard.wtcg.hearthstone",
+          "com.tencent.peng",
+          "com.tencent.qqgame.xq",
+          "com.qqgame.happymj",
+          "com.tencent.tmgp.tstl",
+          "com.tencent.wmsj",
+          "com.tencent.swy",
+          "com.tencent.tmgp.qqx5",
+          "com.tencent.tmgp.wec",
+          "com.tencent.shootgame",
+          "com.tencent.tmgp.vgame",
+          "com.tencent.tmgp.mt4",
+          "com.tencent.woool3d",
+          "com.tencent.xishanju.xj4",
+          "com.tencent.tmgp.redfox",
+          "com.tencent.wdqy",
+          "com.tencent.YiRen",
+          "com.tencent.tmgp.ylm",
+          "com.tencent.yoozoo.got.wintercoming",
+          "com.tencent.hxh",
+          "com.tencent.tmgp.sskgame",
+          "com.minitech.miniworld",
+          "com.bairimeng.dmmdzz",
+          "com.netease.tom",
+          "com.supercell.clashofclans.kunlun",
+          "com.aligames.sgzzlb",
+          "com.outfit7.talkingtomgoldrun.bd",
+          "com.bf.sgs.hdexp",
+          "com.lilithgames.hgame.cn",
+          "com.supercell.clashroyale.kunlun",
+          "com.ChillyRoom.DungeonShooter",
+          "com.wepie.snake",
+          "com.ledou.mhhy",
+          "com.gbits.atm.leiting",
+          "com.shiyi.bkby",
+          "com.jiguang.dldl.sy37",
+          "com.qidian.dldl.official",
+          "com.papegames.nn4.cn",
+          "com.wanmei.zhuxian.laohu",
+          "com.qhjx.snk.sy371",
+          "com.szxchd.yqxx.dodsdk",
+          "com.sqw.sssf",
+          "com.hermes.bgame",
+          "com.netease.lx7",
+          "com.taomee.huah",
+          "com.soulgame.shokudo.kuaishou",
+          "com.pwrd.hotta.laohu",
+          "com.hottagames.hotta.mi",
+          "com.hottagames.hotta.aligames"
+        ],
+        "force_scale_app_list": [
+          "com.tencent.tmgp.sgame:440#1.25:com.tencent.tmgp.sgame.SGameActivity",
+          "com.tencent.tmgp.pubgmhd:440#1.66:com.epicgames.ue4.GameActivity"
+        ],
+        "migl_enable": true,
+        "migl_config": [
+          "yuanshen:com.miHoYo.Yuanshen#com.miHoYo.GenshinImpact#com.miHoYo.ys.mi#com.miHoYo.ys.bilibili;1280;576;-1",
+          "pubg:com.tencent.tmgp.pubgmhd;-1;-1;1"
+        ],
+        "booster_config": {
+          "default_config": [],
+          "scene_config": [],
+          "ovrride_config": [
+            {
+              "game_name": "com.tencent.tmgp.sgame",
+              "start_scene": "7",
+              "end_scene": "4",
+              "badfps_thresh1": "54,81",
+              "badfps_thresh2": "3,5",
+              "PID_T": "90#10:0 0 0 0 0 0,44:45 90 60 15 1.5 3;60#10:0 0 0 0 0 0;30#10:0 0 0 0 0 0",
+              "PID_M": "90#10:0 0 0 0 0 0,42:43 90 60 15 1.5 3;60#10:0 0 0 0 0 0;30#10:0 0 0 0 0 0",
+              "scene_ovrride": [
+                {
+                  "scene_id": 1,
+                  "scene_name": "startgame",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 4,
+                  "scene_name": "hall",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.sgamece",
+              "start_scene": "7",
+              "end_scene": "4",
+              "badfps_thresh1": "54,81",
+              "badfps_thresh2": "3,5",
+              "PID_T": "90#10:0 0 0 0 0 0,44:45 90 60 15 1.5 3;60#10:0 0 0 0 0 0;30#10:0 0 0 0 0 0",
+              "PID_M": "90#10:0 0 0 0 0 0,42:43 90 60 15 1.5 3;60#10:0 0 0 0 0 0;30#10:0 0 0 0 0 0",
+              "scene_ovrride": [
+                {
+                  "scene_id": 1,
+                  "scene_name": "startgame",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 4,
+                  "scene_name": "hall",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.pubgmhd",
+              "start_scene": "102",
+              "end_scene": "4",
+              "badfps_thresh1": "54",
+              "badfps_thresh2": "3",
+              "scene_ovrride": [
+                {
+                  "scene_id": 1,
+                  "scene_name": "startgame",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 4,
+                  "scene_name": "hall",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.Yuanshen",
+              "PID_T": "60#10:0 0 0 0 0 0,43:45 60 24 10 0.8 3",
+              "PID_M": "60#10:0 0 0 0 0 0,42:43 60 24 10 1 2",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.miHoYo.ys.mi",
+              "PID_T": "60#10:0 0 0 0 0 0,43:45 60 24 10 0.8 3",
+              "PID_M": "60#10:0 0 0 0 0 0,42:43 60 24 10 1 2",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.miHoYo.ys.bilibili",
+              "PID_T": "60#10:0 0 0 0 0 0,43:45 60 24 10 0.8 3",
+              "PID_M": "60#10:0 0 0 0 0 0,42:43 60 24 10 1 2",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.miHoYo.GenshinImpact",
+              "PID_T": "60#10:0 0 0 0 0 0,43:45 60 24 10 0.8 3",
+              "PID_M": "60#10:0 0 0 0 0 0,42:43 60 24 10 1 2",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.tencent.tmgp.cod",
+              "scene_ovrride": [
+                {
+                  "scene_id": 1,
+                  "scene_name": "startgame",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 4,
+                  "scene_name": "hall",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.lolm",
+              "start_scene": "7",
+              "end_scene": "4",
+              "badfps_thresh1": "54,81",
+              "badfps_thresh2": "3,5",
+              "scene_ovrride": [
+                {
+                  "scene_id": 1,
+                  "scene_name": "startgame",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 4,
+                  "scene_name": "hall",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.speedmobile",
+              "PID_T": "120#10:0 0 0 0 0 0,44:45 120 90 15 1.5 3;90#10:0 0 0 0 0 0,44:45 90 60 15 1.5 3;60#10:0 0 0 0 0 0;30#10:0 0 0 0 0 0",
+              "PID_M": "120#10:0 0 0 0 0 0,42:43 120 90 15 1.5 3;90#10:0 0 0 0 0 0,42:43 90 60 15 1.5 3;60#10:0 0 0 0 0 0;30#10:0 0 0 0 0 0",
+              "scene_ovrride": [
+                {
+                  "scene_id": 1,
+                  "scene_name": "startgame",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 4,
+                  "scene_name": "hall",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.cf",
+              "scene_ovrride": [
+                {
+                  "scene_id": 1,
+                  "scene_name": "startgame",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 4,
+                  "scene_name": "hall",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.jkchess",
+              "scene_ovrride": [
+                {
+                  "scene_id": 1,
+                  "scene_name": "startgame",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 4,
+                  "scene_name": "hall",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_27ac40_00400000_1e8480_00400100_27ac40_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "booster_config": {
+    "config_name": "booster_config",
+    "enable": true,
+    "group_name": "booster_config",
+    "version": 2022030201,
+    "with_model": false,
+    "params": {
+      "header": {
+        "version": "2022030201",
+        "index_enable": true,
+        "network_improve": true,
+        "mqs_enable": true
+      },
+      "game_booster": {
+        "booster_enable": true,
+        "cpuset_enable": true,
+        "tuner_enable": true,
+        "monitor": {
+          "monitor_enable": false,
+          "analytics_enable": false,
+          "default_interval": 2
+        },
+        "migl_support_app_version": [
+          "com.miHoYo.Yuanshen:350",
+          "com.miHoYo.GenshinImpact:350",
+          "com.miHoYo.ys.mi:350",
+          "com.miHoYo.ys.bilibili:350"
+        ],
+        "migl_enable": true,
+        "migl_config": [
+          "yuanshen:com.miHoYo.Yuanshen#com.miHoYo.GenshinImpact#com.miHoYo.ys.mi#com.miHoYo.ys.bilibili;1280;576;-1",
+          "pubg:com.tencent.tmgp.pubgmhd;-1;-1;1"
+        ],
+        "support_display_refresh_rates": [
+          30,
+          48,
+          50,
+          60,
+          90,
+          120
+        ],
+        "support_dynamic_refresh_rate_games": [
+          "com.tencent.tmgp.pubgmhd",
+          "com.tencent.tmgp.sgame",
+          "com.tencent.tmgp.sgamece"
+        ],
+        "support_highfps_app": [
+          "com.tencent.tmgp.speedmobile:120",
+          "com.tencent.tmgp.pubgmhd:120",
+          "com.tencent.tmgp.sgame:120",
+          "com.tencent.tmgp.sgamece:120",
+          "com.tencent.tmgp.cf:90",
+          "com.netease.moba.mi:120",
+          "com.miHoYo.bh3.mi:90",
+          "com.miHoYo.enterprise.NGHSoD:90",
+          "com.t2ksports.nba2k20and:120",
+          "com.miHoYo.Yuanshen:60",
+          "com.miHoYo.ys.mi:60",
+          "com.tencent.lolm:90",
+          "com.guandan.mi:60",
+          "com.tencent.af:90"
+        ],
+        "support_motor_app": [],
+        "booster_config": {
+          "default_config": [],
+          "scene_config": [],
+          "ovrride_config": [
+            {
+              "game_name": "com.tencent.tmgp.sgame",
+              "start_scene": "7",
+              "end_scene": "4",
+              "badfps_thresh1": "54,81",
+              "badfps_thresh2": "3,5",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.tencent.tmgp.sgamece",
+              "start_scene": "7",
+              "end_scene": "4",
+              "badfps_thresh1": "54,81",
+              "badfps_thresh2": "3,5",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.tencent.tmgp.pubgmhd",
+              "start_scene": "102",
+              "end_scene": "4",
+              "badfps_thresh1": "54,81",
+              "badfps_thresh2": "3,5",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.miHoYo.Yuanshen",
+              "dynamic_fps": "10:60,46:55,47:50,48:40,50:30",
+              "dynamic_fps_M": "10:55,42:50,43:40,45:35,47:30",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.miHoYo.ys.mi",
+              "dynamic_fps": "10:60,46:55,47:50,48:40,50:30",
+              "dynamic_fps_M": "10:55,42:50,43:40,45:35,47:30",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.tencent.tmgp.cf",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.yingxiong.hero.mi",
+              "scene_ovrride": []
+            }
+          ]
+        }
+      }
+    }
+  }
+}

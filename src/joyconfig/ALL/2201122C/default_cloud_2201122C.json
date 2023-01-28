@@ -1,0 +1,1954 @@
+{
+  "booster_config": {
+    "config_name": "booster_config",
+    "enable": true,
+    "group_name": "booster_config",
+    "version": 2022040652,
+    "with_model": false,
+    "params": {
+      "header": {
+        "version": "2022040652",
+        "network_improve": true,
+        "index_enable": true,
+        "mqs_enable": true
+      },
+      "game_booster": {
+        "booster_enable": true,
+        "cpuset_enable": true,
+        "tuner_enable": true,
+        "speedmode_enable": true,
+        "vrs_soc": "8450",
+        "support_vrs_app": [
+          "com.tencent.tmgp.sgame",
+          "com.tencent.tmgp.speedmobile",
+          "com.tencent.tmgp.pubgmhd",
+          "com.sy.dldlhsdj.gw",
+          "com.protopop.brightridge"
+        ],
+        "monitor": {
+          "monitor_enable": false,
+          "analytics_enable": false,
+          "default_interval": 2
+        },
+        "support_motor_app": [],
+        "support_display_refresh_rates": [
+          60,
+          90,
+          120
+        ],
+        "low_display_refresh_rate_scenes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "support_dynamic_refresh_rate_games": [
+          "com.tencent.tmgp.pubgmhd",
+          "com.tencent.tmgp.sgame",
+          "com.tencent.ig",
+          "com.tencent.lolm"
+        ],
+        "support_speed_mode_games": [
+          "com.tencent.tmgp.sgame",
+          "com.miHoYo.ys.mi",
+          "com.miHoYo.ys.bilibili",
+          "com.miHoYo.Yuanshen",
+          "com.miHoYo.GenshinImpact"
+        ],
+        "support_highfps_app": [
+          "com.tencent.tmgp.sgame:120",
+          "com.tencent.tmgp.sgamece:120",
+          "com.activision.callofduty.shooter:60",
+          "com.netease.lztg1.mi:120",
+          "com.netease.lztg:120",
+          "com.tencent.tmgp.cf:60",
+          "com.pwrd.xxajh.laohu:120",
+          "com.pwrd.xxajh.mi:120",
+          "com.miHoYo.bh3.mi:90",
+          "com.miHoYo.enterprise.NGHSoD:90",
+          "com.t2ksports.nba2k20and:90",
+          "com.tencent.af:120",
+          "com.tencent.tmgp.pubgmhd:120",
+          "com.tencent.tmgp.speedmobile:120",
+          "com.tencent.tmgp.WePop:120",
+          "com.tencent.YiRen:120",
+          "com.tencent.KiHan:120",
+          "com.gs.truckdrive.road.train.truck.gtx:60",
+          "com.tencent.ig:90",
+          "com.tencent.tmgp.cod:60",
+          "com.denachina.g13002010.mi:120",
+          "com.denachina.g13002010.denacn:120",
+          "com.tencent.lolm:90",
+          "com.netease.harrypotter:60",
+          "com.netease.harrypotter.mi:60",
+          "com.tencent.sgwsba:60",
+          "com.longtugame.yjfb.mi:60",
+          "com.duole.doudizhuhd.mi:60",
+          "com.tencent.jkchess:60",
+          "com.miHoYo.cloudgames.ys:60",
+          "com.supercell.clashofclans.mi:60",
+          "com.feiyu.carrot3.mi:60",
+          "com.miHoYo.cloudgames.ys:60",
+          "com.supercell.clashofclans.mi:60",
+          "com.feiyu.carrot3.mi:60",
+          "com.sy.dldlhsdj.mi:60",
+          "com.pwrd.hotta.laohu:90",
+          "com.hottagames.hotta.mi:90"
+        ],
+        "scale_app_enable": true,
+        "support_scale_app_list": [
+          "com.miHoYo.enterprise.NGHSoD",
+          "com.happyelements.AndroidAnimal",
+          "cn.jj",
+          "com.tencent.tmgp.speedmobile",
+          "com.blizzard.wtcg.hearthstone",
+          "com.tencent.peng",
+          "com.tencent.qqgame.xq",
+          "com.qqgame.happymj",
+          "com.tencent.tmgp.tstl",
+          "com.tencent.wmsj",
+          "com.tencent.swy",
+          "com.tencent.tmgp.qqx5",
+          "com.tencent.tmgp.wec",
+          "com.tencent.shootgame",
+          "com.tencent.tmgp.vgame",
+          "com.tencent.tmgp.mt4",
+          "com.tencent.woool3d",
+          "com.tencent.xishanju.xj4",
+          "com.tencent.tmgp.redfox",
+          "com.tencent.wdqy",
+          "com.tencent.YiRen",
+          "com.tencent.tmgp.ylm",
+          "com.tencent.yoozoo.got.wintercoming",
+          "com.tencent.hxh",
+          "com.tencent.tmgp.sskgame",
+          "com.minitech.miniworld",
+          "com.bairimeng.dmmdzz",
+          "com.netease.tom",
+          "com.supercell.clashofclans.kunlun",
+          "com.aligames.sgzzlb",
+          "com.outfit7.talkingtomgoldrun.bd",
+          "com.bf.sgs.hdexp",
+          "com.lilithgames.hgame.cn",
+          "com.supercell.clashroyale.kunlun",
+          "com.ChillyRoom.DungeonShooter",
+          "com.wepie.snake",
+          "com.ledou.mhhy",
+          "com.gbits.atm.leiting",
+          "com.shiyi.bkby",
+          "com.jiguang.dldl.sy37",
+          "com.qidian.dldl.official",
+          "com.papegames.nn4.cn",
+          "com.wanmei.zhuxian.laohu",
+          "com.qhjx.snk.sy371",
+          "com.szxchd.yqxx.dodsdk",
+          "com.sqw.sssf",
+          "com.hermes.bgame",
+          "com.netease.lx7",
+          "com.taomee.huah",
+          "com.soulgame.shokudo.kuaishou"
+        ],
+        "force_scale_app_list": [
+          "com.tencent.tmgp.sgame:560#1.66;420#1.25",
+          "com.tencent.tmgp.pubgmhd:560#2.25;420#1.66"
+        ],
+        "migl_enable": true,
+        "migl_config": [
+          "yuanshen:com.miHoYo.Yuanshen#com.miHoYo.GenshinImpact#com.miHoYo.ys.mi#com.miHoYo.ys.bilibili;1280;576;-1",
+          "pubg:com.tencent.tmgp.pubgmhd;-1;-1;1"
+        ],
+        "dynamic_fps_global": {
+          "dynamic_fps": "10:120,30:90,35:80,37:70,40:60,42:50,44:40",
+          "dynamic_fps_M": "10:120,30:90,35:70,38:60,42:50"
+        },
+        "migt": [
+          "com.tencent.tmgp.pubgmhd;0:0 1:0 2:0 3:0 4:1881600 5:1881600 6:1881600 7:1785600;10;90:18 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.ig;0:0 1:0 2:0 3:0 4:1881600 5:1881600 6:1881600 7:1785600;10;90:18 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.tmgp.sgame;0:0 1:0 2:0 3:0 4:2227200 5:2227200 6:2227200 7:2630400;30;120:15 90:15 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.tmgp.sgamece;0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;30;90:8 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.tmgp.speedmobile;0:0 1:0 2:0 3:0 4:1996800 5:1996800 6:1996800 7:1900800;10;90:18 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.miHoYo.Yuanshen;0:0 1:0 2:0 3:0 4:1766400 5:1766400 6:1766400 7:1785600;10;90:18 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.miHoYo.GenshinImpact;0:0 1:0 2:0 3:0 4:1766400 5:1766400 6:1766400 7:1785600;10;90:18 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.miHoYo.ys.mi;0:0 1:0 2:0 3:0 4:1766400 5:1766400 6:1766400 7:1785600;10;90:18 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.miHoYo.ys.bilibili;0:0 1:0 2:0 3:0 4:1766400 5:1766400 6:1766400 7:1785600;10;90:18 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.lolm;0:0 1:0 2:0 3:0 4:2227200 5:2227200 6:2227200 7:2630400;30;90:8 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.netease.harrypotter;0:0 1:0 2:0 3:0 4:2227200 5:2227200 6:2227200 7:2630400;30;90:8 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.netease.harrypotter.mi;0:0 1:0 2:0 3:0 4:2227200 5:2227200 6:2227200 7:2630400;30;90:8 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.jkchess;0:0 1:0 2:0 3:0 4:2227200 5:2227200 6:2227200 7:2630400;30;90:8 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.tmgp.cod;0:0 1:0 2:0 3:0 4:2227200 5:2227200 6:2227200 7:2630400;30;90:8 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.tmgp.cf;0:0 1:0 2:0 3:0 4:2227200 5:2227200 6:2227200 7:2630400;30;90:8 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.netease.mrzh;0:0 1:0 2:0 3:0 4:2227200 5:2227200 6:2227200 7:2630400;30;90:8 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.netease.mrzh.mi;0:0 1:0 2:0 3:0 4:2227200 5:2227200 6:2227200 7:2630400;30;90:8 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.tmgp.WePop;0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;30;90:15 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.sy.dldlhsdj.mi;0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;30;90:15 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.protopop.brightridge;0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;30;90:15 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.protopop.brightridge.shiba;0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;30;90:15 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.pwrd.hotta.laohu;0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;30;90:15 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.hottagames.hotta.mi;0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;30;90:15 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0"
+        ],
+        "booster_config": {
+          "default_config": [
+            {
+              "permission": "root",
+              "cmd": "/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+            }
+          ],
+          "scene_config": [
+            {
+              "scene_id": 5,
+              "scene_name": "loading",
+              "change_end": true,
+              "booster": [
+                {
+                  "permission": "root",
+                  "cmd": "perflock#40800000_FFF#20"
+                }
+              ]
+            }
+          ],
+          "ovrride_config": [
+            {
+              "game_name": "com.tencent.tmgp.pubgmhd",
+              "start_scene": "102",
+              "end_scene": "3",
+              "badfps_thresh1": "54,81",
+              "badfps_thresh2": "3,5",
+              "dynamic_targetfps": "60#10:60;90#10:90,44:60,46:40;120#10:121",
+              "dynamic_targetfps_M": "60#10:60,40:58,42:30,43:15;90#10:60,40:58,42:30,43:15",
+              "scene_ovrride": [
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "change_end": true,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 1004,
+                  "scene_name": "target_fps_update",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": ""
+                    }
+                  ],
+                  "booster#30": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#844800,1324800,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:844800;WA#1;BI#0;BE#0"
+                    }
+                  ],
+                  "booster#40": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#844800,1440000,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:844800;WA#1;BI#0;BE#0"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#1075200,1440000,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:844800;WA#1;BI#0;BE#0"
+                    }
+                  ],
+                  "booster#60#MGAME": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#1075200,1209600,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:844800;WA#1;BI#0;BE#0"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#1075200,1843200,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:1401600;WA#1;BI#0;BE#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#6"
+                    },
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#1075200,1843200,806400;WA#1;BI#0;BE#0"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    },
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#1075200,1440000,806400;WA#1;BI#0;BE#0"
+                    }
+                  ],
+                  "booster#60#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    },
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#1075200,1209600,806400;WA#1;BI#0;BE#0"
+                    }
+                  ],
+                  "booster#40": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    },
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#844800,1440000,806400;WA#1;BI#0;BE#0"
+                    }
+                  ],
+                  "booster#30": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    },
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#844800,1324800,806400;WA#1;BI#0;BE#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;sys/module/migt/parameters/cpu_boost_cycle#0"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#307200,633600,844800;MA#1075200,1843200,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:1401600;WA#1;BI#0;BE#0;BP#2;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1;sys/module/migt/parameters/cpu_boost_cycle#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#307200,806400,844800;MA#1075200,1440000,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0;BP#2;sys/module/migt/parameters/cpu_boost_cycle#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "booster#60#MGAME": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#307200,806400,844800;MA#1075200,1209600,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0;BP#2;sys/module/migt/parameters/cpu_boost_cycle#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "booster#40": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#844800,1440000,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0;BP#2;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1;sys/module/migt/parameters/cpu_boost_cycle#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "booster#30": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#844800,1324800,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0;BP#2;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1;sys/module/migt/parameters/cpu_boost_cycle#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 4,
+                  "scene_name": "hall",
+                  "booster": [
+                    {
+                      "permission": "restore",
+                      "cmd": "glk#WA#1"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 102,
+                  "scene_name": "start",
+                  "timeout": 60,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": ""
+                    }
+                  ],
+                  "end#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;RE#1;BE#0;MA#1075200,1843200,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:1401600"
+                    }
+                  ],
+                  "end#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;RE#1;BE#0;MA#1075200,1440000,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    }
+                  ],
+                  "end#60#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;RE#1;BE#0;MA#1075200,1209600,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    }
+                  ],
+                  "end#40": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;RE#1;BE#0;MA#844800,1440000,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    }
+                  ],
+                  "end#30": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;RE#1;BE#0;MA#844800,1324800,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.sgame",
+              "start_scene": "7",
+              "end_scene": "4",
+              "badfps_thresh1": "54,81",
+              "badfps_thresh2": "3,5",
+              "group_fight_thresh": 5,
+              "dynamic_targetfps": "60#10:61;90#10:91,45:60,46:45;120#10:121,44:90,45:60,46:45",
+              "dynamic_targetfps_M": "60#10:61,42:40,44:35;90#10:61,42:40,44:35;120#10:61,42:40,44:35",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": ""
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;/sys/devices/system/cpu/cpufreq/policy0/walt/target_loads#0;/sys/devices/system/cpu/cpufreq/policy4/walt/target_loads#0;/sys/devices/system/cpu/cpufreq/policy7/walt/target_loads#0;/sys/devices/system/cpu/cpu4/core_ctl/enable#1;/sys/devices/system/cpu/cpu7/core_ctl/enable#1;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#1;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#1;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#1000000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#1024;/proc/sys/walt/sched_asymcap_boost#0;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#1555200"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "rafe#"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;sys/module/migt/parameters/cpu_boost_cycle#0;/sys/devices/system/cpu/cpufreq/policy0/walt/target_loads#0 844800:-20;/sys/devices/system/cpu/cpufreq/policy4/walt/target_loads#0 1766400:-25 1881600:-25;/sys/devices/system/cpu/cpufreq/policy7/walt/target_loads#0 1612800:-25 2400000:-25;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1#0"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#0;BP#2;sys/module/migt/parameters/cpu_boost_cycle#0;MM#307200,633600,844800;MA#1075200,1555200,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:1286400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "booster#60#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#0;BP#2;sys/module/migt/parameters/cpu_boost_cycle#0;MM#307200,633600,844800;MA#844800,1324800,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "booster#120": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;sys/module/migt/parameters/cpu_boost_cycle#0;/sys/devices/system/cpu/cpufreq/policy0/walt/target_loads#0 844800:-20;/sys/devices/system/cpu/cpufreq/policy4/walt/target_loads#0 1766400:-25 1996800:-25;/sys/devices/system/cpu/cpufreq/policy7/walt/target_loads#0 1612800:-25 1843200:-25;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1#0"
+                    }
+                  ],
+                  "booster#120#SPEEDON": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;sys/module/migt/parameters/cpu_boost_cycle#0;/sys/devices/system/cpu/cpufreq/policy0/walt/target_loads#0 844800:-20;/sys/devices/system/cpu/cpufreq/policy4/walt/target_loads#0 1881600:-10 2112000:-25;/sys/devices/system/cpu/cpufreq/policy7/walt/target_loads#0 2054400:-10 2515200:-20;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1#0"
+                    }
+                  ],
+                  "booster#90#SPEEDON": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;sys/module/migt/parameters/cpu_boost_cycle#0;/sys/devices/system/cpu/cpufreq/policy0/walt/target_loads#0 844800:-20;/sys/devices/system/cpu/cpufreq/policy4/walt/target_loads#0 1766400:-25 1881600:-25;/sys/devices/system/cpu/cpufreq/policy7/walt/target_loads#0 1612800:-25 2400000:-25;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 1004,
+                  "scene_name": "target_fps_update",
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1075200,1555200,806400;WA#1;BE#0;BI#0;BP#2;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:1286400"
+                    }
+                  ],
+                  "booster#60#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1324800,806400;WA#1;BE#0;BI#0;BP#2;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;sys/module/migt/parameters/cpu_boost_cycle#0;/sys/devices/system/cpu/cpufreq/policy0/walt/target_loads#0 844800:-20;/sys/devices/system/cpu/cpufreq/policy4/walt/target_loads#0 1766400:-25 1881600:-25;/sys/devices/system/cpu/cpufreq/policy7/walt/target_loads#0 1612800:-25 2400000:-25;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#43C00000_1#0"
+                    }
+                  ],
+                  "booster#120": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;sys/module/migt/parameters/cpu_boost_cycle#0;/sys/devices/system/cpu/cpufreq/policy0/walt/target_loads#0 844800:-20;/sys/devices/system/cpu/cpufreq/policy4/walt/target_loads#0 1766400:-25 1996800:-25;/sys/devices/system/cpu/cpufreq/policy7/walt/target_loads#0 1612800:-25 1843200:-25;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#43C00000_1#0"
+                    }
+                  ],
+                  "booster#120#SPEEDON": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;sys/module/migt/parameters/cpu_boost_cycle#0;/sys/devices/system/cpu/cpufreq/policy0/walt/target_loads#0 844800:-20;/sys/devices/system/cpu/cpufreq/policy4/walt/target_loads#0 1881600:-10 2112000:-25;/sys/devices/system/cpu/cpufreq/policy7/walt/target_loads#0 2054400:-10 2515200:-20;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#43C00000_1#0"
+                    }
+                  ],
+                  "booster#90#SPEEDON": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;sys/module/migt/parameters/cpu_boost_cycle#0;/sys/devices/system/cpu/cpufreq/policy0/walt/target_loads#0 844800:-20;/sys/devices/system/cpu/cpufreq/policy4/walt/target_loads#0 1766400:-25 1881600:-25;/sys/devices/system/cpu/cpufreq/policy7/walt/target_loads#0 1612800:-25 2400000:-25;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#43C00000_1#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.GenshinImpact",
+              "dynamic_fps": "10:60,39:58,45:50,46:45",
+              "dynamic_fps_M": "10:60,30:35,41:20,45:12",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1440000,1286400;WA#1;BI#1;BE#0;SCN#2;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0_43C00000_1#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "booster#60#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1113600,1056000;WA#1;BI#1;BE#0;SCN#2;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0_43C00000_1#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "booster#60#SPEEDON": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1555200,1286400;WA#1;BI#1;BE#0;SCN#2;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0_43C00000_1#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "booster#60#MGAME#SPEEDON": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1209600,1056000;WA#1;BI#1;BE#0;SCN#2;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0_43C00000_1#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0;SCN#1;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;/sys/devices/system/cpu/cpu7/core_ctl/max_cpus#1;/sys/devices/system/cpu/cpu4/core_ctl/enable#1;/sys/devices/system/cpu/cpu7/core_ctl/enable#1;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#1;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#1;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#1000000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#1024;/proc/sys/walt/sched_asymcap_boost#0;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#1555200"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "rafe#"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.Yuanshen",
+              "dynamic_fps": "10:60,39:58,45:50,46:45",
+              "dynamic_fps_M": "10:60,30:35,41:20,45:12",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1440000,1286400;WA#1;BI#1;BE#0;SCN#2;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0_43C00000_1#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "booster#60#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1113600,1056000;WA#1;BI#1;BE#0;SCN#2;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0_43C00000_1#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "booster#60#SPEEDON": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1555200,1286400;WA#1;BI#1;BE#0;SCN#2;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0_43C00000_1#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "booster#60#MGAME#SPEEDON": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1209600,1056000;WA#1;BI#1;BE#0;SCN#2;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0_43C00000_1#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0;SCN#1;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;/sys/devices/system/cpu/cpu7/core_ctl/max_cpus#1;/sys/devices/system/cpu/cpu4/core_ctl/enable#1;/sys/devices/system/cpu/cpu7/core_ctl/enable#1;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#1;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#1;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#1000000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#1024;/proc/sys/walt/sched_asymcap_boost#0;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#1555200"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "rafe#"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.ys.bilibili",
+              "dynamic_fps": "10:60,39:58,45:50,46:45",
+              "dynamic_fps_M": "10:60,30:35,41:20,45:12",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1440000,1286400;WA#1;BI#1;BE#0;SCN#2;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0_43C00000_1#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "booster#60#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1113600,1056000;WA#1;BI#1;BE#0;SCN#2;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0_43C00000_1#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "booster#60#SPEEDON": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1555200,1286400;WA#1;BI#1;BE#0;SCN#2;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0_43C00000_1#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "booster#60#MGAME#SPEEDON": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1209600,1056000;WA#1;BI#1;BE#0;SCN#2;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0_43C00000_1#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0;SCN#1;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;/sys/devices/system/cpu/cpu7/core_ctl/max_cpus#1;/sys/devices/system/cpu/cpu4/core_ctl/enable#1;/sys/devices/system/cpu/cpu7/core_ctl/enable#1;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#1;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#1;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#1000000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#1024;/proc/sys/walt/sched_asymcap_boost#0;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#1555200"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "rafe#"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.ys.mi",
+              "dynamic_fps": "10:60,39:58,45:50,46:45",
+              "dynamic_fps_M": "10:60,30:35,41:20,45:12",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1440000,1286400;WA#1;BI#1;BE#0;SCN#2;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0_43C00000_1#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "booster#60#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1113600,1056000;WA#1;BI#1;BE#0;SCN#2;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0_43C00000_1#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "booster#60#SPEEDON": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1555200,1286400;WA#1;BI#1;BE#0;SCN#2;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0_43C00000_1#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "booster#60#MGAME#SPEEDON": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1209600,1056000;WA#1;BI#1;BE#0;SCN#2;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu4/core_ctl/enable#0;/sys/devices/system/cpu/cpu7/core_ctl/enable#0;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#0;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#800000;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#800000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0_43C00000_1#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0;SCN#1;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;/sys/devices/system/cpu/cpu7/core_ctl/max_cpus#1;/sys/devices/system/cpu/cpu4/core_ctl/enable#1;/sys/devices/system/cpu/cpu7/core_ctl/enable#1;/sys/devices/system/cpu/cpufreq/policy4/walt/pl#1;/sys/devices/system/cpu/cpufreq/policy7/walt/pl#1;/sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq#1000000;/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh#1024;/proc/sys/walt/sched_asymcap_boost#0;/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq#1555200"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "rafe#"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.ig",
+              "start_scene": "102",
+              "end_scene": "3",
+              "badfps_thresh1": "54,81",
+              "badfps_thresh2": "3,5",
+              "dynamic_fps": "10:90,39:85,44:60,47:55",
+              "dynamic_fps_M": "10:90,38:60,40:58,44:40",
+              "scene_ovrride": [
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "change_end": true,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 1004,
+                  "scene_name": "target_fps_update",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": ""
+                    }
+                  ],
+                  "booster#40": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#844800,1440000,1497600;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:844800;WA#1;BI#0;BE#0"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#844800,1209600,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:844800;WA#1;BI#0;BE#0"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#844800,1651200,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:844800;WA#1;BI#0;BE#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "change_end": true,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    },
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#844800,1651200,806400;WA#1;BI#0;BE#0"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    },
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#844800,1209600,806400;WA#1;BI#0;BE#0"
+                    }
+                  ],
+                  "booster#40": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    },
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#844800,1440000,1497600;WA#1;BI#0;BE#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;sys/module/migt/parameters/cpu_boost_cycle#0"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#307200,633600,844800;MA#844800,1651200,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0;BP#2;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1;sys/module/migt/parameters/cpu_boost_cycle#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#307200,806400,844800;MA#844800,1209600,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0;BP#2;sys/module/migt/parameters/cpu_boost_cycle#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "booster#40": [
+                    {
+                      "permission": "tmp",
+                      "cmd": "glk#MM#300000,710400,844800;MA#844800,1440000,1497600;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0;BP#2;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1;sys/module/migt/parameters/cpu_boost_cycle#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 4,
+                  "scene_name": "hall",
+                  "booster": [
+                    {
+                      "permission": "restore",
+                      "cmd": "glk#WA#1"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 102,
+                  "scene_name": "start",
+                  "timeout": 60,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": ""
+                    }
+                  ],
+                  "end#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;RE#1;BE#0;MA#844800,1612800,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    }
+                  ],
+                  "end#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;RE#1;BE#0;MA#1324800,1209600,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    }
+                  ],
+                  "end#40": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;RE#1;BE#0;MA#844800,1440000,1497600;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 902,
+                  "scene_name": "car",
+                  "booster#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MA#844800,1651200,806400;BI#0;BE#0;MF#0:0 1:0 2:0 3:0 4:1209600 5:1209600 6:1209600 7:806400"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MA#844800,1651200,806400;BI#0;BE#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MA#844800,1209600,806400;BI#1;BE#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    }
+                  ],
+                  "end#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MA#844800,1209600,806400;BI#0;BE#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    }
+                  ],
+                  "booster#40": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MA#844800,1440000,1497600;BI#1;BE#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    }
+                  ],
+                  "end#40": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MA#844800,1440000,1497600;BI#0;BE#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "stop",
+                  "start": 902
+                },
+                {
+                  "scene_id": 103,
+                  "scene_name": "stop",
+                  "start": 902
+                },
+                {
+                  "scene_id": 904,
+                  "scene_name": "stop",
+                  "start": 902
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.speedmobile",
+              "dynamic_targetfps": "120#10:120,36:90,40:80,44:70;90#10:90,36:80,40:70,44:60",
+              "dynamic_targetfps_M": "120#10:120,36:80,38:70,40:60;90#10:90,36:75,40:60",
+              "dynamic_fps": "10:120,36:90,40:80,44:70",
+              "dynamic_fps_M": "10:120,36:80,38:70,40:60",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": ""
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    }
+                  ],
+                  "booster#120": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,2112000,1728000;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0;sys/module/migt/parameters/cpu_boost_cycle#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ],
+                  "booster#120#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,2112000,1728000;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0;sys/module/migt/parameters/cpu_boost_cycle#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1996800,1728000;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0;sys/module/migt/parameters/cpu_boost_cycle#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1651200,1728000;WA#1;BI#0;BE#0;sys/module/migt/parameters/cpu_boost_cycle#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ],
+                  "booster#30": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1651200,1728000;WA#1;BI#0;BE#0;sys/module/migt/parameters/cpu_boost_cycle#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 1004,
+                  "scene_name": "target_fps_update",
+                  "booster#30": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1651200,1728000;WA#1;BI#0;BE#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1651200,1728000;WA#1;BI#0;BE#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    }
+                  ],
+                  "booster#120": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,2112000,1728000;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    }
+                  ],
+                  "booster#120#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,2112000,1728000;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.lolm",
+              "start_scene": "7",
+              "end_scene": "4",
+              "badfps_thresh1": "54,81",
+              "badfps_thresh2": "3,5",
+              "dynamic_targetfps": "60#10:60;90#10:92",
+              "dynamic_targetfps_M": "60#10:60;90#10:92,37:60,40:55,44:35",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": " "
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "rafe#"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#0;BP#2;sys/module/migt/parameters/cpu_boost_cycle#0;MM#307200,633600,844800;MA#844800,1996800,1843200;MF#0:0 1:0 2:0 3:0 4:2419200 5:2419200 6:2419200 7:2630400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#0;sys/module/migt/parameters/cpu_boost_cycle#0;MM#307200,633600,844800;MA#844800,1766400,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "booster#60#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#0;sys/module/migt/parameters/cpu_boost_cycle#0;MM#307200,633600,844800;MA#1075200,1555200,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "booster#30": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#0;sys/module/migt/parameters/cpu_boost_cycle#0;MM#307200,633600,844800;MA#844800,1555200,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 1004,
+                  "scene_name": "target_fps_update",
+                  "booster#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1996800,1843200;WA#1;BE#0;BI#0;BP#2;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;MF#0:0 1:0 2:0 3:0 4:2419200 5:2419200 6:2419200 7:2630400"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1766400,806400;WA#1;BE#0;BI#0;BP#2;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    }
+                  ],
+                  "booster#60#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1555200,806400;WA#1;BE#0;BI#0;BP#2;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    }
+                  ],
+                  "booster#30": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1555200,806400;WA#1;BE#0;BI#0;BP#2;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.netease.harrypotter",
+              "dynamic_fps": "10:60",
+              "dynamic_fps_M": "10:60",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#0;sys/module/migt/parameters/cpu_boost_cycle#0;MM#307200,633600,844800;MA#844800,1766400,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.netease.harrypotter.mi",
+              "dynamic_fps": "10:60",
+              "dynamic_fps_M": "10:60",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#0;sys/module/migt/parameters/cpu_boost_cycle#0;MM#307200,633600,844800;MA#844800,1766400,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.jkchess",
+              "dynamic_fps": "10:60",
+              "dynamic_fps_M": "10:60",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1766400,806400;WA#1;BI#0;BE#0;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;/sys/devices/system/cpu/cpu7/core_ctl/max_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;/sys/devices/system/cpu/cpu7/core_ctl/max_cpus#1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.cod",
+              "dynamic_fps": "10:60",
+              "dynamic_fps_M": "10:60",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1075200,1651200,806400;WA#1;BI#0;BE#0;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.cf",
+              "dynamic_fps": "10:60",
+              "dynamic_fps_M": "10:60",
+              "scene_ovrride": [
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1555200,806400;WA#1;BI#0;BE#0;SCN#1;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:1555200 5:1555200 6:1555200 7:806400;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;/sys/devices/system/cpu/cpu7/core_ctl/max_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0;SCN#1;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;/sys/devices/system/cpu/cpu7/core_ctl/max_cpus#1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.netease.mrzh",
+              "dynamic_fps": "10:60,40:40,44:30",
+              "dynamic_fps_M": "10:60,40:40,44:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1766400,1728000;WA#1;BI#0;BE#0;SCN#1;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;/sys/devices/system/cpu/cpu7/core_ctl/max_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0;SCN#1;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;/sys/devices/system/cpu/cpu7/core_ctl/max_cpus#1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.netease.mrzh.mi",
+              "dynamic_fps": "10:60,40:40,44:30",
+              "dynamic_fps_M": "10:60,40:40,44:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1766400,1728000;WA#1;BI#0;BE#0;SCN#1;sys/module/migt/parameters/cpu_boost_cycle#0;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;/sys/devices/system/cpu/cpu7/core_ctl/max_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0;SCN#1;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;/sys/devices/system/cpu/cpu7/core_ctl/max_cpus#1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.WePop",
+              "dynamic_fps": "10:60,42:50,44:40",
+              "dynamic_fps_M": "10:60,40:50,44:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1766400,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;/sys/devices/system/cpu/cpu7/core_ctl/max_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;/sys/devices/system/cpu/cpu7/core_ctl/max_cpus#1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.sy.dldlhsdj.mi",
+              "dynamic_fps": "10:60,42:50,44:40",
+              "dynamic_fps_M": "10:60,40:50,44:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1766400,806400;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;/sys/devices/system/cpu/cpu7/core_ctl/max_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42808000_a_42C08000_0#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0;/sys/devices/system/cpu/cpu7/core_ctl/max_cpus#1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.protopop.brightridge",
+              "dynamic_fps": "10:60,39:50,47:40",
+              "dynamic_fps_M": "10:60,39:35,44:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1171200,1881600,1728000;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.protopop.brightridge.shiba",
+              "dynamic_fps": "10:60,39:50,47:40",
+              "dynamic_fps_M": "10:60,39:35,44:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1171200,1881600,1728000;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.hottagames.hotta.mi",
+              "dynamic_fps": "10:90,38:59,44:45,45:30",
+              "dynamic_fps_M": "10:90,30:35,41:30,45:12",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1555200,1651200;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.pwrd.hotta.laohu",
+              "dynamic_fps": "10:90,38:59,44:45,45:30",
+              "dynamic_fps_M": "10:90,30:35,41:30,45:12",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#844800,1555200,1651200;MF#0:0 1:0 2:0 3:0 4:633600 5:633600 6:633600 7:806400;WA#1;BI#0;BE#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#MM#307200,633600,806400;MA#1785600,2419200,2841600;WA#0;BI#0;BP#0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

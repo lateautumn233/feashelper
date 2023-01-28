@@ -1,0 +1,4452 @@
+{
+  "booster_config": {
+    "config_name": "booster_config",
+    "enable": true,
+    "group_name": "booster_config",
+    "version": 2022091399,
+    "with_model": false,
+    "params": {
+      "header": {
+        "version": "2022091399",
+        "network_improve": true,
+        "support_wifi_ant_swap": true,
+        "index_enable": true
+      },
+      "game_booster": {
+        "booster_enable": true,
+        "cpuset_enable": true,
+        "tuner_enable": true,
+        "monitor": {
+          "monitor_enable": false,
+          "analytics_enable": false,
+          "default_interval": 2
+        },
+        "support_motor_app": [],
+        "support_display_refresh_rates": [
+          60,
+          120
+        ],
+        "support_dynamic_refresh_rate_games": [
+          "com.tencent.tmgp.pubgmhd",
+          "com.tencent.ig",
+          "com.tencent.lolm",
+          "com.riotgames.league.wildrift"
+        ],
+        "support_highfps_app": [
+          "com.tencent.tmgp.codev:120",
+          "com.activision.callofduty.shooter:120",
+          "com.netease.lztg1.mi:120",
+          "com.netease.lztg:120",
+          "com.tencent.tmgp.cf:60",
+          "com.pwrd.xxajh.laohu:120",
+          "com.pwrd.xxajh.mi:120",
+          "com.miHoYo.bh3.mi:90",
+          "com.miHoYo.enterprise.NGHSoD:90",
+          "com.t2ksports.nba2k20and:90",
+          "com.tencent.af:120",
+          "com.tencent.tmgp.pubgmhd:90",
+          "com.tencent.tmgp.speedmobile:120",
+          "com.tencent.tmgp.WePop:120",
+          "com.tencent.YiRen:120",
+          "com.tencent.KiHan:120",
+          "com.gs.truckdrive.road.train.truck.gtx:60",
+          "com.tencent.tmgp.cod:120",
+          "com.ngame.allstar.eu:60",
+          "com.garena.game.kgtw:60",
+          "com.garena.game.codm:120",
+          "com.tencent.tmgp.kr.codm:120",
+          "com.activision.callofduty.codpbt:120",
+          "com.tencent.tmgp.codty:120",
+          "com.activision.callofduty.codesports:120",
+          "com.tencent.tmgp.codme:120",
+          "com.tencent.tmgp.cod:120",
+          "com.activision.callofduty.shooter:120",
+          "com.vng.codmvn:120",
+          "com.mobile.legends:120",
+          "com.denachina.g13002010.mi:120",
+          "com.denachina.g13002010.denacn:120",
+          "com.tencent.lolm:90",
+          "com.netease.harrypotter:60",
+          "com.netease.harrypotter.mi:60",
+          "com.tencent.sgwsba:60",
+          "com.longtugame.yjfb.mi:60",
+          "com.duole.doudizhuhd.mi:60",
+          "com.tencent.jkchess:60",
+          "com.miHoYo.cloudgames.ys:60",
+          "com.supercell.clashofclans.mi:60",
+          "com.feiyu.carrot3.mi:60",
+          "com.miHoYo.cloudgames.ys:60",
+          "com.supercell.clashofclans.mi:60",
+          "com.feiyu.carrot3.mi:60",
+          "com.sy.dldlhsdj.mi:60",
+          "com.riotgames.league.teamfighttactics:60",
+          "com.riotgames.league.wildrift:90",
+          "com.riotgames.internal.wildrift:90",
+          "com.riotgames.internal.wildrift.test:90",
+          "com.riotgames.internal.wildrift.trunk:90",
+          "com.riotgames.league.wildriftvn:90",
+          "com.riotgames.league.wildrifttw:90",
+          "com.rastargames.maplestory:120",
+          "com.miHoYo.bh3global:90",
+          "com.miHoYo.bh3oversea:90",
+          "com.gameloft.android.ANMP.GloftA9HM:60",
+          "com.ea.games.r3_row:120",
+          "jp.pokemon.pokemonunite:60",
+          "com.epicgames.fortnite:60",
+          "com.bilibili.snake:120",
+          "com.bilibili.snake.mi:120",
+          "com.miHoYo.enterprise.NGHSoDBeta:90",
+          "com.ea.gp.apexlegendsmobilefps:120",
+          "com.dts.freefireth:90",
+          "com.dts.freefiremax:90",
+          "com.tencent.ig:90",
+          "com.rekoo.pubgm:90",
+          "com.vng.pubgmobile:90",
+          "com.pubg.krmobile:90",
+          "com.pubg.imobile:90"
+        ],
+        "scale_app_enable": true,
+        "support_scale_app_list": [
+          "com.miHoYo.enterprise.NGHSoD",
+          "com.happyelements.AndroidAnimal",
+          "cn.jj",
+          "com.tencent.tmgp.speedmobile",
+          "com.blizzard.wtcg.hearthstone",
+          "com.tencent.peng",
+          "com.tencent.qqgame.xq",
+          "com.qqgame.happymj",
+          "com.tencent.tmgp.tstl",
+          "com.tencent.wmsj",
+          "com.tencent.swy",
+          "com.tencent.tmgp.qqx5",
+          "com.tencent.tmgp.wec",
+          "com.tencent.shootgame",
+          "com.tencent.tmgp.vgame",
+          "com.tencent.tmgp.mt4",
+          "com.tencent.woool3d",
+          "com.tencent.xishanju.xj4",
+          "com.tencent.tmgp.redfox",
+          "com.tencent.wdqy",
+          "com.tencent.YiRen",
+          "com.tencent.tmgp.ylm",
+          "com.tencent.yoozoo.got.wintercoming",
+          "com.tencent.hxh",
+          "com.tencent.tmgp.sskgame",
+          "com.minitech.miniworld",
+          "com.bairimeng.dmmdzz",
+          "com.netease.tom",
+          "com.supercell.clashofclans.kunlun",
+          "com.aligames.sgzzlb",
+          "com.outfit7.talkingtomgoldrun.bd",
+          "com.bf.sgs.hdexp",
+          "com.lilithgames.hgame.cn",
+          "com.supercell.clashroyale.kunlun",
+          "com.ChillyRoom.DungeonShooter",
+          "com.wepie.snake",
+          "com.ledou.mhhy",
+          "com.gbits.atm.leiting",
+          "com.shiyi.bkby",
+          "com.jiguang.dldl.sy37",
+          "com.qidian.dldl.official",
+          "com.papegames.nn4.cn",
+          "com.wanmei.zhuxian.laohu",
+          "com.qhjx.snk.sy371",
+          "com.szxchd.yqxx.dodsdk",
+          "com.sqw.sssf",
+          "com.hermes.bgame",
+          "com.netease.lx7",
+          "com.taomee.huah",
+          "com.soulgame.shokudo.kuaishou",
+          "com.tencent.ig"
+        ],
+        "support_gdpvo_app": [
+          "com.tencent.tmgp.sgame",
+          "com.tencent.tmgp.pubgmhd",
+          "com.miHoYo.enterprise.NGHSoD",
+          "com.miHoYo.bh3.mi",
+          "com.tencent.ig"
+        ],
+        "support_gt_app": [],
+        "migl_enable": true,
+        "migl_config": [
+          "yuanshen:com.miHoYo.Yuanshen#com.miHoYo.GenshinImpact#com.miHoYo.ys.mi#com.miHoYo.ys.bilibili;1280;576;-1",
+          "pubg:com.tencent.tmgp.pubgmhd#com.tencent.ig#com.pubg.imobile;-1;-1;1"
+        ],
+        "booster_config": {
+          "default_config": [
+            {
+              "permission": "root",
+              "cmd": "/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+            }
+          ],
+          "scene_config": [
+            {
+              "scene_id": 5,
+              "scene_name": "loading",
+              "booster": [
+                {
+                  "permission": "root",
+                  "cmd": "perflock#40800000_FFF#20"
+                }
+              ]
+            }
+          ],
+          "ovrride_config": [
+            {
+              "game_name": "com.miHoYo.GenshinImpact",
+              "dynamic_fps": "10:0,47:45,48:30",
+              "dynamic_fps_M": "10:0,43:45,45:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#280"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-40"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40CE0000_0064005F_40CE0200_00410037#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-50"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#8"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.Yuanshen",
+              "dynamic_fps": "10:0,47:45,48:30",
+              "dynamic_fps_M": "10:0,43:45,45:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#280"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-40"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40CE0000_0064005F_40CE0200_00410037#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-50"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#8"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.ys.mi",
+              "dynamic_fps": "10:0,47:45,48:30",
+              "dynamic_fps_M": "10:0,43:45,45:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#280"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-40"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40CE0000_0064005F_40CE0200_00410037#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-50"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#8"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.ys.bilibili",
+              "dynamic_fps": "10:0,47:45,48:30",
+              "dynamic_fps_M": "10:0,43:45,45:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#280"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-40"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40CE0000_0064005F_40CE0200_00410037#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-50"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#8"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.ig",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.pubgmhd",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.pubg.imobile",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.riotgames.internal.wildrift.trunk",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-50"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#450"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-70"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.riotgames.league.wildrifttw",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-50"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#450"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-70"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.riotgames.league.wildriftvn",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-50"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#450"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-70"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.riotgames.league.wildrift",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-50"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#450"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-70"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.riotgames.internal.wildrift",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.riotgames.internal.wildrift.test",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.mobile.legends",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/min_freq_limit_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/boost_minfreq#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0 1881600:-10 2227200:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0 2284800:-10 2630400:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#450"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-75"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_32_40C1C100_5F_40C1C200_3C#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#8"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-50"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#0-7"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.cod",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.lolm",
+              "start_scene": "7",
+              "group_fight_thresh": 4,
+              "end_scene": "4",
+              "badfps_thresh1": "54,81,108",
+              "badfps_thresh2": "3,5,10",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#2745600"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#2995200"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#8"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-50"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster#120": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#2745600"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#2995200"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/min_freq_limit_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/boost_minfreq#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0 1881600:-10 2227200:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0 2284800:-10 2630400:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#12"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-75"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#2745600"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#2995200"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/min_freq_limit_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/boost_minfreq#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#365"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-65"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#1996800"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#1996800"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/min_freq_limit_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/boost_minfreq#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ],
+                  "booster#30": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#1440000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#1401600"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40CE0000_005F0055_40CE0200_005F0055#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#2572800"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#2592000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/min_freq_limit_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/boost_minfreq#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 1004,
+                  "scene_name": "target_fps_update",
+                  "booster#30": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#1440000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#1401600"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#1996800"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#1996800"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#2745600"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#2995200"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ],
+                  "booster#120": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#2745600"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#2995200"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0 1881600:-10 2227200:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0 2284800:-10 2630400:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 1002,
+                  "scene_name": "motor",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "motor#500"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_40800100_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 4,
+                  "scene_name": "ending",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_40800100_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.speedmobile",
+              "scene_ovrride": [
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_40800100_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0 940800:-5 1440000:-10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ],
+                  "booster#120": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0 940800:-5 1440000:-10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.sgame",
+              "start_scene": "7",
+              "group_fight_thresh": 4,
+              "end_scene": "4",
+              "badfps_thresh1": "54,81,108",
+              "badfps_thresh2": "3,5,10",
+              "scene_ovrride": [
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40800000_FFF_40800200_FFF_40800100_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 1,
+                  "scene_name": "startgame",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C1C200_1E_40800000_FFF_40800200_FFF_40800100_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#2745600"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#2995200"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#8"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-50"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster#120": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#2745600"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#2995200"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/min_freq_limit_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/boost_minfreq#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0 1881600:-10 2227200:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0 2284800:-10 2630400:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#12"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-75"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_46_40C1C100_5F_40C1C200_50#0"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#2745600"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#2995200"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/min_freq_limit_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/boost_minfreq#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#365"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-65"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0 1440000:-10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#1996800"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#1996800"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/min_freq_limit_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/boost_minfreq#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ],
+                  "booster#30": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#1440000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#1401600"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40CE0000_005F0055_40CE0200_005F0055#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#2572800"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#2592000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/min_freq_limit_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/boost_minfreq#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 1004,
+                  "scene_name": "target_fps_update",
+                  "booster#30": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#1440000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#1401600"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#1996800"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#1996800"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#2745600"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#2995200"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0 1440000:-10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ],
+                  "booster#120": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq#2745600"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq#2995200"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0 1881600:-10 2227200:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0 2284800:-10 2630400:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_55_40C20200_46_40C1C100_5F_40C1C200_50#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 1002,
+                  "scene_name": "motor",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "motor#500"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_40800100_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 4,
+                  "scene_name": "ending",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_40800100_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.netease.mrzh",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.netease.mrzh.mi",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.bh3global",
+              "dynamic_fps": "10:0,46:52,47:48",
+              "dynamic_fps_M": "10:0,43:45,44:38",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3 994125:-7 1435500:-11 1881000:-15 2338875:-19"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-3 1167187:-7 1649625:-12 2128171:-16 2587265:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-60"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#8"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40CE0000_0064005F_40CE0200_00410037#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-50"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#8"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.enterprise.NGHSoDBeta",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.bh3oversea",
+              "dynamic_fps": "10:0,46:52,47:48",
+              "dynamic_fps_M": "10:0,43:45,44:38",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3 994125:-7 1435500:-11 1881000:-15 2338875:-19"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-3 1167187:-7 1649625:-12 2128171:-16 2587265:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-60"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#8"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40CE0000_0064005F_40CE0200_00410037#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-50"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#8"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.dts.freefiremax",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.dts.freefireth",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#8"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-50"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#6"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#450"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-70"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3 994125:-7 1435500:-11 1881000:-15 2338875:-19"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-3 1167187:-7 1649625:-12 2128171:-16 2587265:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.activision.callofduty.shooter",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-50"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#450"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-70"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40CE0000_0064005F_40CE0200_00410037#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.cf",
+              "scene_ovrride": [
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3 994125:-5 1435500:-8 1881000:-12 2338875:-19"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-3 1167187:-5 1649625:-8 2128171:-12 2587265:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.ngame.allstar.eu",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.jkchess",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq#633600"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq#1200000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0 940800:-5 1440000:-10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#4280C000_16C#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.cod",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/min_freq_limit_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/boost_minfreq#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a_thres#700"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.garena.game.codm",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/min_freq_limit_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/boost_minfreq#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a_thres#700"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.activision.callofduty.shooter",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/min_freq_limit_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/boost_minfreq#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a_thres#700"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.levelinfinite.apexlegendsmobile",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/min_freq_limit_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/boost_minfreq#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0 1881600:-10 2227200:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0 2284800:-10 2630400:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#450"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-75"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a_thres#580"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/walt/sched_asymcap_booster#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "40C20100_55_40C20200_32_40C1C100_5F_40C1C200_3C#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#8"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-50"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/walt/sched_asymcap_booster#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a_thres#640"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/predict_freq_level#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.yingzheng.jlkt3",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/min_freq_limit_level#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/boost_minfreq#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0 1881600:-10 2227200:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0 2284800:-10 2630400:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#450"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-75"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_32_40C1C100_5F_40C1C200_3C#0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/normal_frame_keep_count#8"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/scaling_b#-50"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/top-app/cpus#0-7"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "DEFAULT_COMMON_CONFIG",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-2,4-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#1000000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#0"
+                    }
+                  ],
+                  "booster#120": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-8"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/core_ctl/enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu4/cpufreq/walt/target_loads#-5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu7/cpufreq/walt/target_loads#-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42C08000_0_43C00000_1_40C20100_55_40C20200_55_40C1C100_5F_40C1C200_5F#0"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/perfmgr/parameters/load_scaling_y#2"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq#800000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/devices/system/cpu/cpu0/cpufreq/walt/target_loads#-5 940800:-14 1440000:-20"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

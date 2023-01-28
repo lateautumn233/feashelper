@@ -1,0 +1,103 @@
+{
+  "booster_config": {
+  "config_name": "booster_config",
+  "enable": true,
+  "group_name": "booster_config",
+  "version": 2021101201,
+  "with_model": false,
+  "params": {
+    "header": {
+      "version": "2021101201",
+      "index_enable": true,
+      "network_improve": true,
+      "mqs_enable": true
+    },
+    "game_booster": {
+      "booster_enable": true,
+      "cpuset_enable": true,
+      "tuner_enable": true,
+      "monitor": {
+        "monitor_enable": false,
+        "analytics_enable": false,
+        "default_interval": 2
+      },
+      "support_display_refresh_rates": [
+        60,
+        120
+      ],
+      "support_dynamic_refresh_rate_games": [
+        "com.tencent.tmgp.pubgmhd",
+        "com.tencent.tmgp.sgame",
+        "com.tencent.tmgp.sgamece"
+      ],
+      "support_highfps_app": [
+        "com.tencent.tmgp.speedmobile:120",
+        "com.tencent.tmgp.pubgmhd:60",
+        "com.tencent.tmgp.sgame:60",
+        "com.tencent.tmgp.sgamece:60",
+        "com.netease.moba.mi:60",
+        "com.miHoYo.bh3.mi:60",
+        "com.miHoYo.enterprise.NGHSoD:60",
+        "com.t2ksports.nba2k20and:120",
+        "com.miHoYo.Yuanshen:60",
+        "com.miHoYo.ys.mi:60",
+        "com.tencent.af:60"
+      ],
+      "support_motor_app": [],
+      "booster_config": {
+        "default_config": [],
+        "scene_config": [],
+        "ovrride_config": [
+          {
+            "game_name": "com.tencent.tmgp.sgame",
+            "start_scene": "7",
+            "end_scene": "4",
+            "badfps_thresh1": "54,81",
+            "badfps_thresh2": "3,5",
+            "scene_ovrride": [
+              {
+                "scene_id": 1001,
+                "scene_name": "group_fight",
+                "timeout": 8,
+                "booster": [
+                  {
+                    "permission": "root",
+                    "cmd": "/sys/module/fbt_cpu/parameters/rescue_percent#50;/sys/module/fbt_cpu/parameters/rescue_enhance_f#70"
+                  }
+                ],
+                "end": [
+                  {
+                    "permission": "root",
+                    "cmd": "/sys/module/fbt_cpu/parameters/rescue_percent#33;/sys/module/fbt_cpu/parameters/rescue_enhance_f#25"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "game_name": "com.tencent.tmgp.pubgmhd",
+            "start_scene": "102",
+            "end_scene": "4",
+            "badfps_thresh1": "54,81",
+            "badfps_thresh2": "3,5",
+            "scene_ovrride": []
+          },
+          {
+            "game_name": "com.miHoYo.Yuanshen",
+            "dynamic_fps": "20:39,43:36,45:30,90:25",
+            "dynamic_fps_M": "20:33,43:30,50:26,90:23",
+            "scene_ovrride": []
+          },
+          {
+            "game_name": "com.miHoYo.ys.mi",
+            "dynamic_fps": "20:39,43:36,45:30,90:25",
+            "dynamic_fps_M": "20:33,43:30,50:26,90:23",
+            "scene_ovrride": []
+          }
+        ]
+      }
+    }
+  }
+ }
+}
+

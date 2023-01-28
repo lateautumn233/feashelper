@@ -1,0 +1,142 @@
+{
+  "common_config": {
+    "config_name": "common_config",
+    "enable": true,
+    "group_name": "common_config",
+    "version": 2019120401,
+    "with_model": false,
+    "params": {
+      "support_app": [
+        "com.tencent.tmgp.vgame",
+        "com.tencent.tmgp.WePop",
+        "com.tencent.tmgp.redfox",
+        "com.tencent.wdqy",
+        "com.tencent.YiRen",
+        "com.tencent.shootgame",
+        "com.tencent.tmgp.ylm",
+        "com.tencent.raziel",
+        "com.tencent.lgame",
+        "com.tencent.lzhx",
+        "com.tencent.tmgp.cod",
+        "com.tencent.yoozoo.got.wintercoming",
+        "com.tencent.tmgp.pubgmhdce",
+        "com.tencent.tmgp.speedmobileEx",
+        "com.tencent.ig",
+        "com.pubg.krmobile",
+        "com.vng.pubgmobile",
+        "com.rekoo.pubgm",
+        "com.tencent.tmgp.pubgm",
+        "com.tencent.hxh",
+        "com.tencent.shihun.android",
+        "com.tencent.tmgp.pubgmhd",
+        "com.tencent.af",
+        "com.tencent.hyrzol",
+        "com.tencent.tmgp.dpcq",
+        "com.tencent.tmgp.jxqy2",
+        "com.garena.game.kgvntest",
+        "com.garena.game.vntest",
+        "com.garena.game.kgcn",
+        "com.garena.game.kgid",
+        "com.garena.game.kgsam",
+        "com.garena.game.kgth",
+        "com.garena.game.kgtw",
+        "com.garena.game.kgvn",
+        "com.sixjoy.warsong1",
+        "com.tencent.gwgo",
+        "com.tencent.tmgp.qqx5",
+        "com.tencent.tmgp.NBA",
+        "com.tencent.tmgp.cfalpha",
+        "com.tencent.tmgp.speedmobile",
+        "com.tencent.tmgp.sgamece",
+        "com.tencent.tmgp.cf",
+        "com.tencent.tmgp.sgame",
+        "com.netease.hyxd",
+        "com.netease.hyxd.mi",
+        "com.netease.onmyoji",
+        "com.netease.onmyoji.mi",
+        "com.ngame.allstar.eu",
+        "com.ngame.allstar.in",
+        "com.netmarble.penta",
+        "com.miHoYo.bh3.mi",
+        "com.miHoYo.bh3.uc"
+      ],
+      "debug_log_collect_config": {
+        "debug_log_switch": true,
+        "L1_threshold_gap": 10,
+        "L2_threshold_gap": 20,
+        "top_process_num": 5,
+        "log_keep_days": 1,
+        "sgame_fstb": "0_-1_-1_60_2_cent.tmgp.sgame 1 48-34",
+        "pubg_fstb": ""
+      }
+    }
+  },
+  "booster_config": {
+    "config_name": "booster_config",
+    "enable": true,
+    "group_name": "booster_config",
+    "version": 2019120401,
+    "with_model": false,
+    "params": {
+      "header": {
+        "version": "2019120401",
+        "network_improve": true
+      },
+      "game_booster": {
+        "booster_enable": true,
+        "cpuset_enable": true,
+        "monitor": {
+          "monitor_enable": false,
+          "analytics_enable": false,
+          "default_interval": 2
+        },
+        "booster_config": {
+          "default_config": [],
+          "scene_config": [],
+          "ovrride_config": [
+            {
+              "game_name": "com.tencent.tmgp.cf",
+              "scene_ovrride": [
+                {
+                  "scene_id": 3,
+                  "scene_name": "loading",
+                  "change_end": true,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#01000000_0_00400000_1e8480_00400100_1f47d0#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.sgame",
+              "scene_ovrride": [],
+              "fstb_cmds":[
+                "/d/fpsgo/fstb/fstb_fps_list#cent.tmgp.sgame 2 60-34 30-30",
+                "60_0_-1_2_-1_-1_-1=>/d/fpsgo/fstb/fstb_fps_list#cent.tmgp.sgame 1 48-34"
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.speedmobile",
+              "scene_ovrride": [
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "change_end": true,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#01000000_0_00400000_1e8480_00400100_1f47d0_00c00000_0_01404300_1_0140C000_1#0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

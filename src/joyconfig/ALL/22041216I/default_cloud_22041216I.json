@@ -1,0 +1,526 @@
+{
+  "booster_config": {
+    "config_name": "booster_config",
+    "enable": true,
+    "group_name": "booster_config",
+    "version": 2022060752,
+    "with_model": false,
+    "params": {
+      "header": {
+        "version": "2022060752",
+        "network_improve": true,
+        "index_enable": false,
+        "mqs_enable": false
+      },
+      "game_booster": {
+        "booster_enable": true,
+        "cpuset_enable": true,
+        "tuner_enable": true,
+        "monitor": {
+          "monitor_enable": false,
+          "analytics_enable": false,
+          "default_interval": 2
+        },
+        "support_motor_app": [],
+        "support_display_refresh_rates": [
+          60,
+          90,
+          120,
+          144
+        ],
+        "support_dynamic_refresh_rate_games": [
+          "com.tencent.tmgp.sgame",
+          "com.tencent.tmgp.sgamece",
+          "com.tencent.tmgp.pubgmhd",
+          "com.tencent.ig",
+          "com.rekoo.pubgm",
+          "com.vng.pubgmobile",
+          "com.pubg.imobile",
+          "com.tencent.tmgp.speedmobile",
+          "com.tencent.lolm",
+          "com.riotgames.league.wildrift"
+        ],
+        "support_highfps_app": [
+          "com.tencent.tmgp.sgame:120",
+          "com.tencent.tmgp.sgamece:120",
+          "com.tencent.tmgp.pubgmhd:90",
+          "com.tencent.ig:90",
+          "com.rekoo.pubgm:90",
+          "com.vng.pubgmobile:90",
+          "com.pubg.imobile:90",
+          "com.tencent.af:120",
+          "com.tencent.tmgp.speedmobile:120",
+          "com.tencent.lolm:90",
+          "com.riotgames.league.wildrift:90",
+          "com.mobile.legends:120",
+          "com.vng.mlbbvn:120",
+          "com.mobilelegends.bp:120",
+          "com.mobilelegends.amazon:120",
+          "com.mobilelegends.shareit:120",
+          "com.dts.freefireth:90",
+          "com.dts.freefiremax:90",
+          "com.ea.games.r3_row:144",
+          "com.ea.games.r3_na:144",
+          "com.fingersoft.hillclimb:144",
+          "com.ua.building.Lokicraft:144",
+          "com.appsomniacs.da2:144",
+          "com.plarium.mechlegion:144"
+        ],
+        "scale_app_enable": true,
+        "support_scale_app_list": [
+          "com.miHoYo.enterprise.NGHSoD",
+          "com.happyelements.AndroidAnimal",
+          "cn.jj",
+          "com.tencent.tmgp.speedmobile",
+          "com.blizzard.wtcg.hearthstone",
+          "com.tencent.peng",
+          "com.tencent.qqgame.xq",
+          "com.qqgame.happymj",
+          "com.tencent.tmgp.tstl",
+          "com.tencent.wmsj",
+          "com.tencent.swy",
+          "com.tencent.tmgp.qqx5",
+          "com.tencent.tmgp.wec",
+          "com.tencent.shootgame",
+          "com.tencent.tmgp.vgame",
+          "com.tencent.tmgp.mt4",
+          "com.tencent.woool3d",
+          "com.tencent.xishanju.xj4",
+          "com.tencent.tmgp.redfox",
+          "com.tencent.wdqy",
+          "com.tencent.YiRen",
+          "com.tencent.tmgp.ylm",
+          "com.tencent.yoozoo.got.wintercoming",
+          "com.tencent.hxh",
+          "com.tencent.tmgp.sskgame",
+          "com.minitech.miniworld",
+          "com.bairimeng.dmmdzz",
+          "com.netease.tom",
+          "com.supercell.clashofclans.kunlun",
+          "com.aligames.sgzzlb",
+          "com.outfit7.talkingtomgoldrun.bd",
+          "com.bf.sgs.hdexp",
+          "com.lilithgames.hgame.cn",
+          "com.supercell.clashroyale.kunlun",
+          "com.ChillyRoom.DungeonShooter",
+          "com.wepie.snake",
+          "com.ledou.mhhy",
+          "com.gbits.atm.leiting",
+          "com.shiyi.bkby",
+          "com.jiguang.dldl.sy37",
+          "com.qidian.dldl.official",
+          "com.papegames.nn4.cn",
+          "com.wanmei.zhuxian.laohu",
+          "com.qhjx.snk.sy371",
+          "com.szxchd.yqxx.dodsdk",
+          "com.sqw.sssf",
+          "com.hermes.bgame",
+          "com.netease.lx7",
+          "com.taomee.huah",
+          "com.soulgame.shokudo.kuaishou",
+          "com.pwrd.hotta.laohu",
+          "com.hottagames.hotta.mi",
+          "com.hottagames.hotta.aligames"
+        ],
+        "force_scale_app_list": [],
+        "migl_enable": true,
+        "migl_config": [
+          "yuanshen:com.miHoYo.Yuanshen#com.miHoYo.GenshinImpact#com.miHoYo.ys.mi#com.miHoYo.ys.bilibili;1280;562;-1"
+        ],
+        "support_mtk_targetfps_v1_games": [
+          "com.miHoYo.Yuanshen",
+          "com.miHoYo.ys.mi",
+          "com.miHoYo.ys.bilibili",
+          "com.miHoYo.GenshinImpact"
+        ],
+        "booster_config": {
+          "default_config": [],
+          "scene_config": [],
+          "ovrride_config": [
+            {
+              "game_name": "com.tencent.tmgp.pubgmhd",
+              "dynamic_targetfps": "60#10:69;90#10:99,46:60",
+              "dynamic_targetfps_M": "60#10:69,44:30;90#10:99,41:60,44:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 1,
+                  "scene_name": "startgame",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 4,
+                  "scene_name": "hall",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.ig",
+              "dynamic_targetfps": "60#10:69;90#10:99,46:60",
+              "dynamic_targetfps_M": "60#10:69,44:30;90#10:99,41:60,44:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 1,
+                  "scene_name": "startgame",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 4,
+                  "scene_name": "hall",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.rekoo.pubgm",
+              "dynamic_targetfps": "60#10:69;90#10:99,46:60",
+              "dynamic_targetfps_M": "60#10:69,44:30;90#10:99,41:60,44:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 1,
+                  "scene_name": "startgame",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 4,
+                  "scene_name": "hall",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.vng.pubgmobile",
+              "dynamic_targetfps": "60#10:69;90#10:99,46:60",
+              "dynamic_targetfps_M": "60#10:69,44:30;90#10:99,41:60,44:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 1,
+                  "scene_name": "startgame",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 4,
+                  "scene_name": "hall",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.pubg.imobile",
+              "dynamic_targetfps": "60#10:69;90#10:99,46:60",
+              "dynamic_targetfps_M": "60#10:69,44:30;90#10:99,41:60,44:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 1,
+                  "scene_name": "startgame",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 4,
+                  "scene_name": "hall",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#10"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.Yuanshen",
+              "dynamic_fps": "10:50,43:45,45:40,47:30",
+              "dynamic_fps_M": "10:50,38:40,40:30,44:24",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.ys.mi",
+              "dynamic_fps": "10:50,43:45,45:40,47:30",
+              "dynamic_fps_M": "10:50,38:40,40:30,44:24",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.ys.bilibili",
+              "dynamic_fps": "10:50,43:45,45:40,47:30",
+              "dynamic_fps_M": "10:50,38:40,40:30,44:24",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.GenshinImpact",
+              "dynamic_fps": "10:50,43:45,45:40,47:30",
+              "dynamic_fps_M": "10:50,38:40,40:30,44:24",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#00404000_1e8480_00404100_2b7cd0_00404200_2b7cd0_00400000_1e8480_00400100_2b7cd0_00400200_2b7cd0_00c04000_0_00c00000_0_01000000_0#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.mobile.legends",
+              "dynamic_fps": "10:129,46:90,47:60",
+              "dynamic_fps_M": "10:129,41:90,43:60",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.vng.mlbbvn",
+              "dynamic_fps": "10:129,46:90,47:60",
+              "dynamic_fps_M": "10:129,41:90,43:60",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.mobilelegends.bp",
+              "dynamic_fps": "10:129,46:90,47:60",
+              "dynamic_fps_M": "10:129,41:90,43:60",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.mobilelegends.amazon",
+              "dynamic_fps": "10:129,46:90,47:60",
+              "dynamic_fps_M": "10:129,41:90,43:60",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.mobilelegends.shareit",
+              "dynamic_fps": "10:129,46:90,47:60",
+              "dynamic_fps_M": "10:129,41:90,43:60",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.dts.freefireth",
+              "dynamic_fps": "10:99,46:90",
+              "dynamic_fps_M": "10:99,41:60",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.dts.freefiremax",
+              "dynamic_fps": "10:99,46:60",
+              "dynamic_fps_M": "10:99,41:60",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.ea.games.r3_row",
+              "dynamic_fps": "10:999,46:60",
+              "dynamic_fps_M": "10:999,41:60",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.ea.games.r3_na",
+              "dynamic_fps": "10:999,46:60",
+              "dynamic_fps_M": "10:999,41:60",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.fingersoft.hillclimb",
+              "dynamic_fps": "10:999,46:60",
+              "dynamic_fps_M": "10:999,41:60",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.ua.building.Lokicraft",
+              "dynamic_fps": "10:999,46:60",
+              "dynamic_fps_M": "10:999,41:60",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.appsomniacs.da2",
+              "dynamic_fps": "10:999,46:60",
+              "dynamic_fps_M": "10:999,41:60",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.plarium.mechlegion",
+              "dynamic_fps": "10:999,46:60",
+              "dynamic_fps_M": "10:999,41:60",
+              "scene_ovrride": []
+            }
+          ]
+        }
+      }
+    }
+  }
+}

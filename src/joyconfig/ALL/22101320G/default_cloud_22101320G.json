@@ -1,0 +1,1228 @@
+{
+  "booster_config": {
+    "config_name": "booster_config",
+    "enable": true,
+    "group_name": "booster_config",
+    "version": 2022112151,
+    "with_model": false,
+    "params": {
+      "header": {
+        "version": "2022112151",
+        "network_improve": true,
+        "index_enable": true,
+        "mqs_enable": false
+      },
+      "game_booster": {
+        "booster_enable": true,
+        "tuner_enable": true,
+        "monitor": {
+          "monitor_enable": false,
+          "analytics_enable": false,
+          "default_interval": 2
+        },
+        "support_motor_app": [],
+        "support_display_refresh_rates": [
+          60,
+          90,
+          120
+        ],
+        "support_dynamic_refresh_rate_games": [
+          "com.tencent.tmgp.sgame",
+          "com.tencent.ig",
+          "com.rekoo.pubgm",
+          "com.vng.pubgmobile",
+          "com.pubg.krmobile",
+          "com.tencent.igce",
+          "com.pubg.imobile",
+          "com.tencent.tmgp.cod",
+          "com.garena.game.kgtw",
+          "com.activision.callofduty.shooter",
+          "com.riotgames.league.wildrift",
+          "com.tencent.jkchess",
+          "com.miHoYo.Yuanshen",
+          "com.miHoYo.GenshinImpact",
+          "com.miHoYo.ys.mi",
+          "com.miHoYo.ys.bilibili",
+          "com.dts.freefireadv",
+          "com.mobile.legends",
+          "com.mobile.legends:UnityKillsMe",
+          "com.ngame.allstar.eu"
+        ],
+        "support_highfps_app": [
+          "com.netease.lztg1.mi:90",
+          "com.netease.lztg:90",
+          "com.tencent.tmgp.cf:60",
+          "com.pwrd.xxajh.laohu:90",
+          "com.pwrd.xxajh.mi:90",
+          "com.miHoYo.bh3.mi:90",
+          "com.miHoYo.enterprise.NGHSoD:90",
+          "com.t2ksports.nba2k20and:90",
+          "com.tencent.af:90",
+          "com.tencent.tmgp.speedmobile:90",
+          "com.tencent.tmgp.WePop:90",
+          "com.tencent.YiRen:90",
+          "com.tencent.KiHan:90",
+          "com.tencent.tmgp.sgame:60",
+          "com.tencent.tmgp.cod:60",
+          "com.dts.freefireadv:90",
+          "com.tencent.ig:60",
+          "com.mobile.legends:120",
+          "com.mobile.legends:UnityKillsMe:120",
+          "com.activision.callofduty.shooter:60",
+          "com.garena.game.codm:60",
+          "com.ngame.allstar.eu:60"
+        ],
+        "scale_app_enable": true,
+        "force_scale_app_list": [
+          "com.tencent.tmgp.sgame:440#1.25:com.tencent.tmgp.sgame.SGameActivity"
+        ],
+        "migl_enable": true,
+        "migl_config": [
+          "yuanshen:com.miHoYo.Yuanshen#com.miHoYo.GenshinImpact#com.miHoYo.ys.mi#com.miHoYo.ys.bilibili;1280;576;-1"
+        ],
+        "predownload_enable": true,
+        "support_predownload_app_list": [
+          "com.tencent.tmgp.pubgmhd"
+        ],
+        "support_scale_app_list": [
+          "com.happyelements.AndroidAnimal",
+          "cn.jj",
+          "com.blizzard.wtcg.hearthstone",
+          "com.tencent.peng",
+          "com.tencent.qqgame.xq",
+          "com.qqgame.happymj",
+          "com.tencent.tmgp.tstl",
+          "com.tencent.wmsj",
+          "com.tencent.swy",
+          "com.tencent.tmgp.qqx5",
+          "com.tencent.tmgp.wec",
+          "com.tencent.shootgame",
+          "com.tencent.tmgp.vgame",
+          "com.tencent.woool3d",
+          "com.tencent.tmgp.redfox",
+          "com.tencent.wdqy",
+          "com.tencent.yoozoo.got.wintercoming",
+          "com.tencent.hxh",
+          "com.tencent.tmgp.sskgame",
+          "com.minitech.miniworld",
+          "com.bairimeng.dmmdzz",
+          "com.netease.tom",
+          "com.supercell.clashofclans.kunlun",
+          "com.aligames.sgzzlb",
+          "com.outfit7.talkingtomgoldrun.bd",
+          "com.bf.sgs.hdexp",
+          "com.lilithgames.hgame.cn",
+          "com.ChillyRoom.DungeonShooter",
+          "com.garena.game.codm",
+          "com.ledou.mhhy",
+          "com.gbits.atm.leiting",
+          "com.shiyi.bkby",
+          "com.qidian.dldl.official",
+          "com.papegames.nn4.cn",
+          "com.netease.lx7",
+          "com.dts.freefireadv",
+          "com.taomee.huah",
+          "com.soulgame.shokudo.kuaishou"
+        ],
+        "support_gdpvo_app": [
+          "com.tencent.tmgp.sgame",
+          "com.miHoYo.enterprise.NGHSoD",
+          "com.miHoYo.bh3.mi",
+          "com.tencent.tmgp.wuxia"
+        ],
+        "support_calculate_target_fps_games": [
+          "com.mobile.legends",
+          "com.mobile.legends:UnityKillsMe"
+        ],
+        "support_gt_app": [],
+        "dynamic_fps_global": {
+          "dynamic_fps": "10:120,44:80,46:60,47:40,48:30",
+          "dynamic_fps_M": "10:120,35:70,38:60,41:55,42:50,43:45,44:40"
+        },
+        "migt": [
+          "com.tencent.ig;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;90:18 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.rekoo.pubgm;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;90:18 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.vng.pubgmobile;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;90:18 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.pubg.krmobile;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;90:18 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.igce;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;90:18 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.pubg.imobile;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;90:18 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.garena.game.kgtw;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.jkchess;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.miHoYo.GenshinImpact;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;60:18 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.miHoYo.Yuanshen;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;60:18 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.miHoYo.ys.mi;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;60:18 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.miHoYo.ys.bilibili;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;60:18 30:34;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.riotgames.league.wildrift;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.activision.callofduty.shooter;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;90:13 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.garena.game.codm;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;90:13 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.mobile.legends;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;120:10 90:15 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.mobile.legends:UnityKillsMe;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;120:10 90:15 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.dts.freefireadv;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;120:10 90:15 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.tencent.tmgp.sgame;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;90:15 60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
+          "com.ngame.allstar.eu;0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400;30;60:18 40:30 30:40;2;10;1;0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0"
+        ],
+        "booster_config": {
+          "default_config": [
+            {
+              "permission": "root",
+              "cmd": "/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+            }
+          ],
+          "scene_config": [
+            {
+              "scene_id": 5,
+              "scene_name": "loading",
+              "booster": [
+                {
+                  "permission": "root",
+                  "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                }
+              ]
+            },
+            {
+              "scene_id": 10001,
+              "scene_name": "foreground",
+              "booster": [
+                {
+                  "permission": "root",
+                  "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                }
+              ]
+            }
+          ],
+          "ovrride_config": [
+            {
+              "game_name": "com.garena.game.kgtw",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#1;BP#2;MA#0,1900800,1766400;MF#0:0 1:0 2:0 3:0 4:1651200 5:1651200 6:1651200 7:1766400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.ig",
+              "dynamic_fps": "10:60,47:50,48:40",
+              "dynamic_fps_M": "10:60,41:55,42:40,44:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#1;BP#2;MA#0,1651200,1766400;MF#0:0 1:0 2:0 3:0 4:1516800 5:1516800 6:1516800 7:1766400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.rekoo.pubgm",
+              "dynamic_fps": "10:60,47:50,48:40",
+              "dynamic_fps_M": "10:60,41:55,42:40,44:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#1;BP#2;MA#0,1651200,1766400;MF#0:0 1:0 2:0 3:0 4:1516800 5:1516800 6:1516800 7:1766400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.vng.pubgmobile",
+              "dynamic_fps": "10:60,47:50,48:40",
+              "dynamic_fps_M": "10:60,41:55,42:40,44:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#1;BP#2;MA#0,1651200,1766400;MF#0:0 1:0 2:0 3:0 4:1516800 5:1516800 6:1516800 7:1766400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.pubg.krmobile",
+              "dynamic_fps": "10:60,47:50,48:40",
+              "dynamic_fps_M": "10:60,41:55,42:40,44:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#1;BP#2;MA#0,1651200,1766400;MF#0:0 1:0 2:0 3:0 4:1516800 5:1516800 6:1516800 7:1766400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.igce",
+              "dynamic_fps": "10:60,47:50,48:40",
+              "dynamic_fps_M": "10:60,41:55,42:40,44:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#1;BP#2;MA#0,1651200,1766400;MF#0:0 1:0 2:0 3:0 4:1516800 5:1516800 6:1516800 7:1766400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.pubg.imobile",
+              "dynamic_fps": "10:60,47:50,48:40",
+              "dynamic_fps_M": "10:60,41:55,42:40,44:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#1;BP#2;MA#0,1651200,1766400;MF#0:0 1:0 2:0 3:0 4:1516800 5:1516800 6:1516800 7:1766400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.GenshinImpact",
+              "dynamic_fps": "20:60,38:55,40:50,42:40,44:30,46:25",
+              "dynamic_fps_M": "20:60,36:55,38:40,40:35,41:30,43:25",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#1;BE#0;SCN#2;MA#0,1651200,1516800;MF#0:1324800 1:1324800 2:1324800 3:1324800 4:1516800 5:1516800 6:1516800 7:1516800;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1;/sys/module/migt/parameters/cpu_boost_cycle#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42810000_21c#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;SCN#1;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "rafe#"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.Yuanshen",
+              "dynamic_fps": "20:60,38:55,40:50,42:40,44:30,46:25",
+              "dynamic_fps_M": "20:60,36:55,38:40,40:35,41:30,43:25",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#1;BE#0;SCN#2;MA#0,1651200,1516800;MF#0:1324800 1:1324800 2:1324800 3:1324800 4:1516800 5:1516800 6:1516800 7:1516800;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1;/sys/module/migt/parameters/cpu_boost_cycle#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42810000_21c#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;SCN#1;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "rafe#"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.ys.mi",
+              "dynamic_fps": "20:60,38:55,40:50,42:40,44:30,46:25",
+              "dynamic_fps_M": "20:60,36:55,38:40,40:35,41:30,43:25",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#1;BE#0;SCN#2;MA#0,1651200,1516800;MF#0:1324800 1:1324800 2:1324800 3:1324800 4:1516800 5:1516800 6:1516800 7:1516800;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1;/sys/module/migt/parameters/cpu_boost_cycle#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42810000_21c#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;SCN#1;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "rafe#"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.ys.bilibili",
+              "dynamic_fps": "20:60,38:55,40:50,42:40,44:30,46:25",
+              "dynamic_fps_M": "20:60,36:55,38:40,40:35,41:30,43:25",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#25"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#1;BE#0;SCN#2;MA#0,1651200,1516800;MF#0:1324800 1:1324800 2:1324800 3:1324800 4:1516800 5:1516800 6:1516800 7:1516800;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1;/sys/module/migt/parameters/cpu_boost_cycle#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#42810000_21c#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "raf#"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;SCN#1;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "rafe#"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.riotgames.league.wildrift",
+              "dynamic_fps": "10:60,47:50,48:40",
+              "dynamic_fps_M": "10:60,41:55,42:50,44:40",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#1;BP#2;MA#0,2054400,2380800;MF#0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2419200,2841600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.dts.freefireadv",
+              "dynamic_fps": "10:90,44:80,44.5:70,45:60,46:50,47:45",
+              "dynamic_fps_M": "10:90,40:80,41:70,42:60,43:50,44:45",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#20"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#0;BP#2;MA#0,1651200,1516800;MF#0:0 1:0 2:0 3:0 4:1651200 5:1651200 6:1651200 7:1516800"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#0;BP#2;MA#0,2054400,1766400;MF#0:0 1:0 2:0 3:0 4:1900800 5:1900800 6:1900800 7:1766400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#0;BP#2;MA#0,1651200,1324800;MF#0:0 1:0 2:0 3:0 4:1516800 5:1516800 6:1516800 7:1324800"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#20"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#20"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.mobile.legends",
+              "dynamic_fps": "10:120,44:80,45:60,47:40,48:30",
+              "dynamic_fps_M": "10:120,42:80,43:60,44:50,45:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#0;BP#2;MA#0,1651200,1516800;MF#0:0 1:0 2:0 3:0 4:1651200 5:1651200 6:1651200 7:1516800"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "booster#120": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#1;BE#0;BP#2;MA#0,2054400,2035200;MF#0:0 1:0 2:0 3:0 4:2054400 5:2054400 6:2054400 7:2035200;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#0;BP#2;MA#0,1651200,1766400;MF#0:0 1:0 2:0 3:0 4:1651200 5:1651200 6:1651200 7:1766400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#0;BP#2;MA#0,1516800,1324800;MF#0:0 1:0 2:0 3:0 4:1516800 5:1516800 6:1516800 7:1324800"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.mobile.legends:UnityKillsMe",
+              "dynamic_fps": "10:120,44:80,45:60,47:40,48:30",
+              "dynamic_fps_M": "10:120,42:80,43:60,44:50,45:30",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#0;BP#2;MA#0,1651200,1516800;MF#0:0 1:0 2:0 3:0 4:1651200 5:1651200 6:1651200 7:1516800"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "booster#120": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#1;BE#0;BP#2;MA#0,2054400,2035200;MF#0:0 1:0 2:0 3:0 4:2054400 5:2054400 6:2054400 7:2035200;/sys/devices/system/cpu/cpu7/core_ctl/min_cpus#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "booster#90": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#0;BP#2;MA#0,1651200,1766400;MF#0:0 1:0 2:0 3:0 4:1651200 5:1651200 6:1651200 7:1766400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "booster#60": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#0;BP#2;MA#0,1516800,1324800;MF#0:0 1:0 2:0 3:0 4:1516800 5:1516800 6:1516800 7:1324800"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.activision.callofduty.shooter",
+              "dynamic_fps": "10:60,47:50,48:40",
+              "dynamic_fps_M": "10:60,41:55,42:50,44:40",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#1;BP#2;MA#0,1651200,1862400;MF#0:0 1:0 2:0 3:0 4:1900800 5:1900800 6:1900800 7:1862400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.garena.game.codm",
+              "dynamic_fps": "10:60,47:50,48:40",
+              "dynamic_fps_M": "10:60,42:55,43:50,44:45",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#1;BP#2;MA#0,1651200,1862400;MF#0:0 1:0 2:0 3:0 4:1900800 5:1900800 6:1900800 7:1862400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 3,
+                  "scene_name": "login",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 5,
+                  "scene_name": "loading",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.jkchess",
+              "dynamic_fps": "10:60,44:55,45:50,46:40",
+              "dynamic_fps_M": "10:60,41:55,42:50,44:40",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#1;BP#2;MA#0,1651200,1766400;MF#0:0 1:0 2:0 3:0 4:691200 5:691200 6:691200 7:806400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.ngame.allstar.eu",
+              "dynamic_fps": "10:60,44:58,45:55,46:40",
+              "dynamic_fps_M": "10:60,41:58,42:55,44:40",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10004,
+                  "scene_name": "cold start",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#1;BI#0;BE#1;BP#2;MA#1324800,1651200,1766400;MF#0:0 1:0 2:0 3:0 4:1516800 5:1516800 6:1516800 7:1766400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#15"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "glk#WA#0;BI#0;BE#0;BP#0;MF#0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0;MA#1804800,2400000,2400000"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

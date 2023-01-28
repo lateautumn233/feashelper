@@ -1,0 +1,112 @@
+{
+  "booster_config": {
+    "config_name": "booster_config",
+    "enable": true,
+    "group_name": "booster_config",
+    "version": 2021042051,
+    "with_model": false,
+    "params": {
+      "header": {
+        "version": "2021042051",
+        "support_wifi_ant_swap": true
+      },
+      "game_booster": {
+        "booster_enable": true,
+        "cpuset_enable": true,
+        "tuner_enable": true,
+        "monitor": {
+          "monitor_enable": false,
+          "analytics_enable": false,
+          "default_interval": 2
+        },
+        "support_display_refresh_rates": [
+          60,
+          120
+        ],
+        "support_dynamic_refresh_rate_games": [
+          "com.tencent.tmgp.pubgmhd",
+          "com.tencent.tmgp.sgame",
+          "com.tencent.tmgp.sgamece"
+        ],
+        "support_highfps_app": [
+          "com.tencent.tmgp.sgamece:120",
+          "com.tencent.tmgp.sgame:120",
+          "com.activision.callofduty.shooter:120",
+          "com.netease.lztg1.mi:120",
+          "com.netease.lztg:120",
+          "com.pwrd.xxajh.laohu:120",
+          "com.pwrd.xxajh.mi:120",
+          "com.miHoYo.bh3.mi:120",
+          "com.miHoYo.enterprise.NGHSoD:120",
+          "com.t2ksports.nba2k20and:120",
+          "com.tencent.af:120",
+          "com.tencent.tmgp.pubgmhd:120",
+          "com.tencent.tmgp.speedmobile:120",
+          "com.tencent.tmgp.WePop:120",
+          "com.tencent.YiRen:120",
+          "com.tencent.KiHan:120",
+          "com.tencent.ig:120",
+          "com.tencent.tmgp.cf:120",
+          "com.tencent.tmgp.cod:120"
+        ],
+        "support_motor_app": [],
+        "booster_config": {
+          "default_config": [],
+          "scene_config": [],
+          "ovrride_config": [
+            {
+              "game_name": "com.tencent.tmgp.sgame",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "/dev/cpuset/game/cpus#4-6"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.pubgmhd",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "/dev/cpuset/game/cpus#4-6"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.Yuanshen",
+              "dynamic_fps": "10:60,30:50,35:40,40:35,44:30",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.miHoYo.GenshinImpact",
+              "dynamic_fps": "10:60,30:50,35:40,40:35,44:30",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.miHoYo.ys.mi",
+              "dynamic_fps": "10:60,30:50,35:40,40:35,44:30",
+              "scene_ovrride": []
+            },
+            {
+              "game_name": "com.miHoYo.ys.bilibili",
+              "dynamic_fps": "10:60,30:50,35:40,40:35,44:30",
+              "scene_ovrride": []
+            }
+          ]
+        }
+      }
+    }
+  }
+}

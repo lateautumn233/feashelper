@@ -1,0 +1,47 @@
+{
+  "booster_config": {
+    "config_name": "booster_config",
+    "enable": true,
+    "group_name": "booster_config",
+    "version": 2020011001,
+    "with_model": false,
+    "params": {
+      "header": {
+        "version": "2020011001"
+      },
+      "game_booster": {
+        "booster_enable": true,
+        "cpuset_enable": true,
+        "monitor": {
+          "monitor_enable": false,
+          "analytics_enable": false,
+          "default_interval": 2
+        },
+        "support_highfps_app": [
+          "com.activision.callofduty.shooter:90",
+          "com.netease.lztg1.mi:90",
+          "com.netease.lztg:90",
+          "com.netease.blqx.mi:90",
+          "com.netease.blqx:90",
+          "com.tencent.tmgp.cf:90",
+          "com.pwrd.xxajh.laohu:90",
+          "com.pwrd.xxajh.mi:90",
+          "com.miHoYo.bh3.mi:90",
+          "com.miHoYo.enterprise.NGHSoD:90",
+          "com.netease.lztg:90",
+          "com.netease.lztg1.mi:90",
+          "com.t2ksports.nba2k20and:90",
+          "com.tencent.af:90",
+          "com.tencent.tmgp.pubgmhd:90",
+          "com.tencent.tmgp.speedmobile:90",
+          "com.tencent.tmgp.WePop:90"
+        ],
+        "booster_config": {
+          "default_config": [],
+          "scene_config": [],
+          "ovrride_config": []
+        }
+      }
+    }
+  }
+}

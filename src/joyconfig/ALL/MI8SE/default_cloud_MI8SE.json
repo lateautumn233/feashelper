@@ -1,0 +1,116 @@
+{
+  "booster_config": {
+    "config_name": "booster_config",
+    "enable": true,
+    "group_name": "booster_config",
+    "version": 2019120401,
+    "with_model": false,
+    "params": {
+      "header": {
+        "version": "2019120401"
+      },
+      "game_booster": {
+        "booster_enable": true,
+        "cpuset_enable": true,
+        "monitor": {
+          "monitor_enable": false,
+          "analytics_enable": false,
+          "default_interval": 2
+        },
+        "booster_config": {
+          "default_config": [
+            {
+              "permission": "root",
+              "cmd": "/sys/class/thermal/thermal_message/boost#boost:0"
+            }
+          ],
+          "scene_config": [
+            {
+              "scene_id": 5,
+              "scene_name": "loading",
+              "change_end": true,
+              "booster": [
+                {
+                  "permission": "root",
+                  "cmd": "perflock#40800000_FFF#0"
+                }
+              ]
+            }
+          ],
+          "ovrride_config": [
+            {
+              "game_name": "com.tencent.tmgp.sgame",
+              "scene_ovrride": [
+                {
+                  "scene_id": 1001,
+                  "scene_name": "group_fight",
+                  "timeout": 10,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "perflock#40800000_FFF#0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.pubgmhd",
+              "scene_ovrride": [
+                {
+                  "scene_id": 102,
+                  "scene_name": "parachute",
+                  "change_end": true,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/class/thermal/thermal_message/boost#boost:1 timeout:90000 cpufreq:2208000 cpu_mask:0xc0"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "/sys/class/thermal/thermal_message/boost#boost:0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.netease.hyxd",
+              "end_scene": "10001",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "/dev/cpuset/game/cpus#6-7;/dev/cpuset/game/cgroup.procs#`pidof com.netease.hyxd`"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.netease.hyxd.mi",
+              "end_scene": "10001",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "/dev/cpuset/game/cpus#6-7;/dev/cpuset/game/cgroup.procs#`pidof com.netease.hyxd.mi`"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1280 @@
+{
+  "booster_config": {
+    "config_name": "booster_config",
+    "enable": true,
+    "group_name": "booster_config",
+    "version": 2022061499,
+    "with_model": false,
+    "params": {
+      "header": {
+        "version": "2022061499",
+        "index_enable": true,
+        "network_improve": true,
+        "mqs_enable": true
+      },
+      "game_booster": {
+        "booster_enable": true,
+        "cpuset_enable": true,
+        "tuner_enable": true,
+        "monitor": {
+          "monitor_enable": false,
+          "analytics_enable": false,
+          "default_interval": 2
+        },
+        "migl_enable": true,
+        "migl_config": [
+          "yuanshen:com.miHoYo.Yuanshen#com.miHoYo.GenshinImpact#com.miHoYo.ys.mi#com.miHoYo.ys.bilibili;1280;576;-1",
+          "pubg:com.tencent.tmgp.pubgmhd;-1;-1;1"
+        ],
+        "support_display_refresh_rates": [
+          60,
+          90,
+          120
+        ],
+        "support_scale_app_list": [
+          "com.miHoYo.enterprise.NGHSoD",
+          "com.happyelements.AndroidAnimal",
+          "cn.jj",
+          "com.tencent.tmgp.speedmobile",
+          "com.blizzard.wtcg.hearthstone",
+          "com.tencent.peng",
+          "com.tencent.qqgame.xq",
+          "com.qqgame.happymj",
+          "com.tencent.tmgp.tstl",
+          "com.tencent.wmsj",
+          "com.tencent.swy",
+          "com.tencent.tmgp.qqx5",
+          "com.tencent.tmgp.wec",
+          "com.tencent.shootgame",
+          "com.tencent.tmgp.vgame",
+          "com.tencent.tmgp.mt4",
+          "com.tencent.woool3d",
+          "com.tencent.xishanju.xj4",
+          "com.tencent.tmgp.redfox",
+          "com.tencent.wdqy",
+          "com.tencent.YiRen",
+          "com.tencent.tmgp.ylm",
+          "com.tencent.yoozoo.got.wintercoming",
+          "com.tencent.hxh",
+          "com.tencent.tmgp.sskgame"
+        ],
+        "support_dynamic_refresh_rate_games": [
+          "com.tencent.tmgp.pubgmhd",
+          "com.tencent.tmgp.sgame",
+          "com.tencent.tmgp.sgamece"
+        ],
+        "support_highfps_app": [
+          "com.tencent.tmgp.speedmobile:120",
+          "com.tencent.tmgp.pubgmhd:120",
+          "com.tencent.tmgp.sgame:120",
+          "com.tencent.tmgp.sgamece:120",
+          "com.tencent.tmgp.cf:120",
+          "com.netease.moba.mi:60",
+          "com.miHoYo.bh3.mi:60",
+          "com.miHoYo.enterprise.NGHSoD:60",
+          "com.t2ksports.nba2k20and:60",
+          "com.miHoYo.Yuanshen:60",
+          "com.miHoYo.ys.mi:60",
+          "com.tencent.lolm:120",
+          "com.tencent.af:90"
+        ],
+        "support_motor_app": [],
+        "booster_config": {
+          "default_config": [],
+          "scene_config": [],
+          "ovrride_config": [
+            {
+              "game_name": "com.tencent.tmgp.sgame",
+              "start_scene": "7",
+              "end_scene": "4",
+              "badfps_thresh1": "54,81,108",
+              "badfps_thresh2": "3,5,10",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster#60#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#300"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "booster#90#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#490"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#7"
+                    }
+                  ],
+                  "booster#120#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#490"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#7"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 1004,
+                  "scene_name": "target_fps_update",
+                  "booster#60#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#300"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "booster#90#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#490"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#7"
+                    }
+                  ],
+                  "booster#120#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#490"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#7"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.sgamece",
+              "start_scene": "7",
+              "end_scene": "4",
+              "badfps_thresh1": "54,81,108",
+              "badfps_thresh2": "3,5,10",
+              "scene_ovrride": [
+                {
+                  "scene_id": 1002,
+                  "scene_name": "motor",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "motor#500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.pubgmhd",
+              "start_scene": "102",
+              "end_scene": "4",
+              "badfps_thresh1": "54,81",
+              "badfps_thresh2": "3,5",
+              "dynamic_targetfps": "60#10:999,47:62",
+              "dynamic_targetfps_M": "60#10:999,42:62",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster#60#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#300"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "booster#90#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#490"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#7"
+                    }
+                  ],
+                  "booster#120#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#490"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#7"
+                    }
+                  ],
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    }
+                  ]
+                },
+                {
+                  "scene_id": 1004,
+                  "scene_name": "target_fps_update",
+                  "booster#60#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#300"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "booster#90#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#490"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#7"
+                    }
+                  ],
+                  "booster#120#MGAME": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#490"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#7"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.Yuanshen",
+              "dynamic_targetfps": "60#10:999,47:45",
+              "dynamic_targetfps_M": "60#10:999,43:48,44:44,45:40,47:35",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#550"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/fixed_target_fps#60"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_b#-150"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/vm/extra_free_kbytes#30375"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/vm/watermark_scale_factor#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/fixed_target_fps#-1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_b#-50"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/vm/extra_free_kbytes#54000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/vm/watermark_scale_factor#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.GenshinImpact",
+              "dynamic_targetfps": "60#10:999,47:45",
+              "dynamic_targetfps_M": "60#10:999,43:48,44:44,45:40,47:35",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#550"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/fixed_target_fps#60"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_b#-150"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/vm/extra_free_kbytes#30375"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/vm/watermark_scale_factor#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/fixed_target_fps#-1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_b#-50"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/vm/extra_free_kbytes#54000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/vm/watermark_scale_factor#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.ys.mi",
+              "dynamic_targetfps": "60#10:999,47:45",
+              "dynamic_targetfps_M": "60#10:999,43:48,44:44,45:40,47:35",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#550"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/fixed_target_fps#60"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_b#-150"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/vm/extra_free_kbytes#30375"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/vm/watermark_scale_factor#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/fixed_target_fps#-1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_b#-50"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/vm/extra_free_kbytes#54000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/vm/watermark_scale_factor#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.ys.bilibili",
+              "dynamic_targetfps": "60#10:999,47:45",
+              "dynamic_targetfps_M": "60#10:999,43:48,44:44,45:40,47:35",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "scene_name": "foreground",
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#550"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/fixed_target_fps#60"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_b#-150"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#7"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/vm/extra_free_kbytes#30375"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/vm/watermark_scale_factor#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-3"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/fixed_target_fps#-1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_b#-50"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/vm/extra_free_kbytes#54000"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "proc/sys/vm/watermark_scale_factor#10"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "dev/cpuset/foreground/cpus#0-7"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.netease.onmyoji.mi",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.netease.aceracer.mi",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.bh3.mi",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.bh3",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.miHoYo.enterprise.NGHSoD",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.netease.moba.mi",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.cf",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.hyrzol",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.KiHan",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.netease.dwrg",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.denachina.g13002010.mi",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.netease.wyclx.mi",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.lolm",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.wanmei.zhuxian.mi",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.taomee.molenew.mi",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.speedmobile",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "game_name": "com.tencent.tmgp.jxqy",
+              "scene_ovrride": [
+                {
+                  "scene_id": 10001,
+                  "booster": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#1"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#400"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#4"
+                    }
+                  ],
+                  "end": [
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/perfmgr_enable#0"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/scaling_a#310"
+                    },
+                    {
+                      "permission": "root",
+                      "cmd": "sys/module/mtk_fpsgo/parameters/load_scaling_x#5"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

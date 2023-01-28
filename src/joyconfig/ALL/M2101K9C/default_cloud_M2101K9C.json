@@ -1,0 +1,273 @@
+{
+  "booster_config":{
+  "config_name": "booster_config",
+  "enable": true,
+  "group_name": "booster_config",
+  "version": 2021041301,
+  "with_model": false,
+  "params": {
+    "header": {
+      "version": "2021041301",
+      "network_improve": true,
+      "index_enable": true
+    },
+    "game_booster": {
+      "booster_enable": true,
+      "tuner_enable": true,
+      "monitor": {
+        "monitor_enable": false,
+        "analytics_enable": false,
+        "default_interval": 2
+      },
+      "support_display_refresh_rates": [
+        60,
+        90
+      ],
+      "support_motor_app": [],
+      "support_dynamic_refresh_rate_games": [
+        "com.tencent.tmgp.pubgmhd"
+      ],
+      "support_highfps_app": [
+        "com.activision.callofduty.shooter:90",
+        "com.netease.lztg1.mi:90",
+        "com.netease.lztg:90",
+        "com.tencent.tmgp.cf:90",
+        "com.pwrd.xxajh.laohu:90",
+        "com.pwrd.xxajh.mi:90",
+        "com.miHoYo.bh3.mi:90",
+        "com.miHoYo.enterprise.NGHSoD:90",
+        "com.t2ksports.nba2k20and:90",
+        "com.tencent.af:90",
+        "com.tencent.tmgp.pubgmhd:90",
+        "com.tencent.tmgp.speedmobile:90",
+        "com.tencent.tmgp.WePop:90",
+        "com.tencent.YiRen:90",
+        "com.tencent.KiHan:90",
+        "com.tencent.tmgp.sgame:90"
+      ],
+      "scale_app_enable": false,
+      "support_scale_app_list": [
+        "com.miHoYo.enterprise.NGHSoD",
+        "com.happyelements.AndroidAnimal",
+        "cn.jj",
+        "com.tencent.tmgp.speedmobile",
+        "com.blizzard.wtcg.hearthstone",
+        "com.tencent.peng",
+        "com.tencent.qqgame.xq",
+        "com.qqgame.happymj",
+        "com.tencent.tmgp.tstl",
+        "com.tencent.wmsj",
+        "com.tencent.swy",
+        "com.tencent.tmgp.qqx5",
+        "com.tencent.tmgp.wec",
+        "com.tencent.shootgame",
+        "com.tencent.tmgp.vgame",
+        "com.tencent.tmgp.mt4",
+        "com.tencent.woool3d",
+        "com.tencent.xishanju.xj4",
+        "com.tencent.tmgp.redfox",
+        "com.tencent.wdqy",
+        "com.tencent.YiRen",
+        "com.tencent.tmgp.ylm",
+        "com.tencent.yoozoo.got.wintercoming",
+        "com.tencent.hxh",
+        "com.tencent.tmgp.sskgame",
+        "com.minitech.miniworld",
+        "com.bairimeng.dmmdzz",
+        "com.netease.tom",
+        "com.supercell.clashofclans.kunlun",
+        "com.aligames.sgzzlb",
+        "com.outfit7.talkingtomgoldrun.bd",
+        "com.bf.sgs.hdexp",
+        "com.lilithgames.hgame.cn",
+        "com.supercell.clashroyale.kunlun",
+        "com.ChillyRoom.DungeonShooter",
+        "com.wepie.snake",
+        "com.ledou.mhhy",
+        "com.gbits.atm.leiting",
+        "com.shiyi.bkby",
+        "com.jiguang.dldl.sy37",
+        "com.qidian.dldl.official",
+        "com.papegames.nn4.cn",
+        "com.wanmei.zhuxian.laohu",
+        "com.qhjx.snk.sy371",
+        "com.szxchd.yqxx.dodsdk",
+        "com.sqw.sssf",
+        "com.hermes.bgame",
+        "com.netease.lx7",
+        "com.taomee.huah",
+        "com.soulgame.shokudo.kuaishou"
+      ],
+      "support_gdpvo_app": [
+        "com.tencent.tmgp.sgame",
+        "com.tencent.tmgp.pubgmhd",
+        "com.miHoYo.enterprise.NGHSoD",
+        "com.miHoYo.bh3.mi",
+        "com.tencent.tmgp.wuxia"
+      ],
+      "support_gt_app": [],
+      "booster_config": {
+        "default_config": [
+          {
+            "permission": "root",
+            "cmd": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor#schedutil;/sys/devices/system/cpu/cpu6/cpufreq/scaling_governor#schedutil"
+          }
+        ],
+        "scene_config": [
+          {
+            "scene_id": 3,
+            "scene_name": "login",
+            "change_end": true,
+            "booster": [
+              {
+                "permission": "root",
+                "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#30"
+              }
+            ]
+          },
+          {
+            "scene_id": 5,
+            "scene_name": "loading",
+            "change_end": true,
+            "booster": [
+              {
+                "permission": "root",
+                "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#30"
+              }
+            ]
+          }
+        ],
+        "ovrride_config": [
+          {
+            "game_name": "com.tencent.tmgp.sgame",
+            "scene_ovrride": [
+              {
+                "scene_id": 3,
+                "scene_name": "login",
+                "change_end": true,
+                "booster": [
+                  {
+                    "permission": "root",
+                    "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#30"
+                  }
+                ]
+              },
+              {
+                "scene_id": 5,
+                "scene_name": "loading",
+                "change_end": true,
+                "booster": [
+                  {
+                    "permission": "root",
+                    "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#30"
+                  }
+                ]
+              },
+              {
+                "scene_id": 1001,
+                "scene_name": "group_fight",
+                "timeout": 8,
+                "booster": [
+                  {
+                    "permission": "root",
+                    "cmd": "/sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq#1516800;/sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_load#75;/sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq#1651200;/sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_load#70;/sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq#2035200;/sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_load#78"
+                  }
+                ],
+                "end": [
+                  {
+                    "permission": "root",
+                    "cmd": "/sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq#1171200;/sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_load#99;/sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq#1209000;/sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_load#85;/sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq#1267000;/sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_load#85"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "game_name": "com.tencent.tmgp.pubgmhd",
+            "start_scene": "102",
+            "end_scene": "3",
+            "scene_ovrride": [
+              {
+                "scene_id": 3,
+                "scene_name": "login",
+                "change_end": true,
+                "booster": [
+                  {
+                    "permission": "root",
+                    "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                  }
+                ]
+              },
+              {
+                "scene_id": 5,
+                "scene_name": "loading",
+                "change_end": true,
+                "booster": [
+                  {
+                    "permission": "root",
+                    "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                  }
+                ]
+              },
+              {
+                "scene_id": 4,
+                "scene_name": "hall",
+                "booster": [
+                  {
+                    "permission": "restore",
+                    "cmd": "/sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres#'60 60 60'"
+                  }
+                ]
+              },
+              {
+                "scene_id": 102,
+                "scene_name": "start",
+                "timeout": 60,
+                "booster": [
+                  {
+                    "permission": "root",
+                    "cmd": ""
+                  }
+                ],
+                "end": [
+                  {
+                    "permission": "root",
+                    "cmd": "/sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres#'1 1 1'"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "game_name": "com.tencent.tmgp.cf",
+            "scene_ovrride": [
+              {
+                "scene_id": 3,
+                "scene_name": "login",
+                "change_end": true,
+                "booster": [
+                  {
+                    "permission": "root",
+                    "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                  }
+                ]
+              },
+              {
+                "scene_id": 5,
+                "scene_name": "loading",
+                "change_end": true,
+                "booster": [
+                  {
+                    "permission": "root",
+                    "cmd": "perflock#40C20100_14_40C20200_14_40C1C100_1E_40C1C200_1E_40800000_FFF_40800100_FFF_40800200_FFF_41800000_FF_40400000_1_42C10000_1_43000000_FF_43400000_FFFF#10"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+ }
+}
