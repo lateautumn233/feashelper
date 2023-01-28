@@ -1,5 +1,6 @@
 #include "../common/Androidutils_feas.h"
 #include "../common/S3profile.h"
+#include "addconfig.h"
 
 inline std::string getGov(){
     std::ifstream fd("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor");
@@ -77,68 +78,7 @@ int main(int argc, char* argv[])
             
             /*From mi joyose config
              *now only genshin*/
-            if(device.getType() == "qcom")
-            {
-                if(isOP(device)) //if game is OP
-                /*from k50u joyose config*/
-                {
-                    Lockvalue("/sys/module/perfmgr/parameters/load_scaling_y", 1);
-                    Lockvalue("/sys/module/perfmgr/parameters/load_scaling_a", 280);
-                    Lockvalue("/sys/module/perfmgr/parameters/load_scaling_b", int(-40));
-                    Lockvalue("/sys/module/perfmgr/parameters/normal_frame_keep_count", 10);
-                    Lockvalue("/sys/module/perfmgr/parameters/predict_freq_level", 0);
-                }
-                else //others
-                {
-                    Lockvalue("/sys/module/perfmgr/parameters/load_scaling_y", 1);
-                    Lockvalue("/sys/module/perfmgr/parameters/load_scaling_a", 450);
-                    Lockvalue("/sys/module/perfmgr/parameters/load_scaling_b", int(-70));
-                    Lockvalue("/sys/module/perfmgr/parameters/normal_frame_keep_count", 8);
-                    Lockvalue("/sys/module/perfmgr/parameters/predict_freq_level", 0);
-                }
-            }
-            if(device.getType() == "mtk")
-            {
-                if(isNewFeas()) // newer feas on mtk(example k60e) feas >= 2.2
-                {
-                    if(isOP(device))
-                    {
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 400);
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_b", int(-50));
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_x", 6);
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_y", int(-1));
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 10);
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/continus_no_jank_count", 15);
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a_thres", 800);
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/predict_freq_level", 1);
-                    }
-                    else //not OP
-                    {
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 500);
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/predict_freq_level", 1);
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_x", 5);
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 8);
-                    }
-                }
-                else if(!isNewFeas()) // older feas on mtk(example k50) feas <=2.1
-                {
-                    if(isOP(device))
-                    {
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 400);
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_b", int(-50));
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 10);
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a_thres", 800);
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/predict_freq_level", 1);
-                    }
-                    else //not OP
-                    {
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 500);
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/predict_freq_level", 1);
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_x", 5);
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 8);
-                    }
-                }
-            }
+            addutils(device);
         }
         else
         {

@@ -24,7 +24,7 @@ inline bool Lockvalue(const char *location, T value){
     return true;
 }
 // Run a shell(always dumpsys), and return result.
-int Shell(const char *sh, std::string &result){
+inline int Shell(const char *sh, std::string &result){
     FILE *pp = popen(sh, "r");
     char tmp[1024];
     if(pp == NULL)
