@@ -1,16 +1,6 @@
 #include "../common/Androidutils_feas.h"
 #include "../common/S3profile.h"
 
-bool isOP(roidDeviceFeas &device)
-{
-    if(device.getToppkg() == std::string("com.miHoYo.GenshinImpact") || device.getToppkg() == std::string("com.miHoYo.Yuanshen") || device.getToppkg() == std::string("com.miHoYo.ys.bilibili") || device.getToppkg() == std::string("com.miHoYo.ys.mi")) //if game is OP
-    {
-        std::cout << "Genshin" << std::endl;
-        return true;
-    }
-    return false;
-}
-
 int main(int argc, char* argv[])
 {
     std::cout << argv[0] << ": Start running" << std::endl;
@@ -81,15 +71,14 @@ int main(int argc, char* argv[])
             }
             if(device.getType() == std::string("mtk"))
             {
-                if(isOP(device)) //OP
+                if(isNewFeas()) // newer feas on mtk(example k60e) feas >= 2.2
                 {
-                    if(Testfile("/sys/module/mtk_fpsgo/parameters/target_fps_61")) // newer feas on mtk(k60e) feas >= 2.2
+                    if(isOP(device))
                     {
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 400);
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_b", int(-50));
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_x", 6);
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_y", int(-1));
-                        Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 10);
+                        Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_y", int(-1));                        Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 10);
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/continus_no_jank_count", 15);
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a_thres", 800);
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/predict_freq_level", 1);
@@ -101,19 +90,30 @@ int main(int argc, char* argv[])
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_x", 5);
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 8);
                     }
-                    /*if(!Testfile("/sys/module/mtk_fpsgo/parameters/target_fps_61")) // older feas on mtk(k50) feas <=2.1
+                }
+                else if(!isNewFeas()) // older feas on mtk(example k50) feas <=2.1
+                {
+                    if(isOP(device))
                     {
-                    
+                        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 400);
+                        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_b", int(-50));
+                        Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 10);
+                        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a_thres", 800);
+                        Lockvalue("/sys/module/mtk_fpsgo/parameters/predict_freq_level", 1);
                     }
-                    else
+                    else //not OP
                     {
-                    
-                    }*/
+                        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 500);
+                        Lockvalue("/sys/module/mtk_fpsgo/parameters/predict_freq_level", 1);
+                        Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_x", 5);
+                        Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 8);
+                    }
                 }
             }
         }
         else
         {
+            //close feas
             device.Feasoff();
             
             //swich performance to schedutil/walt
@@ -122,6 +122,7 @@ int main(int argc, char* argv[])
             if(!Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "walt"))
                 Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", "schedutil");
         }
+        //dumpsys update in 3s
         sleep(3);
     }
 }

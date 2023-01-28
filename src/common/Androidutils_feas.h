@@ -1,5 +1,24 @@
 #pragma once
 #include "Androidutils.h"
+
+bool isOP(roidDeviceFeas &device)
+{
+    if(device.getToppkg() == std::string("com.miHoYo.GenshinImpact") || device.getToppkg() == std::string("com.miHoYo.Yuanshen") || device.getToppkg() == std::string("com.miHoYo.ys.bilibili") || device.getToppkg() == std::string("com.miHoYo.ys.mi")) //if game is OP
+    {
+        std::cout << "Genshin" << std::endl;
+        return true;
+    }
+    return false;
+}
+bool isNewFeas()
+{
+    if(Testfile("/sys/module/mtk_fpsgo/parameters/target_fps_61"))
+    {
+        return true;
+    }
+    return false
+}
+
 // Feas Android device
 class roidDeviceFeas : public roidDevice
 {
@@ -67,7 +86,7 @@ public:
                 tmpbool = false;
             if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps", fps))
             {
-                if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps_61", fps))
+                if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/target_fps_61", fps))
                     tmpbool = false;
             }
         }
@@ -83,15 +102,22 @@ public:
                 tmpbool = false;
             if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/perfmgr_enable", 0))
                 tmpbool = false;
-            if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps", 0))
-                tmpbool = false;
+            if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps"), 0)
+            {
+                if(!Lockvalue("/sys/module/perfmgr/parameters/target_fps_61", 0))
+                {
+                    tmpbool = false;
+                }
+            }
         }
         if(type == "qcom")
         {
             if(!Lockvalue("/sys/module/perfmgr/parameters/perfmgr_enable", 0))
-            {
-                if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps_61", 0))
                 tmpbool = false;
+            if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps", 0))
+            {
+                if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/target_fps_61", 0))
+                    tmpbool = false;
             }
         }
         Feas_status = false;
