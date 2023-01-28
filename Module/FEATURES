@@ -39,4 +39,5 @@ v0.9(beta)
   - (qcom from k50u, mtk from k60e)
   * 更换dumpsys，现在存在小窗的情况下
   - 只识别主要应用
+  * 修复切换到performance不恢复的问题
   

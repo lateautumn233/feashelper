@@ -17,7 +17,10 @@ private:
         if (!Testfile("/sys/module/mtk_fpsgo/parameters/perfmgr_enable"))
             return false;
         if(!Testfile("/sys/module/mtk_fpsgo/parameters/fixed_target_fps"))
-            return false;
+        {
+            if(!Testfile("/sys/module/mtk_fpsgo/parameters/target_fps_61"))
+                return false;
+        }
         return true;
     }
     bool getqcomFeassupport()
@@ -60,7 +63,10 @@ public:
             if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/perfmgr_enable", 1))
                 tmpbool = false;
             if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps", fps))
-                tmpbool = false;
+            {
+                if(!Lockvalue("/sys/module/mtk_fpsgo/parameters/target_fps_61", fps))
+                    tmpbool = false;
+            }
         }
         if(type == "qcom")
         {
@@ -115,7 +121,7 @@ public:
     }
 };
 
-bool isOP(roidDeviceFeas &device)
+inline bool isOP(roidDeviceFeas &device)
 {
     if(device.getToppkg() == std::string("com.miHoYo.GenshinImpact") || device.getToppkg() == std::string("com.miHoYo.Yuanshen") || device.getToppkg() == std::string("com.miHoYo.ys.bilibili") || device.getToppkg() == std::string("com.miHoYo.ys.mi")) //if game is OP
     {
@@ -124,9 +130,13 @@ bool isOP(roidDeviceFeas &device)
     }
     return false;
 }
-bool isNewFeas()
+inline bool isNewFeas()
 {
     if(Testfile("/sys/module/mtk_fpsgo/parameters/target_fps_61"))
+    {
+        return true;
+    }
+    if(Testfile("/sys/module/perfmgr/parameters/target_fps_61"))
     {
         return true;
     }

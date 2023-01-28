@@ -1,12 +1,27 @@
 #include "../common/Androidutils_feas.h"
 #include "../common/S3profile.h"
 
-std::string getGov(){
+inline std::string getGov(){
     std::ifstream fd("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor");
     std::string gov;
     fd >> gov;
     fd.close();
     return gov;
+}
+
+//stop feas boost_affinity if had installed asoulopt
+inline void Ifasopt()
+{
+    if(Testfile("/data/adb/modules/asoul_affinity_opt/AsoulOpt"))
+    {
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/boost_affinity", 0);
+        Lockvalue("/sys/module/perfmgr/parameters/boost_affinity", 0);
+    }
+    else
+    {
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/boost_affinity", 1);
+        Lockvalue("/sys/module/perfmgr/parameters/boost_affinity", 1);
+    }
 }
 
 int main(int argc, char* argv[])
@@ -46,8 +61,10 @@ int main(int argc, char* argv[])
     device.startTopappmonitor(3);
     while(true)
     {
-        if(profile.Inlist(device.getToppkg()))
+        if(profile.Inlist(device.getToppkg()))//is a game in config
         {
+            Ifasopt();
+            
             //open feas
             device.Feason(profile.fps);
             
@@ -68,7 +85,7 @@ int main(int argc, char* argv[])
                     Lockvalue("/sys/module/perfmgr/parameters/load_scaling_y", 1);
                     Lockvalue("/sys/module/perfmgr/parameters/load_scaling_a", 280);
                     Lockvalue("/sys/module/perfmgr/parameters/load_scaling_b", int(-40));
-                    Lockvalue("sys/module/perfmgr/parameters/normal_frame_keep_count", 10);
+                    Lockvalue("/sys/module/perfmgr/parameters/normal_frame_keep_count", 10);
                     Lockvalue("/sys/module/perfmgr/parameters/predict_freq_level", 0);
                 }
                 else //others
@@ -103,7 +120,7 @@ int main(int argc, char* argv[])
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 8);
                     }
                 }
-                /*else if(!isNewFeas()) // older feas on mtk(example k50) feas <=2.1
+                else if(!isNewFeas()) // older feas on mtk(example k50) feas <=2.1
                 {
                     if(isOP(device))
                     {
@@ -120,7 +137,7 @@ int main(int argc, char* argv[])
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_x", 5);
                         Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 8);
                     }
-                }*/
+                }
             }
         }
         else
