@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
     profile.startProfilemonitor(5);
 
     // creat device
-    roidDeviceFeas device("feas");
+    AndroidDeviceFeas device("feas");
 
     // test feas support
     if (!device.ifFeas_support())

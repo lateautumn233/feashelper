@@ -16,7 +16,7 @@ static inline bool isNewFeas()
 }
 const bool NFEAS = isNewFeas();
 /*Default*/
-static inline void Default(roidDeviceFeas &device)
+static inline void Default(AndroidDeviceFeas &device)
 {
     if (device.getType() == "qcom")
     {
@@ -46,7 +46,7 @@ static inline void Default(roidDeviceFeas &device)
 }
 
 /*Genshin*/
-static inline void OPdo(roidDeviceFeas &device)
+static inline void OPdo(AndroidDeviceFeas &device)
 {
     if (device.getType() == "qcom") // qcom
     {
@@ -82,7 +82,7 @@ static inline void OPdo(roidDeviceFeas &device)
         }*/
     }
 }
-static inline bool isOP(roidDeviceFeas &device)
+static inline bool isOP(AndroidDeviceFeas &device)
 {
     if (device.getToppkg() == std::string("com.miHoYo.GenshinImpact") || device.getToppkg() == std::string("com.miHoYo.Yuanshen") || device.getToppkg() == std::string("com.miHoYo.ys.bilibili") || device.getToppkg() == std::string("com.miHoYo.ys.mi")) // if game is OP
     {
@@ -93,7 +93,7 @@ static inline bool isOP(roidDeviceFeas &device)
 }
 /*Genshin*/
 
-void addutils(roidDeviceFeas &device)
+void addutils(AndroidDeviceFeas &device)
 {
     // Genshin
     if (isOP(device))

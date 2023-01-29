@@ -1,2 +1,2 @@
 #pragma once
-void addutils(roidDeviceFeas &device);
+void addutils(AndroidDeviceFeas &device);

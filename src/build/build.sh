@@ -1,5 +1,2 @@
 rm -rf ./Feashelper
-clang++ ../feashelper/feashelper.cpp ../feashelper/addconfig.cpp -O3 --static -s -o Feashelper
-#fallback
-[ ! -f $MODDIR/Feashelper ] && arm-linux-gnueabihf-c++ ../feashelper/feashelper.cpp ../feashelper/addconfig.cpp -O3 --static -s -o ./Feashelper
-[ -f ./Feashelper ] && cp -r ./Feashelper ../../Module/Feashelper
+clang++ ../feashelper/addconfig.cpp ../feashelper/Androidutils_feas.cpp ../feashelper/Androidutils.cpp ../feashelper/feashelper.cpp -std=c++20 -O3 --static -flto -mcpu=cortex-a78 -fuse-ld=lld -Wl,-s,-x -o Feashelper
