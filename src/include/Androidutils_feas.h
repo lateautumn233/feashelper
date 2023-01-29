@@ -1,4 +1,5 @@
 #pragma once
+
 #include "Androidutils.h"
 
 // Feas Android device

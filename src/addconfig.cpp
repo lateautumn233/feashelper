@@ -1,22 +1,21 @@
-#include "../common/Androidutils_feas.h"
-#include "../common/Androidutils.h"
 #include <string>
 
-static inline bool isNewFeas()
+#include "include/Androidutils_feas.h"
+#include "include/Androidutils.h"
+
+static bool isNewFeas()
 {
     if (Testfile("/sys/module/mtk_fpsgo/parameters/target_fps_61"))
-    {
         return true;
-    }
     else if (Testfile("/sys/module/perfmgr/parameters/target_fps_61"))
-    {
         return true;
-    }
     return false;
 }
-const bool NFEAS = isNewFeas();
+
+static const bool NFEAS = isNewFeas();
+
 /*Default*/
-static inline void Default(AndroidDeviceFeas &device)
+static void Default(AndroidDeviceFeas &device)
 {
     if (device.getType() == "qcom")
     {
@@ -46,7 +45,7 @@ static inline void Default(AndroidDeviceFeas &device)
 }
 
 /*Genshin*/
-static inline void OPdo(AndroidDeviceFeas &device)
+static void OPdo(AndroidDeviceFeas &device)
 {
     if (device.getType() == "qcom") // qcom
     {
@@ -82,7 +81,7 @@ static inline void OPdo(AndroidDeviceFeas &device)
         }*/
     }
 }
-static inline bool isOP(AndroidDeviceFeas &device)
+static bool isOP(AndroidDeviceFeas &device)
 {
     if (device.getToppkg() == std::string("com.miHoYo.GenshinImpact") || device.getToppkg() == std::string("com.miHoYo.Yuanshen") || device.getToppkg() == std::string("com.miHoYo.ys.bilibili") || device.getToppkg() == std::string("com.miHoYo.ys.mi")) // if game is OP
     {

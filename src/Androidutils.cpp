@@ -7,7 +7,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
-#include "../common/Androidutils.h"
+#include "include/Androidutils.h"
 
 // Run a shell (always dumpsys) and return result.
 int Shell(const char *sh, std::string &result)
@@ -31,9 +31,7 @@ bool Testfile(const char *location)
 {
     std::ifstream fd(location);
     if (!fd)
-    {
         return false;
-    }
     return true;
 }
 
@@ -61,10 +59,8 @@ void AndroidDevice::Topappmonitor(std::string &Topapp, int second)
     {
         Shell("dumpsys activity activities|grep topResumedActivity=|tail -n 1|cut -d \"{\" -f2|cut -d \"/\" -f1|cut -d \" \" -f3", Topapp);
         // reduce screen off cost
-        if (Topapp == std::string(""))
-        {
+        if (Topapp.empty())
             sleep(6);
-        }
         sleep(second);
     }
 }
@@ -113,7 +109,7 @@ void AndroidDevice::startScreenstatusmonitor(int second)
 
 bool AndroidDevice::getHeadphonestatus()
 {
-    if (Headphonestatus == "[off]" || Headphonestatus == "")
+    if (Headphonestatus == "[off]" || Headphonestatus.empty())
         return false;
     return true;
 }
