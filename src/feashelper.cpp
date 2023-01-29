@@ -1,8 +1,8 @@
-#include "../common/Androidutils_feas.h"
-#include "../common/S3profile.h"
+#include "include/Androidutils_feas.h"
+#include "include/S3profile.h"
 //#include "addconfig.h"
 
-inline std::string getGov()
+std::string getGov()
 {
     std::ifstream fd("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor");
     std::string gov;
@@ -10,9 +10,9 @@ inline std::string getGov()
     fd.close();
     return gov;
 }
-inline void setGov(const char *governor) // swich cpu 0-7 to performance
+void setGov(const char *governor) // swich cpu 0-7 to performance
 {
-    while (getGov() != std::string(governor))
+    while (getGov() != governor)
     {
         Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", governor);
         Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", governor);
@@ -45,12 +45,12 @@ int main(int argc, char *argv[])
     // test feas support
     if (!device.ifFeas_support())
     {
-        std::cout << "Device not support, or this sortware is out of date." << std::endl;
-        // not support
+        std::cout << "Unsupported device, or you are using an outdated version of FEASHelper.\n";
+        // not supported
         return 1;
     }
-    std::cout << "Support." << std::endl;
-    std::cout << "Device: " << device.getType() << std::endl;
+    std::cout << "Support.\n";
+    std::cout << "Device: " << device.getType() << '\n';
 
     // start Topappmonitor
     device.startTopappmonitor(3);
@@ -58,7 +58,6 @@ int main(int argc, char *argv[])
     {
         if (profile.Inlist(device.getToppkg())) // is a game in config
         {
-
             // open feas
             device.Feason(profile.fps);
 
@@ -81,14 +80,10 @@ int main(int argc, char *argv[])
                 {
                     setGov("walt");
                     if (getGov() != "walt") // fall back
-                    {
                         setGov("schedutil");
-                    }
                 }
                 if (device.getType() == "mtk")
-                {
                     setGov("schedutil");
-                }
             }
         }
         // dumpsys update in 3s

@@ -11,9 +11,7 @@ int Countline(const char *location)
 {
     std::ifstream cfgFile(location);
     if (!cfgFile)
-    {
         return 0;
-    }
     char tmp[1024];
     int i = 0;
     while (!cfgFile.eof())

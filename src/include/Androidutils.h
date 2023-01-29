@@ -1,11 +1,7 @@
 #pragma once
-#include <iostream>
-#include <string>
-#include <thread>
-#include <sys/prctl.h>
-#include <unistd.h>
+
 #include <fstream>
-#include <sys/types.h>
+#include <string>
 #include <sys/stat.h>
 
 // Edit and Lock a file

@@ -1,5 +1,5 @@
-#include "../common/Androidutils.h"
-#include "../common/Androidutils_feas.h"
+#include "include/Androidutils.h"
+#include "include/Androidutils_feas.h"
 
 bool AndroidDeviceFeas::getmtkFeassupport()
 {
@@ -84,9 +84,7 @@ bool AndroidDeviceFeas::Feasoff()
         if (!Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps", 0))
         {
             if (!Lockvalue("/sys/module/perfmgr/parameters/target_fps_61", 0))
-            {
                 tmpbool = false;
-            }
         }
     }
     if (type == "qcom")
