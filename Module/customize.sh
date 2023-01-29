@@ -3,7 +3,7 @@ MODDIR=${0%/*}
 alias sh='/system/bin/sh'
 echo "----------------------------------------------------"
 #print FEATURES slowly
-cat $MODPATH/FEATURES | while read row; do echo "$row";sleep 0.15;done;echo ""
+cat $MODPATH/FEATURES | while read row; do echo "$row";sleep 0.1;done;echo ""
 
 echo "Please wait…"
 rm $MODPATH/FEATURES
