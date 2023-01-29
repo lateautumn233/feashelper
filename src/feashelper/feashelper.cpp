@@ -58,7 +58,7 @@ int main(int argc, char* argv[])
     //test feas support
     if (!device.ifFeas_support())
     {
-        std::cout << "Not support feas, or this sortware is out of date." << std::endl;
+        std::cout << "Device not support, or this sortware is out of date." << std::endl;
         //not support
         return 1;
     }
