@@ -7,7 +7,7 @@
 
 #include "include/S3profile.h"
 
-int Countline(const char *location)
+static int Countline(const char *location)
 {
     std::ifstream cfgFile(location);
     if (!cfgFile)
@@ -23,7 +23,7 @@ int Countline(const char *location)
     return i;
 }
 
-bool readProfile(const char *Profilelocation, std::string *&p)
+static bool readProfile(const char *Profilelocation, std::string *&p)
 {
     std::ifstream cfgFile(Profilelocation);
     if (!Profilelocation)

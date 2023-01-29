@@ -15,7 +15,7 @@ static bool isNewFeas()
 static const bool NFEAS = isNewFeas();
 
 /*Default*/
-static void Default(AndroidDeviceFeas &device)
+static void Default(AndroidDeviceFEAS &device)
 {
     if (device.getType() == "qcom")
     {
@@ -45,7 +45,7 @@ static void Default(AndroidDeviceFeas &device)
 }
 
 /*Genshin*/
-static void OPdo(AndroidDeviceFeas &device)
+static void OPdo(AndroidDeviceFEAS &device)
 {
     if (device.getType() == "qcom") // qcom
     {
@@ -81,9 +81,9 @@ static void OPdo(AndroidDeviceFeas &device)
         }*/
     }
 }
-static bool isOP(AndroidDeviceFeas &device)
+static bool isOP(AndroidDeviceFEAS &device)
 {
-    if (device.getToppkg() == std::string("com.miHoYo.GenshinImpact") || device.getToppkg() == std::string("com.miHoYo.Yuanshen") || device.getToppkg() == std::string("com.miHoYo.ys.bilibili") || device.getToppkg() == std::string("com.miHoYo.ys.mi")) // if game is OP
+    if (device.getToppkg() == "com.miHoYo.GenshinImpact" || device.getToppkg() == "com.miHoYo.Yuanshen" || device.getToppkg() == "com.miHoYo.ys.bilibili" || device.getToppkg() == "com.miHoYo.ys.mi") // if game is OP
     {
         // std::cout << "Genshin" << std::endl;
         return true;
@@ -92,7 +92,7 @@ static bool isOP(AndroidDeviceFeas &device)
 }
 /*Genshin*/
 
-void addutils(AndroidDeviceFeas &device)
+void addutils(AndroidDeviceFEAS &device)
 {
     // Genshin
     if (isOP(device))

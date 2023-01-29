@@ -1,7 +1,14 @@
-#include "include/Androidutils.h"
 #include "include/Androidutils_feas.h"
 
-bool AndroidDeviceFeas::getmtkFeassupport()
+AndroidDeviceFEAS::AndroidDeviceFEAS(const char *name) : AndroidDevice(name)
+{
+    Feas_status = false;
+    isFEASSupported = checkFEASType();
+    if (checkFEASType())
+        FEASoff();
+}
+
+bool AndroidDeviceFEAS::getmtkFEASsupport()
 {
     if (!Testfile("/sys/kernel/fpsgo/common/fpsgo_enable"))
         return false;
@@ -14,7 +21,8 @@ bool AndroidDeviceFeas::getmtkFeassupport()
     }
     return true;
 }
-bool AndroidDeviceFeas::getqcomFeassupport()
+
+bool AndroidDeviceFEAS::getqcomFEASsupport()
 {
     if (!Testfile("/sys/module/perfmgr/parameters/perfmgr_enable"))
         return false;
@@ -22,14 +30,15 @@ bool AndroidDeviceFeas::getqcomFeassupport()
         return false;
     return true;
 }
-bool AndroidDeviceFeas::getFeassupport()
+
+bool AndroidDeviceFEAS::checkFEASType()
 {
-    if (getmtkFeassupport())
+    if (getmtkFEASsupport())
     {
         type = "mtk";
         return true;
     }
-    if (getqcomFeassupport())
+    if (getqcomFEASsupport())
     {
         type = "qcom";
         return true;
@@ -37,14 +46,7 @@ bool AndroidDeviceFeas::getFeassupport()
     return false;
 }
 
-AndroidDeviceFeas::AndroidDeviceFeas(const char *name) : AndroidDevice(name)
-{
-    Feas_status = false;
-    Feas_support = getFeassupport();
-    if (getFeassupport())
-        Feasoff();
-}
-bool AndroidDeviceFeas::Feason(int &fps)
+bool AndroidDeviceFEAS::FEASon(int &fps)
 {
     bool tmpbool = true;
     if (type == "mtk")
@@ -72,7 +74,8 @@ bool AndroidDeviceFeas::Feason(int &fps)
     Feas_status = true;
     return tmpbool;
 }
-bool AndroidDeviceFeas::Feasoff()
+
+bool AndroidDeviceFEAS::FEASoff()
 {
     bool tmpbool = true;
     if (type == "mtk")
@@ -100,11 +103,13 @@ bool AndroidDeviceFeas::Feasoff()
     Feas_status = false;
     return tmpbool;
 }
-bool AndroidDeviceFeas::ifFeas_support() const
+
+bool AndroidDeviceFEAS::HasFEAS() const
 {
-    return Feas_support;
+    return isFEASSupported;
 }
-std::string AndroidDeviceFeas::getType() const
+
+std::string AndroidDeviceFEAS::getType() const
 {
     return type;
 }

@@ -2,4 +2,4 @@
 
 #include "Androidutils_feas.h"
 
-void addutils(AndroidDeviceFeas &device);
+void addutils(AndroidDeviceFEAS &device);
