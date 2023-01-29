@@ -1,16 +1,13 @@
 #include <iostream>
-#include <string>
 #include <thread>
 #include <sys/prctl.h>
 #include <unistd.h>
-#include <fstream>
 #include <sys/types.h>
-#include <sys/stat.h>
 
 #include "include/Androidutils.h"
 
 // Run a shell (always dumpsys) and return result.
-int Shell(const char *sh, std::string &result)
+static int Shell(const char *sh, std::string &result)
 {
     FILE *pp = popen(sh, "r");
     char tmp[1024];

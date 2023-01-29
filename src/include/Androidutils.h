@@ -21,9 +21,6 @@ bool Lockvalue(const char *location, T value)
     return true;
 }
 
-// Run a shell (always dumpsys) and return result.
-int Shell(const char *sh, std::string &result);
-
 bool Testfile(const char *location);
 
 // normal AndroidDevice

@@ -5,7 +5,7 @@
 #include "include/S3profile.h"
 //#include "addconfig.h"
 
-std::string getGov()
+static std::string getGov()
 {
     std::ifstream fd("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor");
     std::string gov;
@@ -13,7 +13,7 @@ std::string getGov()
     fd.close();
     return gov;
 }
-void setGov(const char *governor) // swich cpu 0-7 to performance
+static void setGov(const char *governor) // swich cpu 0-7 to performance
 {
     while (getGov() != governor)
     {
@@ -43,10 +43,10 @@ int main(int argc, char *argv[])
     profile.startProfilemonitor(5);
 
     // creat device
-    AndroidDeviceFeas device("feas");
+    AndroidDeviceFEAS device("feas");
 
     // test feas support
-    if (!device.ifFeas_support())
+    if (!device.HasFEAS())
     {
         std::cout << "Unsupported device, or you are using an outdated version of FEASHelper.\n";
         // not supported
@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
         if (profile.Inlist(device.getToppkg())) // is a game in config
         {
             // open feas
-            device.Feason(profile.fps);
+            device.FEASon(profile.fps);
 
             // set governor
             setGov("performance");
@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
         else
         {
             // close feas
-            device.Feasoff();
+            device.FEASoff();
 
             // swich performance to schedutil/walt
             while (getGov() != "walt" && getGov() != "schedutil")
