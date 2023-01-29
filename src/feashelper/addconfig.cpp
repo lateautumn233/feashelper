@@ -4,11 +4,11 @@
 
 static inline bool isNewFeas()
 {
-    if(Testfile("/sys/module/mtk_fpsgo/parameters/target_fps_61"))
+    if (Testfile("/sys/module/mtk_fpsgo/parameters/target_fps_61"))
     {
         return true;
     }
-    else if(Testfile("/sys/module/perfmgr/parameters/target_fps_61"))
+    else if (Testfile("/sys/module/perfmgr/parameters/target_fps_61"))
     {
         return true;
     }
@@ -18,7 +18,7 @@ const bool NFEAS = isNewFeas();
 /*Default*/
 static inline void Default(roidDeviceFeas &device)
 {
-    if(device.getType() == "qcom")
+    if (device.getType() == "qcom")
     {
         Lockvalue("/sys/module/perfmgr/parameters/load_scaling_y", 1);
         Lockvalue("/sys/module/perfmgr/parameters/load_scaling_a", 450);
@@ -28,7 +28,7 @@ static inline void Default(roidDeviceFeas &device)
     }
     else if (device.getType() == "mtk")
     {
-        if(isNewFeas())
+        if (isNewFeas())
         {
             Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 500);
             Lockvalue("/sys/module/mtk_fpsgo/parameters/predict_freq_level", 1);
@@ -48,9 +48,9 @@ static inline void Default(roidDeviceFeas &device)
 /*Genshin*/
 static inline void OPdo(roidDeviceFeas &device)
 {
-    if(device.getType() == "qcom")//qcom
+    if (device.getType() == "qcom") // qcom
     {
-        if(NFEAS)//new feas
+        if (NFEAS) // new feas
         {
             Lockvalue("/sys/module/perfmgr/parameters/load_scaling_y", 1);
             Lockvalue("/sys/module/perfmgr/parameters/load_scaling_a", 280);
@@ -59,9 +59,9 @@ static inline void OPdo(roidDeviceFeas &device)
             Lockvalue("/sys/module/perfmgr/parameters/predict_freq_level", 0);
         }
     }
-    if(device.getType() == "mtk")//mtk
+    if (device.getType() == "mtk") // mtk
     {
-        if(NFEAS)//new feas
+        if (NFEAS) // new feas
         {
             Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 400);
             Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_b", int(-50));
@@ -84,9 +84,9 @@ static inline void OPdo(roidDeviceFeas &device)
 }
 static inline bool isOP(roidDeviceFeas &device)
 {
-    if(device.getToppkg() == std::string("com.miHoYo.GenshinImpact") || device.getToppkg() == std::string("com.miHoYo.Yuanshen") || device.getToppkg() == std::string("com.miHoYo.ys.bilibili") || device.getToppkg() == std::string("com.miHoYo.ys.mi")) //if game is OP
+    if (device.getToppkg() == std::string("com.miHoYo.GenshinImpact") || device.getToppkg() == std::string("com.miHoYo.Yuanshen") || device.getToppkg() == std::string("com.miHoYo.ys.bilibili") || device.getToppkg() == std::string("com.miHoYo.ys.mi")) // if game is OP
     {
-        //std::cout << "Genshin" << std::endl;
+        // std::cout << "Genshin" << std::endl;
         return true;
     }
     return false;
@@ -95,11 +95,10 @@ static inline bool isOP(roidDeviceFeas &device)
 
 void addutils(roidDeviceFeas &device)
 {
-    //Genshin
-    if(isOP(device))
+    // Genshin
+    if (isOP(device))
         OPdo(device);
     else
         Default(device);
     //
-    
 }
