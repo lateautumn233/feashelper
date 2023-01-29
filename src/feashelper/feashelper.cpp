@@ -18,20 +18,6 @@ inline void setGov(const char *governor) // swich cpu 0-7 to performance
         Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", governor);
     }
 }
-// stop feas boost_affinity if had installed asoulopt
-inline void Ifasopt()
-{
-    if (Testfile("/data/adb/modules/asoul_affinity_opt/AsoulOpt"))
-    {
-        Lockvalue("/sys/module/mtk_fpsgo/parameters/boost_affinity", 0);
-        Lockvalue("/sys/module/perfmgr/parameters/boost_affinity", 0);
-    }
-    else
-    {
-        Lockvalue("/sys/module/mtk_fpsgo/parameters/boost_affinity", 1);
-        Lockvalue("/sys/module/perfmgr/parameters/boost_affinity", 1);
-    }
-}
 
 int main(int argc, char *argv[])
 {
@@ -72,7 +58,6 @@ int main(int argc, char *argv[])
     {
         if (profile.Inlist(device.getToppkg())) // is a game in config
         {
-            Ifasopt();
 
             // open feas
             device.Feason(profile.fps);
