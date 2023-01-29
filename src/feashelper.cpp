@@ -1,3 +1,6 @@
+#include <iostream>
+#include <unistd.h>
+
 #include "include/Androidutils_feas.h"
 #include "include/S3profile.h"
 //#include "addconfig.h"
@@ -26,7 +29,7 @@ int main(int argc, char *argv[])
     // read profile
     const char *Profilelocat = argv[1];
     listProfile profile(Profilelocat);
-    if (!profile.Readsucces)
+    if (!profile.Readsuccess)
     {
         // read error
         std::cout << "Profile error" << std::endl;

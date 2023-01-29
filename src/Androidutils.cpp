@@ -22,7 +22,7 @@ int Shell(const char *sh, std::string &result)
     // collect result
     fgets(tmp, sizeof(tmp), pp);
     result = tmp;
-    result.erase(result.length() - 1, result.length() - 1);
+    result.pop_back();
     pclose(pp);
     return 1;
 }
