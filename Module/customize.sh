@@ -13,7 +13,7 @@ MODS_PATH="/data/adb/modules"
 [ -d $MODS_PATH/Feashelper_Mtk ] && rm -rf $MODS_PATH/Feashelper_Mtk
 
 #no miui13
-[ $(getprop ro.miui.ui.version.code) -lt 14 ] && echo "Unsupport miui version." && abort
+[ $(getprop ro.miui.ui.version.code) -lt 14 ] && echo "Unsupported MIUI version detected, please upgrade." && abort
 
 #nfc fix
 if [ -f /product/pangu ]; then
@@ -40,7 +40,7 @@ sleep 1s
 
 #test if Feashelper started
 if [[ "$(pgrep Feashelper)" == "" ]]; then
-    echo "Device not support."
+    echo "Sorry, unsupported device."
     abort
 fi
 echo "Feashelper is running……"
