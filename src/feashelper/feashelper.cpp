@@ -1,6 +1,6 @@
 #include "../common/Androidutils_feas.h"
 #include "../common/S3profile.h"
-#include "addconfig.h"
+//#include "addconfig.h"
 
 inline std::string getGov()
 {
@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
 
             /*From mi joyose config
              *now only genshin*/
-            addutils(device);
+            //addutils(device);
         }
         else
         {

@@ -8,6 +8,9 @@ cat $MODPATH/FEATURES | while read row; do echo "$row";sleep 0.15;done;echo ""
 echo "Please wait…"
 rm $MODPATH/FEATURES
 
+#no uperf
+[ $(pgrep uperf) == "" ] && echo "Uperf detected, please remove." && abort
+
 #rm old version
 MODS_PATH="/data/adb/modules"
 [ -d $MODS_PATH/Feashelper_Mtk ] && rm -rf $MODS_PATH/Feashelper_Mtk
