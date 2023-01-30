@@ -26,10 +26,11 @@ static int Shell(const char *sh, std::string &result)
 
 bool Testfile(const char *location)
 {
-    std::ifstream fd(location);
-    if (!fd)
+    int ret = access(location, F_OK);
+    if (ret == 0)
+        return true;
+    else
         return false;
-    return true;
 }
 
 AndroidDevice::AndroidDevice(const char *name)
