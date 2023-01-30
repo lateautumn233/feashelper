@@ -1,23 +1,10 @@
-CPPFLAGS = -O3 -march=arm64 -mcpu=cortex-a78
-LDFLAGS = -flto -fuse-ld=lld --static -Wl,-s,-x
+CPPFLAGS = -std=c++20 -O3 -mcpu=cortex-a78 -flto -fuse-ld=lld --static -Wl,-s,-x
 CLANG = $(NDK)/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-androideabi33-clang++
-Feashelper: feashelper.o Androidutils.o Androidutils_feas.o S3profile.o
-	$(CLANG) $^ $(LDFLAGS) -o Feashelper
+Feashelper: ../src/feashelper.cpp ../src/Androidutils.cpp ../src/Androidutils_feas.cpp ../src/S3profile.cpp
+	$(CLANG) $(CPPFLAGS) $^ -o Feashelper
 	sstrip Feashelper; true
 	cp -f Feashelper ../Module/Feashelper
 
-feashelper.o:
-	$(CLANG) -c ../src/feashelper.cpp $(CPPFLAGS)
-
-Androidutils.o:
-	$(CLANG) -c ../src/Androidutils.cpp $(CPPFLAGS)
-
-Androidutils_feas.o:
-	$(CLANG) -c ../src/Androidutils_feas.cpp $(CPPFLAGS)
-
-S3profile.o:
-	$(CLANG) -c ../src/S3profile.cpp $(CPPFLAGS)
-
 .PHONY:clean
 clean:
-	rm *.o
+	rm Feashelper
