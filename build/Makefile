@@ -1,6 +1,6 @@
 CPPFLAGS = -O3 -march=arm64 -mcpu=cortex-a78
-LDFLAGS = -flto -O3 -fuse-ld=lld --static -Wl,-s,-x
-CLANG = $(NDK)/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi33-clang++
+LDFLAGS = -flto -fuse-ld=lld --static -Wl,-s,-x
+CLANG = $(NDK)/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-androideabi33-clang++
 Feashelper: feashelper.o Androidutils.o Androidutils_feas.o S3profile.o
 	$(CLANG) $^ $(LDFLAGS) -o Feashelper
 	sstrip Feashelper; true
