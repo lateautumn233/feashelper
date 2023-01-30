@@ -7,13 +7,13 @@
 
 #include "include/S3profile.h"
 
-static int Countline(const char *location)
+static unsigned int Countline(const char *location)
 {
     std::ifstream cfgFile(location);
     if (!cfgFile)
         return 0;
     char tmp[1024];
-    int i = 0;
+    unsigned int i = 0;
     while (!cfgFile.eof())
     {
         cfgFile.getline(tmp, sizeof(tmp));
@@ -29,7 +29,7 @@ static bool readProfile(const char *Profilelocation, std::string *&p)
     if (!Profilelocation)
         return false;
     char tmp[1024];
-    int i = 0;
+    unsigned int i = 0;
     while (!cfgFile.eof())
     {
         cfgFile.getline(tmp, sizeof(tmp));
@@ -51,7 +51,7 @@ listProfile::listProfile(const char *location)
         Readsuccess = true;
 }
 
-void listProfile::Profilemonitor(int second, int &_line, std::string *&_p, const char *&Profilelocation)
+void listProfile::Profilemonitor(unsigned int second, unsigned int &_line, std::string *&_p, const char *&Profilelocation)
 {
     prctl(PR_SET_NAME, "Profilemonitor");
     while (true)
@@ -63,7 +63,7 @@ void listProfile::Profilemonitor(int second, int &_line, std::string *&_p, const
     }
 }
 
-void listProfile::startProfilemonitor(int second)
+void listProfile::startProfilemonitor(unsigned int second)
 {
     std::thread Profilehelper(Profilemonitor, second, std::ref(line), std::ref(p), std::ref(Profilelocation));
     Profilehelper.detach();
@@ -71,16 +71,16 @@ void listProfile::startProfilemonitor(int second)
 
 void listProfile::List()
 {
-    for (int i = 0; i < line; i++)
+    for (unsigned int i = 0; i < line; i++)
         std::cout << *(p + i) << '\n';
 }
 
 bool listProfile::Inlist(std::string app)
 {
-    for (int i = 0; i < line; i++)
+    for (unsigned int i = 0; i < line; i++)
     {
         // asdf 120
-        int pos = (p + i)->find(' ');
+        std::size_t pos = (p + i)->find(' ');
         std::string pkgname = (p + i)->substr(0, pos);
         if (app == pkgname)
         {

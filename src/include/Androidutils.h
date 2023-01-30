@@ -32,17 +32,17 @@ class AndroidDevice
     bool Screenstatus;
 
 protected:
-    static void Headphonemonitor(std::string &status, int second);
-    static void Topappmonitor(std::string &Topapp, int second);
-    static void Screenstatusmonitor(bool &status, int second);
+    static void Headphonemonitor(std::string &status, unsigned int second);
+    static void Topappmonitor(std::string &Topapp, unsigned int second);
+    static void Screenstatusmonitor(bool &status, unsigned int second);
 
 public:
     AndroidDevice(const char *name);
     std::string getToppkg();
     bool ifScreenon();
-    void startHeadphonemonitor(int second);
-    void startTopappmonitor(int second);
-    void startScreenstatusmonitor(int second);
+    void startHeadphonemonitor(unsigned int second);
+    void startTopappmonitor(unsigned int second);
+    void startScreenstatusmonitor(unsigned int second);
     bool getHeadphonestatus();
     std::string getTopapp();
     bool getScreenstatus();

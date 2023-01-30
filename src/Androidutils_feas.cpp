@@ -46,7 +46,7 @@ bool AndroidDeviceFEAS::checkFEASType()
     return false;
 }
 
-bool AndroidDeviceFEAS::FEASon(int &fps)
+bool AndroidDeviceFEAS::FEASon(unsigned int &fps)
 {
     bool tmpbool = true;
     if (type == "mtk")

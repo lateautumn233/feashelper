@@ -13,7 +13,7 @@ public:
     static bool getmtkFEASsupport();
     static bool getqcomFEASsupport();
     bool checkFEASType();
-    bool FEASon(int &fps);
+    bool FEASon(unsigned int &fps);
     bool FEASoff();
     bool HasFEAS() const;
     std::string getType() const;

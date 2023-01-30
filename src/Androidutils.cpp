@@ -10,15 +10,15 @@
 static int Shell(const char *sh, std::string &result)
 {
     FILE *pp = popen(sh, "r");
-    char tmp[1024];
+    char buf[1024];
     if (pp == NULL)
     {
         perror("Failed");
         return 0;
     }
     // collect result
-    fgets(tmp, sizeof(tmp), pp);
-    result = tmp;
+    fgets(buf, sizeof(buf), pp);
+    result = buf;
     result.pop_back();
     pclose(pp);
     return 1;
@@ -26,10 +26,11 @@ static int Shell(const char *sh, std::string &result)
 
 bool Testfile(const char *location)
 {
-    std::ifstream fd(location);
-    if (!fd)
+    int ret = access(location, F_OK);
+    if (ret == 0)
+        return true;
+    else
         return false;
-    return true;
 }
 
 AndroidDevice::AndroidDevice(const char *name)
@@ -39,7 +40,7 @@ AndroidDevice::AndroidDevice(const char *name)
     Frontpkgname = "com.unKnown.pkg";
 }
 
-void AndroidDevice::Headphonemonitor(std::string &status, int second)
+void AndroidDevice::Headphonemonitor(std::string &status, unsigned int second)
 {
     prctl(PR_SET_NAME, "Headphonemonitor");
     while (true)
@@ -49,7 +50,7 @@ void AndroidDevice::Headphonemonitor(std::string &status, int second)
     }
 }
 
-void AndroidDevice::Topappmonitor(std::string &Topapp, int second)
+void AndroidDevice::Topappmonitor(std::string &Topapp, unsigned int second)
 {
     prctl(PR_SET_NAME, "Topappmonitor");
     while (true)
@@ -62,7 +63,7 @@ void AndroidDevice::Topappmonitor(std::string &Topapp, int second)
     }
 }
 
-void AndroidDevice::Screenstatusmonitor(bool &status, int second)
+void AndroidDevice::Screenstatusmonitor(bool &status, unsigned int second)
 {
     std::string thestatus;
     prctl(PR_SET_NAME, "Screenstatusmonitor");
@@ -87,19 +88,19 @@ bool AndroidDevice::ifScreenon()
     return Screenstatus;
 }
 
-void AndroidDevice::startHeadphonemonitor(int second)
+void AndroidDevice::startHeadphonemonitor(unsigned int second)
 {
     std::thread Headphonehelper(Headphonemonitor, std::ref(Headphonestatus), second);
     Headphonehelper.detach();
 }
 
-void AndroidDevice::startTopappmonitor(int second)
+void AndroidDevice::startTopappmonitor(unsigned int second)
 {
     std::thread Topapphelper(Topappmonitor, std::ref(Frontpkgname), second);
     Topapphelper.detach();
 }
 
-void AndroidDevice::startScreenstatusmonitor(int second)
+void AndroidDevice::startScreenstatusmonitor(unsigned int second)
 {
     std::thread Screenstatushelper(Screenstatusmonitor, std::ref(Screenstatus), second);
 }
