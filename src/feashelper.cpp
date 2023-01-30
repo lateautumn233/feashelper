@@ -24,7 +24,8 @@ static void setGov(const char *governor) // switch cpu 4-7 to performance
 
 int main(int argc, char *argv[])
 {
-    std::cout << argv[0] << ": Start running" << std::endl;
+    std::cout.sync_with_stdio(false);
+    std::cout << argv[0] << ": Start running\n";
 
     // read profile
     const char *Profilelocat = argv[1];
@@ -32,10 +33,10 @@ int main(int argc, char *argv[])
     if (!profile.Readsuccess)
     {
         // read error
-        std::cout << "Profile error" << std::endl;
+        std::cout << "Profile error\n";
         return 1;
     }
-    std::cout << "Read profile done." << std::endl;
+    std::cout << "Read profile done.\n";
     profile.List();
     // read done
 
