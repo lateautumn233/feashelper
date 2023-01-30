@@ -85,7 +85,7 @@ static bool isOP(AndroidDeviceFEAS &device)
 {
     if (device.getToppkg() == "com.miHoYo.GenshinImpact" || device.getToppkg() == "com.miHoYo.Yuanshen" || device.getToppkg() == "com.miHoYo.ys.bilibili" || device.getToppkg() == "com.miHoYo.ys.mi") // if game is OP
     {
-        // std::cout << "Genshin" << std::endl;
+        // std::cout << "Genshin\n";
         return true;
     }
     return false;
