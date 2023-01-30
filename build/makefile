@@ -4,6 +4,7 @@ CLANG = $(NDK)/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideab
 Feashelper: feashelper.o Androidutils.o Androidutils_feas.o S3profile.o
 	$(CLANG) $^ $(LDFLAGS) -o Feashelper
 	sstrip Feashelper; true
+	cp -f Feashelper ../Module/Feashelper
 
 feashelper.o:
 	$(CLANG) -c ../src/feashelper.cpp $(CPPFLAGS)
