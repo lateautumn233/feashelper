@@ -21,7 +21,7 @@ static void Default(AndroidDeviceFEAS &device)
     {
         Lockvalue("/sys/module/perfmgr/parameters/load_scaling_y", 1);
         Lockvalue("/sys/module/perfmgr/parameters/load_scaling_a", 450);
-        Lockvalue("/sys/module/perfmgr/parameters/load_scaling_b", int(-70));
+        Lockvalue("/sys/module/perfmgr/parameters/load_scaling_b", -70);
         Lockvalue("/sys/module/perfmgr/parameters/normal_frame_keep_count", 8);
         Lockvalue("/sys/module/perfmgr/parameters/predict_freq_level", 0);
     }
@@ -53,7 +53,7 @@ static void OPdo(AndroidDeviceFEAS &device)
         {
             Lockvalue("/sys/module/perfmgr/parameters/load_scaling_y", 1);
             Lockvalue("/sys/module/perfmgr/parameters/load_scaling_a", 280);
-            Lockvalue("/sys/module/perfmgr/parameters/load_scaling_b", int(-40));
+            Lockvalue("/sys/module/perfmgr/parameters/load_scaling_b", -40);
             Lockvalue("/sys/module/perfmgr/parameters/normal_frame_keep_count", 10);
             Lockvalue("/sys/module/perfmgr/parameters/predict_freq_level", 0);
         }
@@ -63,9 +63,9 @@ static void OPdo(AndroidDeviceFEAS &device)
         if (NFEAS) // new feas
         {
             Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 400);
-            Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_b", int(-50));
+            Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_b", -50);
             Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_x", 6);
-            Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_y", int(-1));
+            Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_y", -1);
             Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 10);
             Lockvalue("/sys/module/mtk_fpsgo/parameters/continus_no_jank_count", 15);
             Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a_thres", 800);
@@ -74,7 +74,7 @@ static void OPdo(AndroidDeviceFEAS &device)
         /*else
         {
             Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 400);
-            Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_b", int(-50));
+            Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_b", -50);
             Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 10);
             Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a_thres", 800);
             Lockvalue("/sys/module/mtk_fpsgo/parameters/predict_freq_level", 1);
