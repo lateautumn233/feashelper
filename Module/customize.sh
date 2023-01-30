@@ -2,7 +2,7 @@ SKIPUNZIP=0
 MODDIR=${0%/*}
 alias sh='/system/bin/sh'
 echo "----------------------------------------------------"
-#print FEATURES slowly
+# print FEATURES slowly
 cat $MODPATH/FEATURES | while read row; do echo "$row";sleep 0.1;done;echo ""
 
 echo "Please wait…"
@@ -36,9 +36,7 @@ chmod a+x $MODPATH/Feashelper
 # start Feashelper on install
 pkill -9 Feashelper
 echo "----------------------------------------------------"
-$MODPATH/Feashelper /data/feas.conf &
-sleep 1s
-echo "----------------------------------------------------"
+$MODPATH/Feashelper /data/feas.conf > /dev/null 2>&1 &
 sleep 1s
 
 # test if Feashelper started
@@ -47,7 +45,3 @@ if [[ "$(pgrep Feashelper)" == "" ]]; then
     abort
 fi
 echo "Feashelper is running……"
-
-# 🤣🤣🤣
-sh $MODPATH/SOMETHINGVERYGREAT
-rm $MODPATH/SOMETHINGVERYGREAT
