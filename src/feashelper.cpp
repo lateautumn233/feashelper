@@ -4,6 +4,8 @@
 #include "include/Androidutils_feas.h"
 #include "include/S3profile.h"
 
+
+
 static std::string getGov()
 {
     std::ifstream fd("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor");
