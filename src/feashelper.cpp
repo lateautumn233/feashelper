@@ -66,11 +66,11 @@ int main(int argc, char *argv[])
             device.FEASon(profile.fps);
 
             // set governor
-            setGov("performance");
+            while(getGov() != "performance")
+            {
+                setGov("performance");
+            }
 
-            /*From mi joyose config
-             *now only genshin*/
-            //addutils(device);
         }
         else
         {
