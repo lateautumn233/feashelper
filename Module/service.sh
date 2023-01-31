@@ -53,7 +53,7 @@ stop_dirty() {
 
 wait_until_login
 sleep 30s
-nohup $MODDIR/Feashelper /data/feas.conf >/dev/null 2>&1
+nohup $MODDIR/Feashelper /data/feas.conf >/dev/null 2>&1 &
 
 # FUCK
 stop_dirty
