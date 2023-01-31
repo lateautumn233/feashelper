@@ -12,7 +12,7 @@ static std::string getGov()
     fd.close();
     return gov;
 }
-static void setGov(const char *governor) // switch cpu 4-7 to performance
+static void setGov(const char *governor) // switch cpu 4-7 to target governor
 {
     while (getGov() != governor)
     {
