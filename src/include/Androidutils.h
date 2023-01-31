@@ -20,8 +20,8 @@ bool Lockvalue(const char *location, T value)
     chmod(location, S_IRUSR | S_IRGRP | S_IROTH);
     return true;
 }
-/*template <>
-bool Lockvalue(const char *location, const char *value)
+template <>
+static bool Lockvalue(const char *location, const char *value)
 {
     chmod(location, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IWOTH | S_IROTH);
     std::fstream fd(location, std::ios::out | std::ios::trunc);
@@ -38,7 +38,7 @@ bool Lockvalue(const char *location, const char *value)
     fd.close();
     chmod(location, S_IRUSR | S_IRGRP | S_IROTH);
     return true;
-}*/
+}
 
 bool Testfile(const char *location);
 
