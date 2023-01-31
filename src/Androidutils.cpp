@@ -7,7 +7,7 @@
 #include "include/Androidutils.h"
 
 // Run a shell (always dumpsys) and return result.
-static int Shell(const char *sh, std::string &result)
+int Shell(const char *sh, std::string &result)
 {
     FILE *pp = popen(sh, "r");
     char buf[1024];

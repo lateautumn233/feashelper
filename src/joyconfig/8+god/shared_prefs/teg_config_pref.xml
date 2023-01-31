@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="pref_in_d">eefaa1d8-f526-4069-93fd-e6e691939a5a</string>
+    <boolean name="pref_network_access_enabled" value="true" />
+    <string name="pref_s_d">a8f019ae4b469b6f2308875eb4573ae6f00950b449bb30046064ceebcc498970</string>
+    <int name="pref_update_interval" value="420" />
+    <long name="pref_last_update_time" value="1674048016834" />
+</map>

@@ -3,6 +3,7 @@
 
 #include "include/Androidutils_feas.h"
 #include "include/S3profile.h"
+#include "include/Addutils.h"
 
 static std::string getGov()
 {
@@ -70,7 +71,9 @@ int main(int argc, char *argv[])
             {
                 setGov("performance");
             }
-
+            
+            // Additional configuration
+            addutils(device.getToppkg());
         }
         else
         {

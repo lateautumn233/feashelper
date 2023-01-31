@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="first_power_on_time" value="1673356253012" />
+    <boolean name="is_first_startup" value="false" />
+</map>

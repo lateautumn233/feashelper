@@ -2,5 +2,5 @@
 - 根据配置自动开启小米设备(可能)支持的Feas
 - 配置文件位于/data/feas.conf
 
-v1.0
-- 感谢@asto的大量修正
+v1.1
+- Addutils

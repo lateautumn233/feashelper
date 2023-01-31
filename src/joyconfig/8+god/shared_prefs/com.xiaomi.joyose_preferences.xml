@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="upid">53BDDBCC8CE4</string>
+    <string name="GPU_TUNER_MODE_com.tencent.tmgp.sgame">HIGH_QUALITY</string>
+    <int name="RESOLUTION_com.tencent.tmgp.sgame" value="2" />
+    <string name="GPU_TUNER_MODE_com.miHoYo.Yuanshen">HIGH_QUALITY</string>
+    <string name="TARGET_FPS_com.tencent.tmgp.sgame">120</string>
+    <int name="cc_version" value="2023010901" />
+    <string name="GPU_TUNER_MODE_com.unity.mmd">CUSTOMIZE</string>
+    <int name="PICTURE_QUALITY_com.tencent.tmgp.sgame" value="1" />
+    <string name="rom_version">V14.0.23.1.9.DEV</string>
+    <int name="SPECIAL_EFFECTS_com.tencent.tmgp.sgame" value="1" />
+</map>
