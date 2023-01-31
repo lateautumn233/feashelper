@@ -3,7 +3,6 @@
 
 #include "include/Androidutils_feas.h"
 #include "include/S3profile.h"
-//#include "addconfig.h"
 
 static std::string getGov()
 {

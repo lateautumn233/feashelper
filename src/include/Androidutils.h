@@ -20,6 +20,25 @@ bool Lockvalue(const char *location, T value)
     chmod(location, S_IRUSR | S_IRGRP | S_IROTH);
     return true;
 }
+/*template <>
+bool Lockvalue(const char *location, const char *value)
+{
+    chmod(location, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IWOTH | S_IROTH);
+    std::fstream fd(location, std::ios::out | std::ios::trunc);
+    if (!fd)
+    {
+        fd.close();
+        return false;
+    }
+    std::string test;
+    do {
+        fd << value;
+        fd >> test;
+    } while(test != value);
+    fd.close();
+    chmod(location, S_IRUSR | S_IRGRP | S_IROTH);
+    return true;
+}*/
 
 bool Testfile(const char *location);
 
@@ -28,22 +47,14 @@ class AndroidDevice
 {
     std::string Name;
     std::string Frontpkgname;
-    std::string Headphonestatus;
-    bool Screenstatus;
 
 protected:
-    static void Headphonemonitor(std::string &status, unsigned int second);
     static void Topappmonitor(std::string &Topapp, unsigned int second);
-    static void Screenstatusmonitor(bool &status, unsigned int second);
 
 public:
     AndroidDevice(const char *name);
     std::string getToppkg();
     bool ifScreenon();
-    void startHeadphonemonitor(unsigned int second);
     void startTopappmonitor(unsigned int second);
-    void startScreenstatusmonitor(unsigned int second);
-    bool getHeadphonestatus();
     std::string getTopapp();
-    bool getScreenstatus();
 };

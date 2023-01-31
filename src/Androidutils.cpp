@@ -36,19 +36,9 @@ bool Testfile(const char *location)
 AndroidDevice::AndroidDevice(const char *name)
 {
     Name = name;
-    Screenstatus = false;
     Frontpkgname = "com.unKnown.pkg";
 }
 
-void AndroidDevice::Headphonemonitor(std::string &status, unsigned int second)
-{
-    prctl(PR_SET_NAME, "Headphonemonitor");
-    while (true)
-    {
-        Shell("getprop | grep persist.audio.headset.plug.status|cut -d \" \" -f2", status);
-        sleep(second);
-    }
-}
 
 void AndroidDevice::Topappmonitor(std::string &Topapp, unsigned int second)
 {
@@ -63,35 +53,9 @@ void AndroidDevice::Topappmonitor(std::string &Topapp, unsigned int second)
     }
 }
 
-void AndroidDevice::Screenstatusmonitor(bool &status, unsigned int second)
-{
-    std::string thestatus;
-    prctl(PR_SET_NAME, "Screenstatusmonitor");
-    while (true)
-    {
-        Shell("dumpsys window policy|grep screenState=|cut -d \"=\"", thestatus);
-        if (!thestatus.compare("SCREEN_STATE_ON"))
-            status = true;
-        else
-            status = false;
-        sleep(second);
-    }
-}
-
 std::string AndroidDevice::getToppkg()
 {
     return Frontpkgname;
-}
-
-bool AndroidDevice::ifScreenon()
-{
-    return Screenstatus;
-}
-
-void AndroidDevice::startHeadphonemonitor(unsigned int second)
-{
-    std::thread Headphonehelper(Headphonemonitor, std::ref(Headphonestatus), second);
-    Headphonehelper.detach();
 }
 
 void AndroidDevice::startTopappmonitor(unsigned int second)
@@ -100,24 +64,7 @@ void AndroidDevice::startTopappmonitor(unsigned int second)
     Topapphelper.detach();
 }
 
-void AndroidDevice::startScreenstatusmonitor(unsigned int second)
-{
-    std::thread Screenstatushelper(Screenstatusmonitor, std::ref(Screenstatus), second);
-}
-
-bool AndroidDevice::getHeadphonestatus()
-{
-    if (Headphonestatus == "[off]" || Headphonestatus.empty())
-        return false;
-    return true;
-}
-
 std::string AndroidDevice::getTopapp()
 {
     return Frontpkgname;
-}
-
-bool AndroidDevice::getScreenstatus()
-{
-    return Screenstatus;
 }
