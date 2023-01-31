@@ -4,7 +4,24 @@
 #include "include/Androidutils_feas.h"
 #include "include/S3profile.h"
 
-
+template <> bool Lockvalue(const char *location, const char *value)
+{
+    chmod(location, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IWOTH | S_IROTH);
+    std::fstream fd(location, std::ios::out | std::ios::trunc);
+    if (!fd)
+    {
+        fd.close();
+        return false;
+    }
+    std::string test;
+    do {
+        fd << value;
+        fd >> test;
+    } while(test != value);
+    fd.close();
+    chmod(location, S_IRUSR | S_IRGRP | S_IROTH);
+    return true;
+}
 
 static std::string getGov()
 {
