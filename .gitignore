@@ -15,7 +15,6 @@ bin-release/
 
 # Builded Feashelper
 build/*.o
-build/Feashelper
 build/*.zip
 
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
