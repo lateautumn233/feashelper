@@ -9,7 +9,7 @@ template <typename T>
 bool Lockvalue(const char *location, T value)
 {
     chmod(location, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IWOTH | S_IROTH);
-    std::fstream fd(location, std::ios::out | std::ios::trunc);
+    std::ofstream fd(location, std::ios::out | std::ios::trunc);
     if (!fd)
     {
         fd.close();
