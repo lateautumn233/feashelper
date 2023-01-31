@@ -15,11 +15,7 @@ bool Lockvalue(const char *location, T value)
         fd.close();
         return false;
     }
-    T test;
-    do {
-        fd << value;
-        fd >> test;
-    } while(test != value);
+    fd << value;
     fd.close();
     chmod(location, S_IRUSR | S_IRGRP | S_IROTH);
     return true;
