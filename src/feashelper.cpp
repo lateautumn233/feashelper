@@ -7,7 +7,7 @@
 
 static std::string getGov()
 {
-    std::ifstream fd("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor");
+    std::ifstream fd("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor");
     std::string gov;
     fd >> gov;
     fd.close();
@@ -17,6 +17,7 @@ static void setGov(const char *governor) // switch cpu 4-7 to performance
 {
     while (getGov() != governor)
     {
+        Lockvalue("/sys/devices/system/cpu/cpufreq/policy3/scaling_governor", governor);
         Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", governor);
         Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", governor);
     }
