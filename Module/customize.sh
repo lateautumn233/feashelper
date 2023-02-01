@@ -25,7 +25,10 @@ if [ -f /product/pangu ]; then
 fi
 
 # keep config
-[ ! -f /data/feas.conf ] && cp $MODPATH/feas.conf /data/feas.conf
+# [ ! -f /data/feas.conf ] && cp $MODPATH/feas.conf /data/feas.conf
+mv /data/feas.conf /data/feas.conf.bak
+cp -f $MODPATH/feas.conf /data/feas.conf
+echo "Please note that this update does not preserve the configuration."
 
 # remove model config
 rm $MODPATH/feas.conf
