@@ -23,7 +23,7 @@ static unsigned int Countline(const char *location)
     return i;
 }
 
-static bool readProfile(const char *Profilelocation, std::string *&p)
+static bool readProfile(const char *Profilelocation, std::string *&p, bool &performance_governor)
 {
     std::ifstream cfgFile(Profilelocation);
     if (!Profilelocation)
@@ -33,7 +33,15 @@ static bool readProfile(const char *Profilelocation, std::string *&p)
     while (!cfgFile.eof())
     {
         cfgFile.getline(tmp, sizeof(tmp));
-        if (tmp[0] != '#')
+        if(tmp == std::string("Performance governor = true"))
+        {
+            performance_governor = true;
+        }
+        else
+        {
+            performance_governor = false;
+        }
+        if (tmp[0] != '#' && tmp[0] != '$')
         {
             *(p + i) = tmp;
             i++;
@@ -47,25 +55,25 @@ listProfile::listProfile(const char *location)
     Profilelocation = location;
     line = Countline(Profilelocation);
     p = new std::string[line];
-    if (readProfile(Profilelocation, p))
+    if (readProfile(Profilelocation, p, performance_governor))
         Readsuccess = true;
 }
 
-void listProfile::Profilemonitor(unsigned int second, unsigned int &_line, std::string *&_p, const char *&Profilelocation)
+static void listProfile::Profilemonitor(unsigned int second, unsigned int &_line, std::string *&_p, const char *&Profilelocation, bool &performance_governor)
 {
     prctl(PR_SET_NAME, "Profilemonitor");
     while (true)
     {
         _line = Countline(Profilelocation);
         _p = new std::string[_line];
-        readProfile(Profilelocation, _p);
+        readProfile(Profilelocation, _p, performance_governor);
         sleep(second);
     }
 }
 
 void listProfile::startProfilemonitor(unsigned int second)
 {
-    std::thread Profilehelper(Profilemonitor, second, std::ref(line), std::ref(p), std::ref(Profilelocation));
+    std::thread Profilehelper(Profilemonitor, second, std::ref(line), std::ref(p), std::ref(Profilelocation), std::ref(performance_governor));
     Profilehelper.detach();
 }
 
@@ -81,12 +89,10 @@ bool listProfile::Inlist(std::string app)
     {
         std::size_t pos = (p + i)->find(' ');
         std::string pkgname = (p + i)->substr(0, pos);
-        std::size_t pos_p = (p + i)->find(' ', pos + 1);
         if (app == pkgname)
         {
             std::string s_fps = (p + i)->substr((pos + 1), ((p + i)->length() - pos));
             fps = atoi(s_fps.c_str());
-            governor = (p + i)->substr(pos_p + 1, (p + i)->length() - pos_p);
             return true;
         }
         fps = 120;
