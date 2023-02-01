@@ -84,6 +84,16 @@ static void rubens(std::string &Frontpkgname)
         Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a_thres", 500);
         Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_b", -50);
     }
+    /*Bh3*/
+    else if(Frontpkgname == "com.miHoYo.bh3.mi" || Frontpkgname == "com.tencent.tmgp.bh3" || Frontpkgname == "com.miHoYo.enterprise.NGHSoDBeta" || Frontpkgname == "com.miHoYo.enterprise.NGHSoD" )
+    {
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/predict_freq_level", 1);
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 8);
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 400);
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_b", -60);
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_x", 5);
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/load_scaling_x", 1);
+    }
 }
 
 void addutils(std::string Frontpkgname)
