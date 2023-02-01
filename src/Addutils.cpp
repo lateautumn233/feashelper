@@ -25,6 +25,7 @@ static short int getModel()
 
 static void diting(std::string &Frontpkgname)
 {
+    /*Genshin*/
     if(Frontpkgname == "com.miHoYo.GenshinImpact" || Frontpkgname == "com.miHoYo.Yuanshen" || Frontpkgname == "com.miHoYo.ys.mi" || Frontpkgname == "com.miHoYo.ys.bilibili")
     {
         Lockvalue("/sys/devices/system/cpu/cpu7/core_ctl/enable", 0);
@@ -34,10 +35,20 @@ static void diting(std::string &Frontpkgname)
         Lockvalue("/sys/module/perfmgr/parameters/normal_frame_keep_count", 5);
         Lockvalue("/sys/module/perfmgr/parameters/predict_freq_level", 0);
     }
+    /*Glory of Kings*/   
+    else if(Frontpkgname == "com.tencent.tmgp.sgamece" || Frontpkgname == "com.tencent.tmgp.sgame")
+    {
+        Lockvalue("/sys/module/perfmgr/parameters/predict_freq_level", 1);
+        Lockvalue("/sys/module/perfmgr/parameters/normal_frame_keep_count", 12);
+        Lockvalue("/sys/module/perfmgr/parameters/scaling_a", 400);
+        Lockvalue("/sys/module/perfmgr/parameters/scaling_a_thres", 580);
+        Lockvalue("/sys/module/perfmgr/parameters/scaling_b", -75);
+    }
 }
 
 static void rubens(std::string &Frontpkgname)
 {
+    /*Genshin*/
     if(Frontpkgname == "com.miHoYo.GenshinImpact" || Frontpkgname == "com.miHoYo.Yuanshen" || Frontpkgname == "com.miHoYo.ys.mi" || Frontpkgname == "com.miHoYo.ys.bilibili")
     {
         Lockvalue("/sys/module/mtk_fpsgo/parameters/predict_freq_level", 0);
@@ -45,6 +56,15 @@ static void rubens(std::string &Frontpkgname)
         Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 280);
         Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_b", -40);
         Lockvalue("/sys/kernel/fpsgo/fbt/switch_idleprefer", 0);
+    }
+    /*Glory of Kings*/   
+    else if(Frontpkgname == "com.tencent.tmgp.sgamece" || Frontpkgname == "com.tencent.tmgp.sgame")
+    {
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/predict_freq_level", 1);
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 12);
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 400);
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a_thres", 580);
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_b", -75);
     }
 }
 
