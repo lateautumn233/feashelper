@@ -66,6 +66,15 @@ static void rubens(std::string &Frontpkgname)
         Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a_thres", 580);
         Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_b", -75);
     }
+    /*Lolm*/
+    else if(Frontpkgname == "com.tencent.lolm")
+    {
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/predict_freq_level", 1);
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/normal_frame_keep_count", 6);
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a", 365);
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_a_thres", 500);
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/scaling_b", -50);
+    }
 }
 
 void addutils(std::string Frontpkgname)
