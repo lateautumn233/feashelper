@@ -27,17 +27,12 @@ static void diting(std::string &Frontpkgname)
 {
     if(Frontpkgname == "com.miHoYo.GenshinImpact" || Frontpkgname == "com.miHoYo.Yuanshen" || Frontpkgname == "com.miHoYo.ys.mi" || Frontpkgname == "com.miHoYo.ys.bilibili")
     {
-        Lockvalue("/sys/module/perfmgr/parameters/load_scaling_y", -1);
-        Lockvalue("/sys/module/perfmgr/parameters/load_scaling_x", 3);
         Lockvalue("/sys/devices/system/cpu/cpu7/core_ctl/enable", 0);
         Lockvalue("/sys/devices/system/cpu/cpu4/core_ctl/enable", 0);
-        Lockvalue("/sys/module/perfmgr/parameters/scaling_a", 300);
+        Lockvalue("/sys/module/perfmgr/parameters/scaling_a", 280);
         Lockvalue("/sys/module/perfmgr/parameters/scaling_b", -40);
-        Lockvalue("/sys/module/perfmgr/parameters/normal_frame_keep_count", 7);
-        Lockvalue("/sys/module/perfmgr/parameters/continus_no_jank_count", 14);
-        Lockvalue("/sys/module/perfmgr/parameters/target_fps_61", 1);
-        Lockvalue("/sys/module/perfmgr/parameters/scaling_a_thres", 950);
-        Lockvalue("/sys/module/perfmgr/parameters/predict_freq_level", 1);
+        Lockvalue("/sys/module/perfmgr/parameters/normal_frame_keep_count", 5);
+        Lockvalue("/sys/module/perfmgr/parameters/predict_freq_level", 0);
     }
 }
 
