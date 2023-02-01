@@ -59,7 +59,7 @@ listProfile::listProfile(const char *location)
         Readsuccess = true;
 }
 
-static void listProfile::Profilemonitor(unsigned int second, unsigned int &_line, std::string *&_p, const char *&Profilelocation, bool &performance_governor)
+void listProfile::Profilemonitor(unsigned int second, unsigned int &_line, std::string *&_p, const char *&Profilelocation, bool &performance_governor)
 {
     prctl(PR_SET_NAME, "Profilemonitor");
     while (true)
