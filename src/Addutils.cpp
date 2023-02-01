@@ -44,6 +44,15 @@ static void diting(std::string &Frontpkgname)
         Lockvalue("/sys/module/perfmgr/parameters/scaling_a_thres", 580);
         Lockvalue("/sys/module/perfmgr/parameters/scaling_b", -75);
     }
+    /*Lolm*/
+    else if(Frontpkgname == "com.tencent.lolm")
+    {
+        Lockvalue("/sys/module/perfmgr/parameters/predict_freq_level", 1);
+        Lockvalue("/sys/module/perfmgr/parameters/normal_frame_keep_count", 6);
+        Lockvalue("/sys/module/perfmgr/parameters/scaling_a", 365);
+        Lockvalue("/sys/module/perfmgr/parameters/scaling_a_thres", 500);
+        Lockvalue("/sys/module/perfmgr/parameters/scaling_b", -50);
+    }
 }
 
 static void rubens(std::string &Frontpkgname)
