@@ -65,9 +65,11 @@ int main(int argc, char *argv[])
             device.FEASon(profile.fps);
 
             // set governor
-            if(profile.governor != "!performance")
-            setGov("performance");
-            
+            if(profile.performance_governor)
+            {
+                setGov("performance");
+            }
+
             // Additional configuration
             addutils(device.getToppkg());
         }
