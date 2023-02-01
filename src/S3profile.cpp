@@ -79,6 +79,8 @@ void listProfile::startProfilemonitor(unsigned int second)
 
 void listProfile::List()
 {
+    if(performance_governor)
+        std::cout << "performance_governor\n";
     for (unsigned int i = 0; i < line; i++)
         std::cout << *(p + i) << '\n';
 }
