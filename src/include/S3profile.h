@@ -12,6 +12,7 @@ class listProfile
 public:
     bool Readsuccess = false;
     unsigned int fps;
+    std::string governor;
     listProfile(const char *location);
     void startProfilemonitor(unsigned int second);
     void List();

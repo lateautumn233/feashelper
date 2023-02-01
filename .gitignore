@@ -12,6 +12,7 @@ bin-release/
 *.air
 *.ipa
 *.apk
+*.bak
 
 # Builded Feashelper
 build/*.o

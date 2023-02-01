@@ -13,19 +13,17 @@ static std::string getGov()
     fd.close();
     return gov;
 }
-static void setGov(const char *governor) // switch cpu 4-7 to target governor
+static void setGov(std::string governor) // switch cpu 4-7 to target governor
 {
-    while (getGov() != governor)
-    {
-        Lockvalue("/sys/devices/system/cpu/cpufreq/policy3/scaling_governor", governor);
-        Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", governor);
-        Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", governor);
-    }
+    Lockvalue("/sys/devices/system/cpu/cpufreq/policy3/scaling_governor", governor);
+    Lockvalue("/sys/devices/system/cpu/cpufreq/policy4/scaling_governor", governor);
+    Lockvalue("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor", governor);
 }
 
 int main(int argc, char *argv[])
 {
     std::cout.sync_with_stdio(false);
+    std::cout << std::unitbuf;
     std::cout << argv[0] << ": Start running\n";
 
     // read profile
@@ -67,10 +65,7 @@ int main(int argc, char *argv[])
             device.FEASon(profile.fps);
 
             // set governor
-            while(getGov() != "performance")
-            {
-                setGov("performance");
-            }
+            setGov(profile.governor);
             
             // Additional configuration
             addutils(device.getToppkg());

@@ -36,7 +36,7 @@ chmod a+x $MODPATH/Feashelper
 # start Feashelper on install
 pkill -9 Feashelper
 echo "----------------------------------------------------"
-$MODPATH/Feashelper /data/feas.conf > /dev/null 2>&1 &
+$MODPATH/Feashelper /data/feas.conf &
 sleep 1s
 
 # test if Feashelper started

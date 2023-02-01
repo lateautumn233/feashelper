@@ -79,13 +79,14 @@ bool listProfile::Inlist(std::string app)
 {
     for (unsigned int i = 0; i < line; i++)
     {
-        // asdf 120
         std::size_t pos = (p + i)->find(' ');
         std::string pkgname = (p + i)->substr(0, pos);
+        std::size_t pos_p = (p + i)->find(' ', pos + 1);
         if (app == pkgname)
         {
             std::string s_fps = (p + i)->substr((pos + 1), ((p + i)->length() - pos));
             fps = atoi(s_fps.c_str());
+            governor = (p + i)->substr(pos_p + 1, (p + i)->length() - pos_p);
             return true;
         }
         fps = 120;
