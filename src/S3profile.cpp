@@ -33,11 +33,11 @@ static bool readProfile(const char *Profilelocation, std::string *&p, bool &perf
     while (!cfgFile.eof())
     {
         cfgFile.getline(tmp, sizeof(tmp));
-        if(tmp == std::string("Performance governor = true"))
+        if(tmp == std::string("$ Performance governor = true"))
         {
             performance_governor = true;
         }
-        else
+        else if (tmp == std::string("$ Performance governor = false"))
         {
             performance_governor = false;
         }
