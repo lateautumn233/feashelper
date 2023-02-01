@@ -17,7 +17,7 @@ static unsigned int Countline(const char *location)
     while (!cfgFile.eof())
     {
         cfgFile.getline(tmp, sizeof(tmp));
-        if (tmp[0] != '#')
+        if (tmp[0] != '#' && tmp[0] != '$' && tmp[0] != '\0')
             i++;
     }
     return i;
@@ -41,7 +41,7 @@ static bool readProfile(const char *Profilelocation, std::string *&p, bool &perf
         {
             performance_governor = false;
         }
-        if (tmp[0] != '#' && tmp[0] != '$')
+        if (tmp[0] != '#' && tmp[0] != '$' && tmp[0] != '\0')
         {
             *(p + i) = tmp;
             i++;
