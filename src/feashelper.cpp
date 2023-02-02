@@ -10,7 +10,6 @@ static std::string getGov()
     std::ifstream fd("/sys/devices/system/cpu/cpufreq/policy7/scaling_governor");
     std::string gov;
     fd >> gov;
-    fd.close();
     return gov;
 }
 static void setGov(std::string governor) // switch cpu 4-7 to target governor
@@ -52,8 +51,8 @@ int main(int argc, char *argv[])
         // not supported
         return 1;
     }
-    std::cout << "Support.\n";
-    std::cout << "Device: " << device.getType() << '\n';
+    std::cout << "Device is supported.\n";
+    std::cout << "Device category: " << device.getType() << '\n';
 
     // start Topappmonitor
     device.startTopappmonitor(3);
@@ -65,10 +64,8 @@ int main(int argc, char *argv[])
             device.FEASon(profile.fps);
 
             // set governor
-            if(profile.performance_governor)
-            {
+            if (profile.performance_governor)
                 setGov("performance");
-            }
 
             // Additional configuration
             addutils(device.getToppkg());
