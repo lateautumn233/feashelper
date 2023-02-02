@@ -10,12 +10,12 @@
 int Shell(const char *sh, std::string &result)
 {
     FILE *pp = popen(sh, "r");
-    char buf[1024];
     if (pp == NULL)
     {
         perror("Failed");
         return 0;
     }
+    char buf[1024];
     // collect result
     fgets(buf, sizeof(buf), pp);
     result = buf;

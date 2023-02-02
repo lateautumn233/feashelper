@@ -12,12 +12,12 @@ static unsigned int Countline(const char *location)
     std::ifstream cfgFile(location);
     if (!cfgFile)
         return 0;
-    char tmp[1024];
+    std::string buf;
     unsigned int i = 0;
     while (!cfgFile.eof())
     {
-        cfgFile.getline(tmp, sizeof(tmp));
-        if (tmp[0] != '#' && tmp[0] != '$' && tmp[0] != '\0')
+        std::getline(cfgFile, buf);
+        if (!buf.empty() && buf[0] != '#' && buf[0] != '$')
             i++;
     }
     return i;
@@ -28,23 +28,22 @@ static bool readProfile(const char *Profilelocation, std::string *&p, bool &perf
     std::ifstream cfgFile(Profilelocation);
     if (!Profilelocation)
         return false;
-    char tmp[1024];
     unsigned int i = 0;
     while (!cfgFile.eof())
     {
-        cfgFile.getline(tmp, sizeof(tmp));
-        if(tmp == std::string("$ Performance governor = true"))
+        std::string buf;
+        std::getline(cfgFile, buf);
+        if (!buf.empty())
         {
-            performance_governor = true;
-        }
-        else if (tmp == std::string("$ Performance governor = false"))
-        {
-            performance_governor = false;
-        }
-        if (tmp[0] != '#' && tmp[0] != '$' && tmp[0] != '\0')
-        {
-            *(p + i) = tmp;
-            i++;
+            if (buf == "$ Performance governor = true")
+                performance_governor = true;
+            else if (buf == "$ Performance governor = false")
+                performance_governor = false;
+            if (buf[0] != '#' && buf[0] != '$')
+            {
+                *(p + i) = std::move(buf);
+                i++;
+            }
         }
     }
     return true;
@@ -79,7 +78,7 @@ void listProfile::startProfilemonitor(unsigned int second)
 
 void listProfile::List()
 {
-    if(performance_governor)
+    if (performance_governor)
         std::cout << "performance_governor\n";
     for (unsigned int i = 0; i < line; i++)
         std::cout << *(p + i) << '\n';
