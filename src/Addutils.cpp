@@ -26,7 +26,7 @@ static model_list getModel()
 static void qcom(std::string &Frontpkgname)
 {
     /* Genshin */
-    if (std::any_of(OP.cbegin(), OP.cend(), [&](const auto &it) { return Frontpkgname == it; }))
+    /* if (std::any_of(OP.cbegin(), OP.cend(), [&](const auto &it) { return Frontpkgname == it; }))
     {
         Lockvalue("/sys/devices/system/cpu/cpu7/core_ctl/enable", 0);
         Lockvalue("/sys/devices/system/cpu/cpu4/core_ctl/enable", 0);
@@ -34,25 +34,25 @@ static void qcom(std::string &Frontpkgname)
         Lockvalue("/sys/module/perfmgr/parameters/scaling_b", -40);
         Lockvalue("/sys/module/perfmgr/parameters/normal_frame_keep_count", 5);
         Lockvalue("/sys/module/perfmgr/parameters/predict_freq_level", 0);
-    }
+    } */
     /* Glory of Kings */
-    else if (std::any_of(NP.cbegin(), NP.cend(), [&](const auto &it) { return Frontpkgname == it; }))
+    /* else if (std::any_of(NP.cbegin(), NP.cend(), [&](const auto &it) { return Frontpkgname == it; }))
     {
         Lockvalue("/sys/module/perfmgr/parameters/predict_freq_level", 1);
         Lockvalue("/sys/module/perfmgr/parameters/normal_frame_keep_count", 12);
         Lockvalue("/sys/module/perfmgr/parameters/scaling_a", 400);
         Lockvalue("/sys/module/perfmgr/parameters/scaling_a_thres", 580);
         Lockvalue("/sys/module/perfmgr/parameters/scaling_b", -75);
-    }
+    } */
     /* Lolm */
-    else if (Frontpkgname == "com.tencent.lolm")
+    /*else if (Frontpkgname == "com.tencent.lolm")
     {
         Lockvalue("/sys/module/perfmgr/parameters/predict_freq_level", 1);
         Lockvalue("/sys/module/perfmgr/parameters/normal_frame_keep_count", 6);
         Lockvalue("/sys/module/perfmgr/parameters/scaling_a", 365);
         Lockvalue("/sys/module/perfmgr/parameters/scaling_a_thres", 500);
         Lockvalue("/sys/module/perfmgr/parameters/scaling_b", -50);
-    }
+    }*/
 }
 
 static void mtk(std::string &Frontpkgname)
