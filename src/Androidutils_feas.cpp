@@ -15,19 +15,12 @@ bool AndroidDeviceFEAS::getmtkFEASsupport()
         return false;
     if (!Testfile("/sys/module/mtk_fpsgo/parameters/perfmgr_enable"))
         return false;
-    if (!Testfile("/sys/module/mtk_fpsgo/parameters/fixed_target_fps"))
-    {
-        if (!Testfile("/sys/module/mtk_fpsgo/parameters/target_fps_61"))
-            return false;
-    }
     return true;
 }
 
 bool AndroidDeviceFEAS::getqcomFEASsupport()
 {
     if (!Testfile("/sys/module/perfmgr/parameters/perfmgr_enable"))
-        return false;
-    if (!Testfile("/sys/module/perfmgr/parameters/target_fps_61"))
         return false;
     return true;
 }
