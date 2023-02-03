@@ -1,6 +1,6 @@
 id=Feashelper
 name=FEASHelper
-version=v1.1
+version=v1.2(beta)
 versionCode=1
 author=shadow3
 description=在支持的小米设备上，自动给配置指定的应用打开Feas，未指定的关闭

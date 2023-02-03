@@ -1,7 +1,3 @@
 - 目前功能:
 - 根据配置自动开启小米设备(可能)支持的Feas
 - 配置文件位于/data/feas.conf
-
-v1.1
-- Addutils
-- 是否开启performance调速器的开关
