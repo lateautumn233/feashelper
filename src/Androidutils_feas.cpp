@@ -90,22 +90,18 @@ bool AndroidDeviceFEAS::FEASon(unsigned int &fps)
     if (type == "mtk")
     {
         if (!Lockvalue("/sys/kernel/fpsgo/common/fpsgo_enable", 1))
-            tmpbool = false;
+            return false;
         if (!Lockvalue("/sys/module/mtk_fpsgo/parameters/perfmgr_enable", 1))
-            tmpbool = false;
-        if (!Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps", fps))
-        {
-            target_fps_helper_mtk(fps);
-        }
+            return false;
+        Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps", fps)
+        target_fps_helper_mtk(fps);
     }
     if (type == "qcom")
     {
         if (!Lockvalue("/sys/module/perfmgr/parameters/perfmgr_enable", 1))
-            tmpbool = false;
-        if (!Lockvalue("/sys/module/perfmgr/parameters/fixed_target_fps", fps))
-        {
-            target_fps_helper_qcom(fps);
-        }
+            return false;
+        Lockvalue("/sys/module/perfmgr/parameters/fixed_target_fps", fps))
+        target_fps_helper_qcom(fps);
     }
     Feas_status = true;
     return tmpbool;
