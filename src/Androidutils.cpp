@@ -1,5 +1,6 @@
 #include <iostream>
 #include <thread>
+#include <string>
 #include <sys/prctl.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -45,7 +46,22 @@ void AndroidDevice::Topappmonitor(std::string &Topapp, unsigned int second)
     prctl(PR_SET_NAME, "Topappmonitor");
     while (true)
     {
-        Shell("dumpsys activity activities|grep topResumedActivity=|tail -n 1|cut -d \"{\" -f2|cut -d \"/\" -f1|cut -d \" \" -f3", Topapp);
+        if (Testfile("/sys/kernel/gbe/gbe2_fg_pid"))
+        {
+            second = 1;
+            std::ifstream pid("/sys/kernel/gbe/gbe2_fg_pid");
+            std::string tmp;
+            pid >> tmp;
+            pid.close();
+            std::ifstream app;
+            app.open(std::string("/proc" + tmp + "/cmdline").c_str());
+            app >> Topapp;
+            app.close();
+        }
+        else
+        {
+            Shell("dumpsys activity activities|grep topResumedActivity=|tail -n 1|cut -d \"{\" -f2|cut -d \"/\" -f1|cut -d \" \" -f3", Topapp);
+        }
         // reduce screen off cost
         if (Topapp.empty())
             sleep(6);
