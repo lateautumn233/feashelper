@@ -46,7 +46,7 @@ void AndroidDevice::Topappmonitor(std::string &Topapp, unsigned int second)
     prctl(PR_SET_NAME, "Topappmonitor");
     while (true)
     {
-        if (Testfile("/sys/kernel/gbe/gbe2_fg_pid"))
+        if (Testfile("/sys/kernel/gbe/gbe2_fg_pid")) // mtk speacial
         {
             second = 1;
             std::ifstream pid("/sys/kernel/gbe/gbe2_fg_pid");
@@ -64,7 +64,7 @@ void AndroidDevice::Topappmonitor(std::string &Topapp, unsigned int second)
         }
         // reduce screen off cost
         if (Topapp.empty())
-            sleep(6);
+            sleep(3);
         sleep(second);
     }
 }

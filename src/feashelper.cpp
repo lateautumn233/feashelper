@@ -169,7 +169,7 @@ int main(int argc, char *argv[])
             uperf_stop = false;
             restored = false;
         }
-        // dumpsys update in 3s
-        sleep(3);
+        // package name update in fastest 1s
+        sleep(1);
     }
 }
