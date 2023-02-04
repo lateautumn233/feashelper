@@ -4,7 +4,7 @@
 #include "include/Androidutils_feas.h"
 #include "include/S3profile.h"
 #include "include/Addutils.h"
-#include "include/uperfhelper.h"
+#include "include/Uperfhelper.h"
 
 static std::string getGov()
 {
@@ -24,9 +24,8 @@ static void setGov(std::string governor) // switch cpu to target governor
     }
 }
 
-void setgov_normal(AndroidDeviceFEAS &device)
+void setgov_normal(AndroidDeviceFEAS &device) // swich performance to schedutil/walt
 {
-// swich performance to schedutil/walt
     while (getGov() != "walt" && getGov() != "schedutil")
     {
         if (device.getType() == "qcom")
@@ -47,7 +46,7 @@ void setgov_normal(AndroidDeviceFEAS &device)
     }
 }
 
-void restore(AndroidDeviceFEAS &device)
+void restore(AndroidDeviceFEAS &device) // restore edition from uperf
 {
     setgov_normal(device);
     std::ifstream freq;
@@ -119,7 +118,7 @@ int main(int argc, char *argv[])
     startUperfhelper(uperf_stat, uperf_stop);
     
     std::string uperf_gov;
-    Shell("grep \"Use CpufreqWriterPerformance\" /storage/emulated/0/Android/yc/uperf/uperf_log.txt", uperf_gov);
+    Shell("grep \"Use CpufreqWriterPerformance\" /storage/emulated/0/Android/yc/uperf/uperf_log.txt", uperf_gov); // if uperf using performance governor
     if (uperf_gov.empty())
         uperf_gov = "powersave";
     else
@@ -136,7 +135,7 @@ int main(int argc, char *argv[])
             {
                 restore(device);
                 restore(device);
-                restore(device); // 3 time for restore uperf's edit
+                restore(device); // 3 time for fully restore uperf's edit
                 restored = true;
             }
             
@@ -164,7 +163,7 @@ int main(int argc, char *argv[])
             else
             {
                 setGov(uperf_gov);
-                Lockvalue("/sys/devices/system/cpu/cpufreq/policy0/scaling_governor", uperf_gov);
+                Lockvalue("/sys/devices/system/cpu/cpufreq/policy0/scaling_governor", uperf_gov); // back 2 uperf
             }
             // uperf
             uperf_stop = false;

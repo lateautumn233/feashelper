@@ -6,7 +6,7 @@
 #include <sys/types.h>
 #include <dirent.h>
 #include <sys/prctl.h>
-#include "include/uperfhelper.h"
+#include "include/Uperfhelper.h"
 
 #define SIGSTOP 19
 #define SIGCONT 18
@@ -18,8 +18,8 @@ static void Uperfhelper(bool &stat, bool &stop)
     stat = false;
     while (true)
     {
-        sleep(10);
         theUperf.findUperf();
+        sleep(10);
         if (theUperf.getPid() == -1)
         {
             stat = false;
@@ -48,7 +48,7 @@ static int is_pid_folder(const struct dirent *entry) {
 }
 
 
-void startUperfhelper(bool &stat, bool &stop)
+void startUperfhelper(bool &stat, bool &stop) // a thread for watching uperf
 {
     std::thread uperfhelper(Uperfhelper, std::ref(stat), std::ref(stop));
     uperfhelper.detach();
@@ -58,8 +58,8 @@ void Uperf::findUperf()
 {
     std::ifstream comm;
     std::string location, name;
-    uperf_pid = -1;
-    int pid1, pid2;
+    uperf_pid = -1; // reset pid
+    int pid1, pid2; // uperf has two daemon
     comm.open(location.c_str());
     bool uperfn = false;
     DIR *Proc;
@@ -83,11 +83,11 @@ void Uperf::findUperf()
             uperfn = true;
             pid1 = atoi(direntp->d_name);
             continue;
-        }
+        } // finded 1st pid
         if (name == "uperf" && uperfn)
         {
-            pid2 = atoi(direntp->d_name);
-            uperf_pid = std::max(pid1, pid2);
+            pid2 = atoi(direntp->d_name); // finded 2nd pid
+            uperf_pid = std::max(pid1, pid2); // the later one
             std::cout << "uperf pid = " << uperf_pid << '\n';
             break;
         }
@@ -95,7 +95,7 @@ void Uperf::findUperf()
     closedir(Proc);
 }
 
-bool Uperf::isUperf()
+bool Uperf::isUperf() // if not, findUperf again
 {
     std::string location = "/proc/" + std::to_string(uperf_pid) + "/comm", name;
     std::ifstream comm(location.c_str());
@@ -106,13 +106,13 @@ bool Uperf::isUperf()
     return (name == "uperf");
 }
 
-void Uperf::start()
+void Uperf::start() // resume uperf from freezed
 {
     if (stopped)
         kill(uperf_pid, SIGCONT);
 }
 
-void Uperf::stop()
+void Uperf::stop() // freeze uperf
 {
     kill(uperf_pid, SIGSTOP);
     stopped = true;
@@ -121,9 +121,4 @@ void Uperf::stop()
 int Uperf::getPid() const
 {
     return uperf_pid;
-}
-
-Uperf::Uperf()
-{
-    
 }

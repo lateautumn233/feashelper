@@ -7,7 +7,6 @@ class Uperf
     unsigned int uperf_pid;
     bool stopped;  
 public:
-    Uperf();
     void findUperf();
     bool isUperf();
     void start();
