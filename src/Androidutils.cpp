@@ -54,7 +54,7 @@ void AndroidDevice::Topappmonitor(std::string &Topapp, unsigned int second)
             pid >> tmp;
             pid.close();
             std::ifstream app;
-            app.open(std::string("/proc" + tmp + "/cmdline").c_str());
+            app.open(std::string("/proc/" + tmp + "/cmdline").c_str());
             app >> Topapp;
             app.close();
         }
