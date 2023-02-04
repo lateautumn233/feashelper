@@ -73,6 +73,7 @@ void restore(AndroidDeviceFEAS &device)
         }
         freq.close();
     }
+    usleep(5000);
 }
 
 int main(int argc, char *argv[])
@@ -134,6 +135,8 @@ int main(int argc, char *argv[])
             if (!restored)
             {
                 restore(device);
+                restore(device);
+                restore(device); // 3 time for restore uperf's edit
                 restored = true;
             }
             
