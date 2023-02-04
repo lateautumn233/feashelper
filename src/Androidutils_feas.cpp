@@ -11,18 +11,17 @@ AndroidDeviceFEAS::AndroidDeviceFEAS(const char *name) : AndroidDevice(name)
 
 bool AndroidDeviceFEAS::getmtkFEASsupport()
 {
-    if (!Testfile("/sys/kernel/fpsgo/common/fpsgo_enable"))
-        return false;
-    if (!Testfile("/sys/module/mtk_fpsgo/parameters/perfmgr_enable"))
-        return false;
-    return true;
+    return Testfile("/sys/module/mtk_fpsgo/parameters/perfmgr_enable");
 }
 
 bool AndroidDeviceFEAS::getqcomFEASsupport()
 {
-    if (!Testfile("/sys/module/perfmgr/parameters/perfmgr_enable"))
-        return false;
-    return true;
+    return Testfile("/sys/module/perfmgr/parameters/perfmgr_enable");
+}
+
+bool AndroidDeviceFEAS::getoldqcomFEASsupport()
+{
+    return Testfile("/sys/module/perfmgr_policy/parameters/perfmgr_enable");
 }
 
 bool AndroidDeviceFEAS::checkFEASType()
@@ -35,6 +34,11 @@ bool AndroidDeviceFEAS::checkFEASType()
     if (getqcomFEASsupport())
     {
         type = "qcom";
+        return true;
+    }
+    if (getoldqcomFEASsupport())
+    {
+        type = "old_qcom";
         return true;
     }
     return false;
@@ -102,6 +106,12 @@ bool AndroidDeviceFEAS::FEASon(unsigned int &fps)
         Lockvalue("/sys/module/perfmgr/parameters/fixed_target_fps", fps);
         target_fps_helper_qcom(fps);
     }
+    if (type == "oldqcom")
+    {
+        if (!Lockvalue("/sys/module/perfmgr_policy/parameters/perfmgr_enable", 1))
+            return false;
+        Lockvalue("/sys/module/perfmgr_policy/parameters/fixed_target_fps", fps);
+    }
     Feas_status = true;
     return true;
 }
@@ -127,6 +137,12 @@ bool AndroidDeviceFEAS::FEASoff()
         Lockvalue("/sys/module/perfmgr/parameters/target_fps_61", 0);
         Lockvalue("/sys/module/perfmgr/parameters/target_fps_91", 0);
         Lockvalue("/sys/module/perfmgr/parameters/target_fps_121", 0);
+    }
+    if (type == "oldqcom")
+    {
+        if (!Lockvalue("/sys/module/perfmgr_policy/parameters/perfmgr_enable", 0))
+            return false;
+        Lockvalue("/sys/module/perfmgr_policy/parameters/fixed_target_fps", 0);
     }
     Feas_status = false;
     return true;

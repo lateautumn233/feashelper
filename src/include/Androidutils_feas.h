@@ -12,6 +12,7 @@ public:
     AndroidDeviceFEAS(const char *name);
     static bool getmtkFEASsupport();
     static bool getqcomFEASsupport();
+    static bool getoldqcomFEASsupport();
     bool checkFEASType();
     bool FEASon(unsigned int &fps);
     bool FEASoff();
