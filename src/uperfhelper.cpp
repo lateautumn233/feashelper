@@ -3,6 +3,8 @@
 #include <thread>
 #include <iostream>
 #include <unistd.h>
+#include <sys/types.h>
+#include <dirent.h>
 #include <sys/prctl.h>
 #include "include/uperfhelper.h"
 
@@ -35,6 +37,17 @@ static void Uperfhelper(bool &stat, bool &stop)
     }
 }
 
+static int is_pid_folder(const struct dirent *entry) {
+    const char *p;
+ 
+    for (p = entry->d_name; *p; p++) {
+        if (!isdigit(*p))
+            return 0;
+    }
+    return 1;
+}
+
+
 void startUperfhelper(bool &stat, bool &stop)
 {
     std::thread uperfhelper(Uperfhelper, std::ref(stat), std::ref(stop));
@@ -44,24 +57,42 @@ void startUperfhelper(bool &stat, bool &stop)
 void Uperf::findUperf()
 {
     std::ifstream comm;
-    std::string location("/proc/1/comm"), name;
+    std::string location, name;
     uperf_pid = -1;
+    int pid1, pid2;
     comm.open(location.c_str());
     bool uperfn = false;
-    for (int pid = 1; pid < 9999999; pid++)
+    DIR *Proc;
+    struct dirent *direntp;
+    Proc = opendir("/proc");
+    while((direntp = readdir(Proc)))
     {
+        if (!is_pid_folder(direntp))
+            continue;
+        location = "/proc/" + std::string(direntp->d_name) + "/comm";
+        comm.open(location.c_str());
+        if (!comm)
+        {
+            comm.close();
+            continue;
+        }
         comm >> name;
-        if (name == "uperf")
+        comm.close();
+        if (name == "uperf" && !uperfn)
+        {
             uperfn = true;
+            pid1 = atoi(direntp->d_name);
+            continue;
+        }
         if (name == "uperf" && uperfn)
         {
-            uperf_pid = pid;
+            pid2 = atoi(direntp->d_name);
+            uperf_pid = std::max(pid1, pid2);
+            std::cout << "uperf pid = " << uperf_pid << '\n';
             break;
         }
-        comm.close();
-        comm.open(location.c_str());
-        location = "/proc/" + std::to_string(pid) + "/comm";
     }
+    closedir(Proc);
 }
 
 bool Uperf::isUperf()
@@ -71,6 +102,7 @@ bool Uperf::isUperf()
     if (!comm)
         return false;
     comm >> name;
+    comm.close();
     return (name == "uperf");
 }
 
@@ -93,5 +125,5 @@ int Uperf::getPid() const
 
 Uperf::Uperf()
 {
-    findUperf();
+    
 }

@@ -13,6 +13,7 @@ static std::string getGov()
     fd >> gov;
     return gov;
 }
+
 static void setGov(std::string governor) // switch cpu to target governor
 {
     std::string tmp;
@@ -45,6 +46,7 @@ void setgov_normal(AndroidDeviceFEAS &device)
         }
     }
 }
+
 void restore(AndroidDeviceFEAS &device)
 {
     setgov_normal(device);
@@ -122,6 +124,7 @@ int main(int argc, char *argv[])
     else
         uperf_gov = "performance";
     bool restored = false;
+    
     while (true)
     {
         if (profile.Inlist(device.getToppkg())) // is a game in config
@@ -153,10 +156,12 @@ int main(int argc, char *argv[])
             if (!uperf_stat)
             {
                 setgov_normal(device);
+                restore(device);
             }
             else
             {
                 setGov(uperf_gov);
+                Lockvalue("/sys/devices/system/cpu/cpufreq/policy0/scaling_governor", uperf_gov);
             }
             // uperf
             uperf_stop = false;
