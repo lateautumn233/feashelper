@@ -16,10 +16,10 @@ int Shell(const char *sh, std::string &result)
         perror("Failed");
         return 0;
     }
-    char buf[1024];
+    char buff[1024];
     // collect result
-    fgets(buf, sizeof(buf), pp);
-    result = buf;
+    fgets(buff, sizeof(buff), pp);
+    result = buff;
     result.pop_back();
     pclose(pp);
     return 1;
@@ -46,25 +46,26 @@ void AndroidDevice::Topappmonitor(std::string &Topapp, unsigned int second)
     prctl(PR_SET_NAME, "Topappmonitor");
     while (true)
     {
-        if (Testfile("/sys/kernel/gbe/gbe2_fg_pid")) // mtk speacial
+        if (Testfile("/sys/kernel/gbe/gbe2_fg_pid"))
         {
-            second = 1;
-            std::ifstream pid("/sys/kernel/gbe/gbe2_fg_pid");
-            std::string tmp;
-            pid >> tmp;
-            pid.close();
-            std::ifstream app;
-            app.open(std::string("/proc/" + tmp + "/cmdline").c_str());
+            std::string pid;
+            std::ifstream Pid("/sys/kernel/gbe/gbe2_fg_pid"), app;
+            Pid >> pid;
+            Pid.close();
+            
+            app.open(std::string("/proc/" + pid + "/cmdline").c_str());
             app >> Topapp;
             app.close();
+            
+            while (Topapp[Topapp.length() - 1] == '\0')
+               Topapp.pop_back();
+            second = 1;
+            
         }
-        else
-        {
-            Shell("dumpsys activity activities|grep topResumedActivity=|tail -n 1|cut -d \"{\" -f2|cut -d \"/\" -f1|cut -d \" \" -f3", Topapp);
-        }
+        Shell("dumpsys activity activities|grep topResumedActivity=|tail -n 1|cut -d \"{\" -f2|cut -d \"/\" -f1|cut -d \" \" -f3", Topapp);
         // reduce screen off cost
         if (Topapp.empty())
-            sleep(3);
+            sleep(6);
         sleep(second);
     }
 }

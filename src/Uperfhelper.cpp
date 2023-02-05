@@ -109,7 +109,10 @@ bool Uperf::isUperf() // if not, findUperf again
 void Uperf::start() // resume uperf from freezed
 {
     if (stopped)
+    {
         kill(uperf_pid, SIGCONT);
+        stopped = false;
+    }
 }
 
 void Uperf::stop() // freeze uperf

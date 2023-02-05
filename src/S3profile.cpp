@@ -90,7 +90,7 @@ bool listProfile::Inlist(std::string app)
     {
         std::size_t pos = (p + i)->find(' ');
         std::string pkgname = (p + i)->substr(0, pos);
-        if (app == pkgname)
+        if (!app.compare(pkgname))
         {
             std::string s_fps = (p + i)->substr((pos + 1), ((p + i)->length() - pos));
             fps = atoi(s_fps.c_str());

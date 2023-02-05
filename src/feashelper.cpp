@@ -127,7 +127,6 @@ int main(int argc, char *argv[])
     
     while (true)
     {
-        std::cout << device.getToppkg();
         if (profile.Inlist(device.getToppkg())) // is a game in config
         {
             // open feas
@@ -142,7 +141,6 @@ int main(int argc, char *argv[])
             
             // uperf
             uperf_stop = true;
-            std::cout << "freeze uperf!\n";
             
             // set governor
             if (profile.performance_governor)
