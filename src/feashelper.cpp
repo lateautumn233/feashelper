@@ -149,7 +149,7 @@ int main(int argc, char *argv[])
             }
 
             // Additional configuration
-            addutils(device.getToppkg());
+            // addutils(device.getToppkg());
         }
         else
         {
