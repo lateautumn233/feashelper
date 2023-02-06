@@ -62,7 +62,10 @@ void AndroidDevice::Topappmonitor(std::string &Topapp, unsigned int second)
             second = 1;
             
         }
-        Shell("dumpsys activity activities|grep topResumedActivity=|tail -n 1|cut -d \"{\" -f2|cut -d \"/\" -f1|cut -d \" \" -f3", Topapp);
+        else
+        {
+            Shell("dumpsys activity activities|grep topResumedActivity=|tail -n 1|cut -d \"{\" -f2|cut -d \"/\" -f1|cut -d \" \" -f3", Topapp);
+        }
         // reduce screen off cost
         if (Topapp.empty())
             sleep(6);

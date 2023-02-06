@@ -138,7 +138,7 @@ bool AndroidDeviceFEAS::FEASoff()
         Lockvalue("/sys/module/perfmgr/parameters/target_fps_91", 0);
         Lockvalue("/sys/module/perfmgr/parameters/target_fps_121", 0);
     }
-    if (type == "oldqcom")
+    if (type == "old_qcom")
     {
         if (!Lockvalue("/sys/module/perfmgr_policy/parameters/perfmgr_enable", 0))
             return false;
