@@ -106,7 +106,7 @@ bool AndroidDeviceFEAS::FEASon(unsigned int &fps)
         Lockvalue("/sys/module/perfmgr/parameters/fixed_target_fps", fps);
         target_fps_helper_qcom(fps);
     }
-    if (type == "oldqcom")
+    if (type == "old_qcom")
     {
         if (!Lockvalue("/sys/module/perfmgr_policy/parameters/perfmgr_enable", 1))
             return false;
