@@ -1,5 +1,6 @@
 #include <iostream>
 #include <unistd.h>
+#include <thread>
 
 #include "include/Androidutils_feas.h"
 #include "include/S3profile.h"
@@ -24,33 +25,22 @@ static void setGov(std::string governor) // switch cpu to target governor
     }
 }
 
-void setgov_normal(AndroidDeviceFEAS &device) // swich performance to schedutil/walt
+static void setGov_normal(AndroidDeviceFEAS &device)
 {
-    while (getGov() != "walt" && getGov() != "schedutil")
+    const std::string target = device.getType() == "qcom" ? "walt" : "schedutil";
+    const std::string path = "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor";
+    while (getGov() != target)
     {
-        if (device.getType() == "qcom")
-        {
-            setGov("walt");
-            Lockvalue("/sys/devices/system/cpu/cpufreq/policy0/scaling_governor", "walt");
-            if (getGov() != "walt") // fall back
-            {
-                setGov("schedutil");
-                Lockvalue("/sys/devices/system/cpu/cpufreq/policy0/scaling_governor", "schedutil");
-            }
-        }
-        if (device.getType() == "mtk")
-        {
-            setGov("schedutil");
-            Lockvalue("/sys/devices/system/cpu/cpufreq/policy0/scaling_governor", "schedutil");
-        }
+        setGov(target);
+        Lockvalue(path, target);
     }
 }
 
 void restore(AndroidDeviceFEAS &device) // restore edition from uperf
 {
-    setgov_normal(device);
-    std::ifstream freq;
-    std::string tmp1,tmp2;
+    setGov_normal(device);
+    static std::ifstream freq;
+    static std::string tmp1,tmp2;
     for (int i = 0; i < 10; i++)
     {
         tmp1 = "/sys/devices/system/cpu/cpufreq/policy" + std::to_string(i) + "/cpuinfo_max_freq";
@@ -72,7 +62,7 @@ void restore(AndroidDeviceFEAS &device) // restore edition from uperf
         }
         freq.close();
     }
-    usleep(5000);
+    std::this_thread::sleep_for(std::chrono::milliseconds(5));
 }
 
 int main(int argc, char *argv[])
@@ -143,6 +133,9 @@ int main(int argc, char *argv[])
             uperf_stop = true;
             
             // set governor
+            if (device.getType() == "old_qcom") // perfmgr_policy can't use performance
+                continue;
+
             if (profile.performance_governor)
             {
                 setGov("performance");
@@ -157,7 +150,7 @@ int main(int argc, char *argv[])
             device.FEASoff();
             if (!uperf_stat)
             {
-                setgov_normal(device);
+                setGov_normal(device);
                 restore(device);
             }
             else

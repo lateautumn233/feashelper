@@ -56,14 +56,14 @@ void startUperfhelper(bool &stat, bool &stop) // a thread for watching uperf
 
 void Uperf::findUperf()
 {
-    std::ifstream comm;
-    std::string location, name;
+    static std::ifstream comm;
+    static std::string location, name;
     uperf_pid = -1; // reset pid
-    int pid1, pid2; // uperf has two daemon
+    static int pid1, pid2; // uperf has two daemon
     comm.open(location.c_str());
-    bool uperfn = false;
+    static bool uperfn = false;
     DIR *Proc;
-    struct dirent *direntp;
+    static struct dirent *direntp;
     Proc = opendir("/proc");
     while((direntp = readdir(Proc)))
     {
@@ -97,8 +97,8 @@ void Uperf::findUperf()
 
 bool Uperf::isUperf() // if not, findUperf again
 {
-    std::string location = "/proc/" + std::to_string(uperf_pid) + "/comm", name;
-    std::ifstream comm(location.c_str());
+    static std::string location = "/proc/" + std::to_string(uperf_pid) + "/comm", name;
+    static std::ifstream comm(location.c_str());
     if (!comm)
         return false;
     comm >> name;

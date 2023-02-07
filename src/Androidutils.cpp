@@ -28,10 +28,7 @@ int Shell(const char *sh, std::string &result)
 bool Testfile(const char *location)
 {
     int ret = access(location, F_OK);
-    if (ret == 0)
-        return true;
-    else
-        return false;
+    return (ret == 0);
 }
 
 AndroidDevice::AndroidDevice(const char *name)
@@ -57,10 +54,9 @@ void AndroidDevice::Topappmonitor(std::string &Topapp, unsigned int second)
             app >> Topapp;
             app.close();
             
-            while (Topapp[Topapp.length() - 1] == '\0')
+            while (Topapp[Topapp.length() - 1] == '\0') // trim
                Topapp.pop_back();
             second = 1;
-            
         }
         else
         {

@@ -14,6 +14,7 @@ bin-release/
 *.apk
 *.o
 *.bak
+FEAShelper
 
 # Builded Feashelper
 build/*.o

@@ -34,17 +34,17 @@ fi
 rm $MODPATH/feas.conf
 
 # permission
-chmod a+x $MODPATH/Feashelper
+chmod a+x $MODPATH/FEAShelper
 
-# start Feashelper on install
-pkill -9 Feashelper
+# start FEAShelper on install
+pkill -9 FEAShelper
 echo "----------------------------------------------------"
-$MODPATH/Feashelper /data/feas.conf &
+$MODPATH/FEAShelper /data/feas.conf &
 sleep 1s
 
-# test if Feashelper started
-if [[ "$(pgrep Feashelper)" == "" ]]; then
+# test if FEAShelper started
+if [[ "$(pgrep FEAShelper)" == "" ]]; then
     echo "Sorry, unsupported device."
     abort
 fi
-echo "Feashelper is running……"
+echo "FEAShelper is running……"
