@@ -26,14 +26,14 @@ bool AndroidDeviceFEAS::getoldqcomFEASsupport()
 
 bool AndroidDeviceFEAS::checkFEASType()
 {
-    if (getmtkFEASsupport())
-    {
-        type = "mtk";
-        return true;
-    }
     if (getqcomFEASsupport())
     {
         type = "qcom";
+        return true;
+    }
+    if (getmtkFEASsupport())
+    {
+        type = "mtk";
         return true;
     }
     if (getoldqcomFEASsupport())

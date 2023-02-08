@@ -32,7 +32,7 @@ static void Uperfhelper(bool &stat, bool &stop)
                 theUperf.start();
             else
                 theUperf.stop();
-            sleep(1);
+            usleep(10000);
         }
     }
 }
@@ -108,17 +108,12 @@ bool Uperf::isUperf() // if not, findUperf again
 
 void Uperf::start() // resume uperf from freezed
 {
-    if (stopped)
-    {
-        kill(uperf_pid, SIGCONT);
-        stopped = false;
-    }
+    kill(uperf_pid, SIGCONT);
 }
 
 void Uperf::stop() // freeze uperf
 {
     kill(uperf_pid, SIGSTOP);
-    stopped = true;
 }
 
 int Uperf::getPid() const

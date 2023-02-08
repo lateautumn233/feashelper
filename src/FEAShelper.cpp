@@ -29,11 +29,8 @@ static void setGov_normal(AndroidDeviceFEAS &device)
 {
     const std::string target = device.getType() == "qcom" ? "walt" : "schedutil";
     const std::string path = "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor";
-    while (getGov() != target)
-    {
-        setGov(target);
-        Lockvalue(path, target);
-    }
+    setGov(target);
+    Lockvalue(path, target);
 }
 
 void restore(AndroidDeviceFEAS &device) // restore edition from uperf
