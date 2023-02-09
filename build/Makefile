@@ -7,4 +7,4 @@ Feashelper: ../src/*.cpp
 
 .PHONY:clean
 clean:
-	rm FEAShelper
+	rm -f FEAShelper
