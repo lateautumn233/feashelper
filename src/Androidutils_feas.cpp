@@ -22,8 +22,17 @@ bool AndroidDeviceFEAS::getoldqcomFEASsupport()
     return Testfile("/sys/module/perfmgr_policy/parameters/perfmgr_enable");
 }
 
+bool AndroidDeviceFEAS::getBocchiFASsupport() {
+    return Testfile("/sys/module/bocchi_perfmgr/parameters/perfmgr_enable");
+}
+
 bool AndroidDeviceFEAS::checkFEASType()
 {
+    if (getBocchiFASsupport())
+    {
+        type = "bocchi";
+        return true;
+    }
     if (getqcomFEASsupport())
     {
         type = "qcom";
@@ -88,6 +97,11 @@ static void target_fps_helper_qcom(unsigned int &fps)
 
 bool AndroidDeviceFEAS::FEASon(unsigned int &fps)
 {
+    if (type == "bocchi")
+    {
+        Lockvalue("/sys/module/bocchi_perfmgr/parameters/perfmgr_enable", 1);
+        Lockvalue("/sys/module/bocchi_perfmgr/parameters/fixed_target_fps", fps);
+    }
     if (type == "mtk")
     {
         if (!Lockvalue("/sys/module/mtk_fpsgo/parameters/perfmgr_enable", 1))
@@ -113,6 +127,11 @@ bool AndroidDeviceFEAS::FEASon(unsigned int &fps)
 
 bool AndroidDeviceFEAS::FEASoff()
 {
+    if (type == "bocchi")
+    {
+        Lockvalue("/sys/module/bocchi_perfmgr/parameters/perfmgr_enable", 0);
+        Lockvalue("/sys/module/bocchi_perfmgr/parameters/fixed_target_fps", 0);
+    }
     if (type == "mtk")
     {
         if (!Lockvalue("/sys/module/mtk_fpsgo/parameters/perfmgr_enable", 0))

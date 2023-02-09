@@ -13,6 +13,7 @@ public:
     static bool getmtkFEASsupport();
     static bool getqcomFEASsupport();
     static bool getoldqcomFEASsupport();
+    static bool getBocchiFASsupport();
     bool checkFEASType();
     bool FEASon(unsigned int &fps);
     bool FEASoff();
