@@ -22,21 +22,20 @@ bool Lockvalue(std::string location, T value)
 }
 
 int Shell(const char *sh, std::string &result);
-bool Testfile(const char *location);
+bool Testfile(const char* location);
 
 // normal AndroidDevice
 class AndroidDevice
 {
-    std::string Name;
     std::string Frontpkgname;
 
 protected:
     static void Topappmonitor(std::string &Topapp, unsigned int second);
 
 public:
-    AndroidDevice(const char *name);
+    AndroidDevice();
     std::string getToppkg();
     bool ifScreenon();
-    void startTopappmonitor(unsigned int second);
+    void startTopappmonitor(const unsigned int& second);
     std::string getTopapp();
 };

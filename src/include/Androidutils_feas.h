@@ -5,11 +5,10 @@
 // Feas Android device
 class AndroidDeviceFEAS : public AndroidDevice
 {
-    bool Feas_status;
     bool isFEASSupported;
     std::string type;
 public:
-    AndroidDeviceFEAS(const char *name);
+    AndroidDeviceFEAS();
     static bool getmtkFEASsupport();
     static bool getqcomFEASsupport();
     static bool getoldqcomFEASsupport();

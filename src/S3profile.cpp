@@ -58,7 +58,7 @@ listProfile::listProfile(const char *location)
         Readsuccess = true;
 }
 
-void listProfile::Profilemonitor(unsigned int second, unsigned int &_line, std::string *&_p, const char *&Profilelocation, bool &performance_governor)
+void listProfile::Profilemonitor(const unsigned int& second, unsigned int &_line, std::string *&_p, const char *&Profilelocation, bool &performance_governor)
 {
     prctl(PR_SET_NAME, "Profilemonitor");
     while (true)
@@ -70,9 +70,9 @@ void listProfile::Profilemonitor(unsigned int second, unsigned int &_line, std::
     }
 }
 
-void listProfile::startProfilemonitor(unsigned int second)
+void listProfile::startProfilemonitor(const unsigned int& second)
 {
-    std::thread Profilehelper(Profilemonitor, second, std::ref(line), std::ref(p), std::ref(Profilelocation), std::ref(performance_governor));
+    std::thread Profilehelper(Profilemonitor, std::ref(second), std::ref(line), std::ref(p), std::ref(Profilelocation), std::ref(performance_governor));
     Profilehelper.detach();
 }
 
@@ -84,13 +84,13 @@ void listProfile::List()
         std::cout << *(p + i) << '\n';
 }
 
-bool listProfile::Inlist(std::string app)
+bool listProfile::Inlist(const std::string& app)
 {
     for (unsigned int i = 0; i < line; i++)
     {
         std::size_t pos = (p + i)->find(' ');
         std::string pkgname = (p + i)->substr(0, pos);
-        if (!app.compare(pkgname))
+        if (app == pkgname)
         {
             std::string s_fps = (p + i)->substr((pos + 1), ((p + i)->length() - pos));
             fps = atoi(s_fps.c_str());

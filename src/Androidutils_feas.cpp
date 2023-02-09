@@ -1,9 +1,7 @@
 #include "include/Androidutils_feas.h"
 
-
-AndroidDeviceFEAS::AndroidDeviceFEAS(const char *name) : AndroidDevice(name)
+AndroidDeviceFEAS::AndroidDeviceFEAS()
 {
-    Feas_status = false;
     isFEASSupported = checkFEASType();
     if (checkFEASType())
         FEASoff();
@@ -112,7 +110,6 @@ bool AndroidDeviceFEAS::FEASon(unsigned int &fps)
             return false;
         Lockvalue("/sys/module/perfmgr_policy/parameters/fixed_target_fps", fps);
     }
-    Feas_status = true;
     return true;
 }
 
@@ -120,8 +117,6 @@ bool AndroidDeviceFEAS::FEASoff()
 {
     if (type == "mtk")
     {
-        if (!Lockvalue("/sys/kernel/fpsgo/common/fpsgo_enable", 0))
-            return false;
         if (!Lockvalue("/sys/module/mtk_fpsgo/parameters/perfmgr_enable", 0))
             return false;
         Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps", 0);
@@ -144,7 +139,6 @@ bool AndroidDeviceFEAS::FEASoff()
             return false;
         Lockvalue("/sys/module/perfmgr_policy/parameters/fixed_target_fps", 0);
     }
-    Feas_status = false;
     return true;
 }
 

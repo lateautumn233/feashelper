@@ -25,15 +25,14 @@ int Shell(const char *sh, std::string &result)
     return 1;
 }
 
-bool Testfile(const char *location)
+bool Testfile(const char* location)
 {
     int ret = access(location, F_OK);
     return (ret == 0);
 }
 
-AndroidDevice::AndroidDevice(const char *name)
+AndroidDevice::AndroidDevice()
 {
-    Name = name;
     Frontpkgname = "com.unKnown.pkg";
 }
 
@@ -74,7 +73,7 @@ std::string AndroidDevice::getToppkg()
     return Frontpkgname;
 }
 
-void AndroidDevice::startTopappmonitor(unsigned int second)
+void AndroidDevice::startTopappmonitor(const unsigned int& second)
 {
     std::thread Topapphelper(Topappmonitor, std::ref(Frontpkgname), second);
     Topapphelper.detach();
