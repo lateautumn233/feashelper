@@ -6,7 +6,7 @@ echo "----------------------------------------------------"
 cat $MODPATH/FEATURES
 rm -rf $MODPATH/FEATURES
 
-echo "Please wait…"
+echo -e "\nPlease wait…"
 echo "请等待…"
 rm $MODPATH/FEATURES
 
