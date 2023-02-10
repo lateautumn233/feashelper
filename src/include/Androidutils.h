@@ -21,7 +21,7 @@ bool Lockvalue(std::string location, T value)
     return true;
 }
 
-int Shell(const char *sh, std::string &result);
+bool Shell(const char *sh, std::string &result);
 bool Testfile(const char* location);
 
 // normal AndroidDevice

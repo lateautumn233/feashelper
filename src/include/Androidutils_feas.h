@@ -9,6 +9,7 @@ class AndroidDeviceFEAS : public AndroidDevice
     std::string type;
 public:
     AndroidDeviceFEAS();
+    AndroidDeviceFEAS(const AndroidDeviceFEAS &others) = delete; // dont't copy this
     static bool getmtkFEASsupport();
     static bool getqcomFEASsupport();
     static bool getoldqcomFEASsupport();

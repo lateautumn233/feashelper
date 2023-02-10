@@ -90,8 +90,6 @@ bool AndroidDeviceFEAS::FEASon(unsigned int &fps)
 {
     if (type == "mtk")
     {
-        if (!Lockvalue("/sys/kernel/fpsgo/common/fpsgo_enable", 1))
-            return false;
         if (!Lockvalue("/sys/module/mtk_fpsgo/parameters/perfmgr_enable", 1))
             return false;
         Lockvalue("/sys/module/mtk_fpsgo/parameters/fixed_target_fps", fps);

@@ -8,13 +8,13 @@
 #include "include/Androidutils.h"
 
 // Run a shell (always dumpsys) and return result.
-int Shell(const char *sh, std::string &result)
+bool Shell(const char *sh, std::string &result)
 {
     FILE *pp = popen(sh, "r");
     if (pp == NULL)
     {
         perror("Failed");
-        return 0;
+        return false;
     }
     char buff[1024];
     // collect result
@@ -22,7 +22,7 @@ int Shell(const char *sh, std::string &result)
     result = buff;
     result.pop_back();
     pclose(pp);
-    return 1;
+    return true;
 }
 
 bool Testfile(const char* location)
