@@ -7,7 +7,7 @@
 
 #include "include/Androidutils.h"
 
-// Run a shell (always dumpsys) and return result.
+// Run a shell (always dumpsys) and save result.
 bool Shell(const char *sh, std::string &result)
 {
     FILE *pp = popen(sh, "r");
@@ -16,10 +16,10 @@ bool Shell(const char *sh, std::string &result)
         perror("Failed");
         return false;
     }
-    char buff[1024];
+    char buffer[1024];
     // collect result
-    fgets(buff, sizeof(buff), pp);
-    result = buff;
+    fgets(buffer, sizeof(buffer), pp);
+    result = buffer;
     result.pop_back();
     pclose(pp);
     return true;

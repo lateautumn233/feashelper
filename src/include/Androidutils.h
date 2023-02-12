@@ -8,7 +8,7 @@
 template <typename T>
 bool Lockvalue(std::string location, T value)
 {
-    chmod(location.c_str(), S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IWOTH | S_IROTH);
+    //chmod(location.c_str(), S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IWOTH | S_IROTH);
     std::ofstream fd(location.c_str(), std::ios::out | std::ios::trunc);
     if (!fd)
     {
@@ -17,7 +17,7 @@ bool Lockvalue(std::string location, T value)
     }
     fd << value;
     fd.close();
-    chmod(location.c_str(), S_IRUSR | S_IRGRP | S_IROTH);
+    //chmod(location.c_str(), S_IRUSR | S_IRGRP | S_IROTH);
     return true;
 }
 
