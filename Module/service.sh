@@ -17,4 +17,5 @@ wait_until_login() {
 }
 wait_until_login
 
-nohup $MODDIR/FEAShelper /data/feas.conf >/dev/null 2>&1 &
+# nohup $MODDIR/FEAShelper /data/feas.conf >/dev/null 2>&1 &
+nohup $MODDIR/FEAShelper /data/feas.conf >/cache/fpsgo.log 2>&1 &

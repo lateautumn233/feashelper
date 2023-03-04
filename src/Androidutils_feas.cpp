@@ -1,4 +1,6 @@
 #include "include/Androidutils_feas.h"
+#include "include/fpsgo.h"
+
 
 AndroidDeviceFEAS::AndroidDeviceFEAS()
 {
@@ -111,6 +113,8 @@ bool AndroidDeviceFEAS::FEASon(unsigned int &fps)
     }
     if (type == "qcom")
     {
+    	fpsgo_ioctl(1, 0, 0, 1, 1);
+    	fpsgo_ioctl(2, 0, 0, 1, 1);
         if (!Lockvalue("/sys/module/perfmgr/parameters/perfmgr_enable", 1))
             return false;
         Lockvalue("/sys/module/perfmgr/parameters/fixed_target_fps", fps);
@@ -143,6 +147,7 @@ bool AndroidDeviceFEAS::FEASoff()
     }
     if (type == "qcom")
     {
+    	fpsgo_ioctl(3, 0, 1, 1, 1);
         if (!Lockvalue("/sys/module/perfmgr/parameters/perfmgr_enable", 0))
             return false;
         Lockvalue("/sys/module/perfmgr/parameters/fixed_target_fps", 0);
